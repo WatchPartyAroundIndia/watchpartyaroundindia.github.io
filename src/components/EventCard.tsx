@@ -1,5 +1,4 @@
-import sponsorImage from "../assets/images/sponsors/navi.png";
-import volunteerImage from "../assets/images/volunteers/women.jpg";
+import Volunteer from "./Volunteer";
 
 interface EventCardProps {
   chapterName: string;
@@ -20,13 +19,19 @@ const EventCard = (event: EventCardProps) => {
       </h2>
 
       <div className='flex-col md:flex md:flex-row items-start max-w-2xl px-6 pt-4'>
-        <div className='w-full h-56 mb-2 rounded bg-gradient-to-r from-red-500 to-orange-500' />
+        <div className='w-full h-56 mb-2 rounded'>
+          <img
+            src={event.imageUrl}
+            alt={event.title}
+            className='w-full h-full object-cover rounded-lg'
+          />
+        </div>
         <div className='px-2 md:pl-8 md:pr-2 h-full'>
           <h3 className='text-2xl font-bold'>{event.title}</h3>
           <span className='text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-yellow-900 text-yellow-300'>
             {event.category}
           </span>
-          <p className='my-2 text-base'>{event.description}</p>
+          <p className='my-2 text-base text-justify'>{event.description}</p>
           <button
             onClick={() =>
               window.open(event.registraionUrl, "_blank", "noopener")
@@ -41,30 +46,30 @@ const EventCard = (event: EventCardProps) => {
       <div className='flex items-center md:justify-between max-w-2xl px-8 py-4 mb-2'>
         <div className='flex-col mr-8'>
           <h6 className='text-sm mb-1 font-semibold'>Venue Partner</h6>
-          {event.partners.map((_, index) => (
-            <img
-              key={index}
-              src={sponsorImage}
-              width={32}
-              height={10}
-              alt='venue partner'
-              loading='lazy'
-              className='w-24 h-10 object-contain'
-            />
-          ))}
+          <div className='flex'>
+            {event.partners.map((partner) => (
+              <img
+                key={partner.id}
+                src={partner.imageUrl}
+                width={32}
+                height={10}
+                alt={partner.name}
+                loading='lazy'
+                className='w-24 h-10 object-contain mr-2'
+              />
+            ))}
+          </div>
         </div>
         <div className='flex-col mr-8'>
           <h6 className='text-sm mb-1 font-semibold'>Volunteers</h6>
           <div className='flex -space-x-4 rtl:space-x-reverse'>
-            {event.volunteers.map((_, index) => (
-              <img
-                key={index}
-                src={volunteerImage}
+            {event.volunteers.map((volunteer) => (
+              <Volunteer
+                key={volunteer.id}
+                className='w-10 h-10 border-2 border-white rounded-full cursor-pointer'
                 width={40}
                 height={40}
-                alt='volunteer'
-                loading='lazy'
-                className='w-10 h-10 border-2 border-white rounded-full'
+                {...volunteer}
               />
             ))}
           </div>
