@@ -1,30 +1,96 @@
 {
   "heroTitle": "Watch Party Around India 🇮🇳",
-  "heroDescription": "Gathering of passionate developer watching the WWDC Keynote and Platform State of Union Together, in Bengaluru, Mumbai, and Hydrabad.",
+  "heroDescription": "Gathering of passionate developer watching the WWDC Keynote and Platform State of Union Together, in Bangalore, Mumbai, and Hyderabad.",
   "events": [
     {
-      "chapterName": "Swift Bengaluru",
-      "title": "WWDC 2021 Keynote Watch Party",
-      "imageUrl": "https://avatars.githubusercontent.com/u/25549847?v=4",
+      "chapterName": "Swift Bangalore",
+      "title": "WWDC 2024 Keynote",
+      "imageUrl": "https://placehold.co/600x400/EEE/31343C",
       "category": "Watch Party",
-      "description": "Join us for the WWDC 2021 Keynote Watch Party in Bengaluru. We will watch the Keynote together and discuss the new announcements.",
+      "description": "Join us for the WWDC 2024 Keynote Watch Party in Bangalore. We will watch the Keynote together and discuss the new announcements.",
       "registraionUrl": "https://www.meetup.com/",
       "partners": [
         {
-          "name": "NSIndia",
-          "logo": "./images/sponsors/navi.png"
+          "id": 1,
+          "name": "Navi",
+          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
+        },
+        {
+          "id": 2,
+          "name": "Navi",
+          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
         }
       ],
       "volunteers": [
         {
           "id": 1,
           "name": "Example 1",
-          "github": "https://avatars.githubusercontent.com/u/25549847?v=4"
+          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+          "socials": "https://x.com/"
         },
         {
           "id": 2,
           "name": "Example 2",
-          "github": "https://avatars.githubusercontent.com/u/25549847?v=4"
+          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+          "socials": "https://x.com/"
+        },
+        {
+          "id": 3,
+          "name": "Example 3",
+          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+          "socials": "https://x.com/"
+        }
+      ]
+    },
+    {
+      "chapterName": "Swift Mumbai",
+      "title": "WWDC 2024 Keynote",
+      "imageUrl": "https://placehold.co/600x400/EEE/31343C",
+      "category": "Watch Party",
+      "description": "Join us for the WWDC 2024 Keynote Watch Party in Mumbai. We will watch the Keynote together and discuss the new announcements.",
+      "registraionUrl": "https://www.meetup.com/",
+      "partners": [
+        {
+          "id": 1,
+          "name": "Navi",
+          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
+        }
+      ],
+      "volunteers": [
+        {
+          "id": 1,
+          "name": "Example 1",
+          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+          "socials": "https://x.com/"
+        },
+        {
+          "id": 2,
+          "name": "Example 2",
+          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+          "socials": "https://x.com/"
+        }
+      ]
+    },
+    {
+      "chapterName": "Swift Hyderabad",
+      "title": "WWDC 2024 Keynote",
+      "imageUrl": "https://placehold.co/600x400/EEE/31343C",
+      "category": "Watch Party",
+      "description": "Join us for the WWDC 2024 Keynote Watch Party in Hyderabad. We will watch the Keynote together and discuss the new announcements.",
+      "registraionUrl": "https://www.meetup.com/",
+      "partners": [
+        {
+          "id": 1,
+          "name": "Navi",
+          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
+        }
+      ],
+      "volunteers": [
+        {
+          "id": 1,
+          "name": "Example 1",
+          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+          "socials": "https://x.com/"
         }
       ]
     }
@@ -33,22 +99,20 @@
     {
       "id": 1,
       "name": "Example 1",
-      "imageUrl": "https://avatars.githubusercontent.com/u/25549847?v=4"
+      "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "socials": "https://x.com/"
     },
     {
       "id": 2,
       "name": "Example 2",
-      "imageUrl": "https://avatars.githubusercontent.com/u/25549847?v=4"
+      "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "socials": "https://x.com/"
     },
     {
       "id": 3,
       "name": "Example 3",
-      "imageUrl": "https://avatars.githubusercontent.com/u/25549847?v=4"
-    },
-    {
-      "id": 4,
-      "name": "Example 4",
-      "imageUrl": "https://avatars.githubusercontent.com/u/25549847?v=4"
+      "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "socials": "https://x.com/"
     }
   ]
 }
