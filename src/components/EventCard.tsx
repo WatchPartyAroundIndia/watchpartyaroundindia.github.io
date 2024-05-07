@@ -19,14 +19,14 @@ const EventCard = (event: EventCardProps) => {
       </h2>
 
       <div className='flex-col md:flex md:flex-row items-start max-w-2xl px-6 pt-4'>
-        <div className='w-full h-56 mb-2 rounded'>
+        <div className='w-full md:w-1/3 h-56 mb-2 rounded'>
           <img
             src={event.imageUrl}
             alt={event.title}
             className='w-full h-full object-cover rounded-lg'
           />
         </div>
-        <div className='px-2 md:pl-8 md:pr-2 h-full'>
+        <div className='md:w-2/3 px-2 md:pl-8 md:pr-2 h-full'>
           <h3 className='text-2xl font-bold'>{event.title}</h3>
           <span className='text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-yellow-900 text-yellow-300'>
             {event.category}
