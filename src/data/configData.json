@@ -45,11 +45,11 @@
     },
     {
       "chapterName": "Swift Mumbai",
-      "title": "WWDC 2024 Keynote",
-      "imageUrl": "https://placehold.co/600x400/EEE/31343C",
+      "title": "WWDC 2024 Keynote Watchparty",
+      "imageUrl": "https://pbs.twimg.com/media/GM3hTF5WkAEAqeB?format=jpg",
       "category": "Watch Party",
       "description": "Join us for the WWDC 2024 Keynote Watch Party in Mumbai. We will watch the Keynote together and discuss the new announcements.",
-      "registraionUrl": "https://www.meetup.com/",
+      "registraionUrl": "https://www.linkedin.com/company/swift-mumbai/",
       "partners": [
         {
           "id": 1,
@@ -60,15 +60,21 @@
       "volunteers": [
         {
           "id": 1,
-          "name": "Example 1",
-          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
-          "socials": "https://x.com/"
+          "name": "Yogesh",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1626843866434535424/KOWYjHsa.jpg",
+          "socials": "https://twitter.com/_yogeshsingh"
         },
         {
           "id": 2,
-          "name": "Example 2",
-          "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
-          "socials": "https://x.com/"
+          "name": "Raj Raval",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1694968755678289920/Yb_7_qev.jpg",
+          "socials": "https://twitter.com/rajhraval"
+        },
+        {
+          "id": 3,
+          "name": "Akanksha Sharma",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1026524499456319488/zUf3VWTR.jpg",
+          "socials": "https://twitter.com/akanksharmaa"
         }
       ]
     },
