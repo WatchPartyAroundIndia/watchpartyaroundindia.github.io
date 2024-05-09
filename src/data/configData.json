@@ -8,14 +8,9 @@
       "imageUrl": "https://pbs.twimg.com/media/GMZjwfwWcAAW1B4?format=jpg&name=large",
       "category": "Watch Party",
       "description": "Join us for an exhilarating evening at the WWDC 2024 Keynote and Platform State of the Union Watch Party in Bangalore! Get ready to witness the latest innovations from Apple as we watch the Keynote together, dissecting every announcement with excitement. Engage in insightful discussions with prominent developers from around the city, as they share firsthand experiences of how the previous year's APIs have propelled their app businesses forward. Plus, don't miss the share panel discussion between Bengaluru, Mumbai, and Hyderabad, where expectations for new APIs will be explored. It's an event not to be missed for tech enthusiasts and developers alike!",
-      "registraionUrl": "https://www.meetup.com/swiftbengaluru/events/300922614/",
-      "partners": [
-        {
-          "id": 1,
-          "name": "Navi",
-          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
-        }
-      ],
+      "registrationUrl": "https://www.meetup.com/swiftbengaluru/events/300922614/",
+      "sponsorRegistrationUrl": "https://forms.gle/UtQstyNsR5DhTHkM6",
+      "partners": [],
       "volunteers": [
         {
           "id": 1,
@@ -49,14 +44,9 @@
       "imageUrl": "https://pbs.twimg.com/media/GM3hTF5WkAEAqeB?format=jpg",
       "category": "Watch Party",
       "description": "Join us for the WWDC 2024 Keynote Watch Party in Mumbai. We will watch the Keynote together and discuss the new announcements.",
-      "registraionUrl": "https://www.linkedin.com/company/swift-mumbai/",
-      "partners": [
-        {
-          "id": 1,
-          "name": "Navi",
-          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
-        }
-      ],
+      "registrationUrl": "https://www.linkedin.com/company/swift-mumbai/",
+      "sponsorRegistrationUrl": "https://forms.gle/UtQstyNsR5DhTHkM6",
+      "partners": [],
       "volunteers": [
         {
           "id": 1,
@@ -84,14 +74,9 @@
       "imageUrl": "https://pbs.twimg.com/media/EPHghV4X0AIt2sf?format=jpg&name=medium",
       "category": "Watch Party",
       "description": "Join us for the WWDC 2024 Keynote Watch Party in Hyderabad. We will watch the Keynote together and discuss the new announcements.",
-      "registraionUrl": "https://www.linkedin.com/company/swifthyderabad/",
-      "partners": [
-        {
-          "id": 1,
-          "name": "Navi",
-          "imageUrl": "https://navi.com/static/media/naviLogo.c2380d7b.svg"
-        }
-      ],
+      "registrationUrl": "https://www.linkedin.com/company/swifthyderabad/",
+      "sponsorRegistrationUrl": "https://forms.gle/UtQstyNsR5DhTHkM6",
+      "partners": [],
       "volunteers": [
         {
           "id": 1,
