@@ -2,7 +2,7 @@ import webSiteConfig from "./data/configData.json";
 
 import Header from "./components/Header";
 import EventCard from "./components/EventCard";
-import Volunteer from "./components/Volunteer";
+// import Volunteer from "./components/Volunteer";
 
 const App = () => {
   return (
@@ -16,7 +16,8 @@ const App = () => {
         ))}
       </div>
 
-      <div className='mb-8 max-w-2xl'>
+      {/* Disabled until volunteers gets finalised. */}
+      {/* <div className='mb-8 max-w-2xl'>
         <h2 className='text-3xl mb-4 font-bold'>Voluteers</h2>
         <div className='flex flex-wrap'>
           {webSiteConfig.volunteers.map((volunteer) => (
@@ -29,7 +30,7 @@ const App = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
