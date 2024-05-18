@@ -16,7 +16,7 @@
           "id": 1,
           "name": "Amit Samant",
           "imageUrl": "https://pbs.twimg.com/profile_images/1769619769798410240/2XrQsCdB_400x400.jpg",
-          "socials": "https://twitter.com/amitsamant_dev"
+          "socials": "https://x.com/amitsamant_dev"
         },
         {
           "id": 2,
@@ -28,7 +28,7 @@
           "id": 3,
           "name": "Sinchan",
           "imageUrl": "https://pbs.twimg.com/profile_images/1343615190965735424/8BZtR_hR_400x400.jpg",
-          "socials": "https://twitter.com/sinchanmaitri"
+          "socials": "https://x.com/sinchanmaitri"
         },
         {
           "id": 3,
@@ -52,19 +52,19 @@
           "id": 1,
           "name": "Yogesh",
           "imageUrl": "https://pbs.twimg.com/profile_images/1626843866434535424/KOWYjHsa.jpg",
-          "socials": "https://twitter.com/_yogeshsingh"
+          "socials": "https://x.com/_yogeshsingh"
         },
         {
           "id": 2,
           "name": "Raj Raval",
           "imageUrl": "https://pbs.twimg.com/profile_images/1694968755678289920/Yb_7_qev.jpg",
-          "socials": "https://twitter.com/rajhraval"
+          "socials": "https://x.com/rajhraval"
         },
         {
           "id": 3,
           "name": "Akanksha Sharma",
           "imageUrl": "https://pbs.twimg.com/profile_images/1026524499456319488/zUf3VWTR.jpg",
-          "socials": "https://twitter.com/akanksharmaa"
+          "socials": "https://x.com/akanksharmaa"
         }
       ]
     },
@@ -82,13 +82,13 @@
           "id": 1,
           "name": "Ranga Reddy",
           "imageUrl": "https://pbs.twimg.com/profile_images/1508519283613073408/1bfjIgH_.jpg",
-          "socials": "https://twitter.com/irangareddy"
+          "socials": "https://x.com/irangareddy"
         },
         {
           "id": 2,
           "name": "Anirudh Jwala",
           "imageUrl": "https://pbs.twimg.com/profile_images/1789347514061090816/nwwjn5tc.jpg",
-          "socials": "https://twitter.com/nirudhuuu"
+          "socials": "https://x.com/nirudhuuu"
         }
       ]
     }
