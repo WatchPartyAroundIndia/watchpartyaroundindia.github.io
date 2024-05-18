@@ -9,7 +9,7 @@ const App = () => {
     <div className='flex flex-col items-center mt-14 max-w-full'>
       <Header />
 
-      <div className='mb-8'>
+      <div className='mb-8 max-w-4xl'>
         <h2 className='text-3xl ml-4 mb-4 font-bold'>Events</h2>
         {webSiteConfig.events.map((event, index) => (
           <EventCard key={index} {...event} />
