@@ -24,6 +24,8 @@ const Volunteer = ({
         alt={name}
         loading='lazy'
         className={className}
+        onContextMenu={(e) => e.preventDefault()}
+        title={name}
       />
     </div>
   );
