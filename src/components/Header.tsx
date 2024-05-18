@@ -14,6 +14,7 @@ const Header = () => {
         autoPlay
         playsInline
         preload='none'
+        onContextMenu={(e) => e.preventDefault()}
       >
         <source src={heroSectionVideo} type='video/mp4' />
       </video>
