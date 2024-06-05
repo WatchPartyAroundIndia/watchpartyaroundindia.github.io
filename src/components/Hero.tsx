@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='w-full flex flex-col items-center'>
       {/* Heading */}
-      <img src={heroImage} className='max-w-sm mb-4' alt='watch party india' />
+      <img src={heroImage} className='max-w-xs mb-4' alt='watch party india' />
       <h1 className='text-7xl text-center mb-8'>
         {/* TODO: Make it gradient */}
         <span className='text-blueGradientText font-semibold'>WWDC</span>&nbsp;
