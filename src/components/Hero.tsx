@@ -29,8 +29,8 @@ const Hero = () => {
       </p>
 
       {/* Timings */}
-      <h3 className='font-bold text-2xl'>10th June 2024, Monday</h3>
-      <h4 className='text-grayGradientText font-bold text-xl'>
+      <h3 className='font-bold text-3xl'>10th June 2024, Monday</h3>
+      <h4 className='text-grayGradientText font-bold text-2xl'>
         7:30 PM IST to 12:30 AM IST
       </h4>
     </div>
