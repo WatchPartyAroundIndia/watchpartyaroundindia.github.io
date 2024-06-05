@@ -1,13 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  @apply leading-normal font-normal text-[rgba(255,255,255,0.87)] bg-black;
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Regular.otf") format("opentype");
+  font-weight: normal;
+}
 
-  font-family: "Montserrat", sans-serif;
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Ultralight.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Heavy.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SfProDisplay";
+  src: url("/font/SF-Pro-Display-Black.otf") format("opentype");
+  font-weight: 800;
+}
+
+:root {
+  @apply leading-normal font-normal text-[rgba(255,255,255,0.87)] bg-[#010117];
+
+  font-family: "SfProDisplay", sans-serif;
   font-optical-sizing: auto;
 
   font-synthesis: none;

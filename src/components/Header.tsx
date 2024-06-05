@@ -1,26 +1,13 @@
-import webSiteConfig from "../data/configData.json";
-import heroSectionVideo from "../assets/videos/wwdc24.mp4";
-
 const Header = () => {
   return (
-    <div className='mb-8 text-center'>
-      <h1 className='text-4xl font-bold mx-12 mb-8'>
-        {webSiteConfig.heroTitle}
-      </h1>
-      <video
-        className='w-full h-auto md:h-36'
-        loop
-        muted
-        autoPlay
-        playsInline
-        preload='none'
-        onContextMenu={(e) => e.preventDefault()}
-      >
-        <source src={heroSectionVideo} type='video/mp4' />
-      </video>
-
-      <p className='mt-8 max-w-2xl'>{webSiteConfig.heroDescription}</p>
-    </div>
+    <nav className='w-full flex justify-between my-8 px-10'>
+      <p className='w-auto text-2xl font-semibold'>Watch Party Around India</p>
+      <ul className='flex'>
+        <li className='pr-12 cursor-pointer'>About</li>
+        <li className='pr-12 cursor-pointer'>Sponsor</li>
+        <li className='pr-12 cursor-pointer'>Register</li>
+      </ul>
+    </nav>
   );
 };
 
