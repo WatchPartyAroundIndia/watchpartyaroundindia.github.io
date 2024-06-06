@@ -2,7 +2,7 @@ import heroImage from "../assets/images/hero/swift-icons.svg";
 
 const Hero = () => {
   return (
-    <div className='w-full flex flex-col items-center'>
+    <div className='w-full flex flex-col items-center mt-20'>
       {/* Heading */}
       <img src={heroImage} className='max-w-xs mb-4' alt='watch party india' />
       <h1 className='text-7xl text-center mb-8'>

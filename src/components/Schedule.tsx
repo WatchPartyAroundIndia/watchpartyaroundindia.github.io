@@ -41,7 +41,7 @@ const Schedule = () => {
       {listOfSchedule.map((schedule) => (
         <div
           key={schedule.id}
-          className='flex justify-between w-1/2 mx-auto mb-2'
+          className='flex justify-between w-full mx-4 md:w-2/3 md:mx-auto mb-2'
         >
           <p className='font-semibold text-xl'>{schedule.timings}</p>
           <p className='font-semibold text-xl'>{schedule.description}</p>
