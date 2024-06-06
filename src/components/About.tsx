@@ -90,11 +90,8 @@ const About = () => {
       </p>
       <div className='flex flex-col items-center max-w-fit'>
         {listOfChapters.map((chapter) => (
-          <>
-            <div
-              key={chapter.id}
-              className='flex items-center justify-center mb-8 mt-12'
-            >
+          <div key={chapter.id}>
+            <div className='flex items-center justify-center mb-8 mt-12'>
               {chapter.icon && (
                 <img
                   src={chapter.icon}
@@ -117,7 +114,7 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
