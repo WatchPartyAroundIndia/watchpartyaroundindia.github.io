@@ -82,45 +82,46 @@ const About = () => {
   ];
 
   return (
-    <div
-      id='about'
-      className='flex flex-col items-center justify-center mt-10 mb-16'
-    >
-      <h5 className='text-2xl text-center font-semibold'>About Us</h5>
-      <p className='text-center font-base w-2/5'>
-        This event is organised in collaboration of Swift Communities of Mumbai,
-        Bengaluru and Hyderabad along with Watch Party Delhi and Ahemdabad.
-      </p>
-      <div className='flex flex-col items-center max-w-fit'>
-        {listOfChapters.map((chapter) => (
-          <div key={chapter.id}>
-            <div className='flex items-center justify-center mb-8 mt-12'>
-              {chapter.icon && (
-                <img
-                  src={chapter.icon}
-                  alt={chapter.name}
-                  className='w-9 mr-2'
-                />
-              )}
-              <p className='font-semibold'>{chapter.name}</p>
-            </div>
+    <>
+      <div id='about' className='h-2' />
+      <div className='flex flex-col items-center justify-center mt-10 mb-16'>
+        <h5 className='text-2xl text-center font-semibold'>About Us</h5>
+        <p className='text-center font-base w-2/5'>
+          This event is organised in collaboration of Swift Communities of
+          Mumbai, Bengaluru and Hyderabad along with Watch Party Delhi and
+          Ahemdabad.
+        </p>
+        <div className='flex flex-col items-center max-w-fit'>
+          {listOfChapters.map((chapter) => (
+            <div key={chapter.id}>
+              <div className='flex items-center justify-center mb-8 mt-12'>
+                {chapter.icon && (
+                  <img
+                    src={chapter.icon}
+                    alt={chapter.name}
+                    className='w-9 mr-2'
+                  />
+                )}
+                <p className='font-semibold'>{chapter.name}</p>
+              </div>
 
-            <div className='grid grid-cols-3 gap-4'>
-              {chapter.voulenteers.map((voulenteer) => (
-                <div
-                  key={voulenteer.id}
-                  className='flex flex-col items-center justify-center mx-4'
-                >
-                  <div className='w-24 h-24 rounded-full bg-slate-200 mb-4' />
-                  <p className='font-semibold text-xl'>{voulenteer.name}</p>
-                  <p className='text-sm font-medium'>{voulenteer.location}</p>
-                </div>
-              ))}
+              <div className='grid grid-cols-3 gap-4'>
+                {chapter.voulenteers.map((voulenteer) => (
+                  <div
+                    key={voulenteer.id}
+                    className='flex flex-col items-center justify-center mx-4'
+                  >
+                    <div className='w-24 h-24 rounded-full bg-slate-200 mb-4' />
+                    <p className='font-semibold text-xl'>{voulenteer.name}</p>
+                    <p className='text-sm font-medium'>{voulenteer.location}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
