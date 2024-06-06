@@ -7,14 +7,12 @@ const Hero = () => {
       <img src={heroImage} className='max-w-xs mb-4' alt='watch party india' />
       <h1 className='text-7xl text-center mb-8'>
         {/* TODO: Make it gradient */}
-        <span className='text-blueGradientText font-semibold'>WWDC</span>&nbsp;
-        <span className='text-orangeGradientText font-semibold'>Watch</span>
+        <span className='text-blueGradientText font-bold'>WWDC</span>&nbsp;
+        <span className='text-orangeGradientText font-bold'>Watch</span>
         &nbsp;
-        <span className='text-pinkGradientText font-semibold'>Party</span>&nbsp;
+        <span className='text-pinkGradientText font-bold'>Party</span>&nbsp;
         <br />
-        <span className='text-grayGradientText font-semibold'>
-          Around India
-        </span>
+        <span className='text-grayGradientText font-bold'>Around India</span>
       </h1>
 
       {/* Description */}
