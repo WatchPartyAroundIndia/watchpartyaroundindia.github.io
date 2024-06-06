@@ -30,16 +30,13 @@ const Organisers = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center my-12'>
+    <div className='flex flex-col justify-center mt-6 mb-12'>
       <h5 className='text-lg text-center font-semibold text-grayGradientText mb-8'>
         organised by
       </h5>
-      <div className='flex items-center mx-auto max-w-fit'>
+      <div className='overflow-x-auto flex items-center'>
         {listOfOrganisers.map((organiser) => (
-          <div
-            key={organiser.id}
-            className='flex items-center justify-center mx-4'
-          >
+          <div key={organiser.id} className='flex items-center mx-2 min-w-fit'>
             {organiser.icon && (
               <img
                 src={organiser.icon}
