@@ -59,14 +59,14 @@ const RegisterEvent = () => {
   return (
     <>
       <div id='register' className='h-2' />
-      <div className='flex flex-col justify-center my-12'>
+      <div className='flex flex-col justify-center mb-6'>
         <h5 className='text-2xl text-center font-semibold'>
           Register for the Event
         </h5>
         <h5 className='text-2xl text-center text-grayGradientText font-semibold mb-8'>
           Offline and Online
         </h5>
-        <div className='grid grid-cols-3 gap-8 mb-2 mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center mx-auto gap-8'>
           {listOfEvents.map((schedule) => (
             <div
               key={schedule.id}
