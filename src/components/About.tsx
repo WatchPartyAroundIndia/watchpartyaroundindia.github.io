@@ -86,7 +86,7 @@ const About = () => {
       <div id='about' className='h-2' />
       <div className='flex flex-col items-center justify-center mt-10 mb-16'>
         <h5 className='text-2xl text-center font-semibold'>About Us</h5>
-        <p className='text-center font-base w-2/5'>
+        <p className='text-center font-base w-full px-6 lg:w-2/5'>
           This event is organised in collaboration of Swift Communities of
           Mumbai, Bengaluru and Hyderabad along with Watch Party Delhi and
           Ahemdabad.
@@ -105,7 +105,7 @@ const About = () => {
                 <p className='font-semibold'>{chapter.name}</p>
               </div>
 
-              <div className='grid grid-cols-3 gap-4'>
+              <div className='grid grid-cols-2 md:grid-cols-3 items-center justify-items-center mx-auto gap-8'>
                 {chapter.voulenteers.map((voulenteer) => (
                   <div
                     key={voulenteer.id}
