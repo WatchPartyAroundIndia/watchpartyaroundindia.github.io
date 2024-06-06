@@ -30,7 +30,7 @@ const Support = () => {
         <h5 className='text-2xl text-center text-grayGradientText font-semibold mb-8'>
           Offline and Online
         </h5>
-        <div className='grid grid-cols-2 gap-8 mb-2 mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-items-center mx-auto gap-8'>
           {listOfSupporters.map((schedule) => (
             <div
               key={schedule.id}
