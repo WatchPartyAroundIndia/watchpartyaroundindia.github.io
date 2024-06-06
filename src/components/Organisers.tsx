@@ -31,10 +31,10 @@ const Organisers = () => {
 
   return (
     <div className='flex flex-col justify-center mt-6 mb-12'>
-      <h5 className='text-lg text-center font-semibold text-grayGradientText mb-8'>
+      <h5 className='text-lg text-center font-semibold text-grayGradientText mb-4'>
         organised by
       </h5>
-      <div className='overflow-x-auto flex items-center'>
+      <div className='overflow-x-auto flex items-center md:mx-auto'>
         {listOfOrganisers.map((organiser) => (
           <div key={organiser.id} className='flex items-center mx-2 min-w-fit'>
             {organiser.icon && (
