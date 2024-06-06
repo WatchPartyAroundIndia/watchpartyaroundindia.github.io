@@ -33,20 +33,21 @@ const Schedule = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center'>
+    <div className='flex flex-col justify-center mb-6'>
       <h5 className='text-2xl text-center font-semibold'>Schedule</h5>
       <h5 className='text-2xl text-center text-grayGradientText font-semibold mb-8'>
         Indian Standard Time
       </h5>
-      {listOfSchedule.map((schedule) => (
-        <div
-          key={schedule.id}
-          className='flex justify-between w-full mx-4 md:w-1/2 md:mx-auto mb-2'
-        >
-          <p className='font-semibold text-xl'>{schedule.timings}</p>
-          <p className='font-semibold text-xl'>{schedule.description}</p>
-        </div>
-      ))}
+      <div className='flex flex-col mx-auto w-2/3 md:w-1/2'>
+        {listOfSchedule.map((schedule) => (
+          <div key={schedule.id} className='md:flex md:justify-between mb-2'>
+            <p className='font-semibold text-xl'>{schedule.timings}</p>
+            <p className='font-semibold text-xl md:text-right'>
+              {schedule.description}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
