@@ -77,7 +77,7 @@ const RegisterEvent = () => {
                 <p className='font-base text-base'>{schedule.location}</p>
               </div>
               <button
-                className={`${schedule.textColor} bg-white rounded-2xl w-full py-2 font-semibold text-sm`}
+                className={`${schedule.textColor} bg-white rounded-2xl w-full py-2 font-semibold text-sm hover:bg-gray-100 hover:shadow-md`}
               >
                 {schedule.buttonText}
               </button>
