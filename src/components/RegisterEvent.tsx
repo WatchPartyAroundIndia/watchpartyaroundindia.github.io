@@ -57,7 +57,7 @@ const RegisterEvent = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center mt-10 mb-16'>
+    <div id='register' className='flex flex-col justify-center mt-10 mb-16'>
       <h5 className='text-2xl text-center font-semibold'>
         Register for the Event
       </h5>

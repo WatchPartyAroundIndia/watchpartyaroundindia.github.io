@@ -82,7 +82,10 @@ const About = () => {
   ];
 
   return (
-    <div className='flex flex-col items-center justify-center mt-10 mb-16'>
+    <div
+      id='about'
+      className='flex flex-col items-center justify-center mt-10 mb-16'
+    >
       <h5 className='text-2xl text-center font-semibold'>About Us</h5>
       <p className='text-center font-base w-2/5'>
         This event is organised in collaboration of Swift Communities of Mumbai,

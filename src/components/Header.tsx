@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   const [showNavDialog, setShowNavDialog] = useState("hidden");
@@ -10,20 +11,26 @@ const Header = () => {
         "backdrop-filter backdrop-blur-lg bg-opacity-30 fixed w-full top-0"
       }`}
     >
-      <a href='#' id='brand'>
+      <Link to='#' id='brand'>
         <span className='text-lg font-medium'>Watch Party Around India</span>
-      </a>
+      </Link>
 
       <div id='nav-menu' className='hidden md:flex gap-12'>
-        <a href='#' className='font-medium hover:text-blueGradientText'>
+        <Link to='#about' className='font-medium hover:text-blueGradientText'>
           About
-        </a>
-        <a href='#' className='font-medium hover:text-orangeGradientText'>
+        </Link>
+        <Link
+          to='#sponsor'
+          className='font-medium hover:text-orangeGradientText'
+        >
           Sponsor
-        </a>
-        <a href='#' className='font-medium hover:text-pinkGradientText'>
+        </Link>
+        <Link
+          to='#register'
+          className='font-medium hover:text-pinkGradientText'
+        >
           Register
-        </a>
+        </Link>
       </div>
 
       <button
@@ -43,11 +50,11 @@ const Header = () => {
           id='nav-bar'
           className='flex z-100 justify-between items-center px-6'
         >
-          <a href='#' id='brand'>
+          <Link to='#' id='brand'>
             <span className='text-lg font-medium'>
               Watch Party Around India
             </span>
-          </a>
+          </Link>
           <button
             className='p-2 md:hidden'
             onClick={() => {
@@ -59,24 +66,33 @@ const Header = () => {
         </div>
 
         <div className='mt-6'>
-          <a
-            href='#'
+          <Link
+            to='#about'
+            onClick={() => {
+              setShowNavDialog("hidden");
+            }}
             className='font-medium hover:text-blueGradientText hover:bg-gray-50 block rounded-lg m-3 p-3 transition duration-200'
           >
             About
-          </a>
-          <a
-            href='#'
+          </Link>
+          <Link
+            to='#sponsor'
+            onClick={() => {
+              setShowNavDialog("hidden");
+            }}
             className='font-medium hover:text-orangeGradientText hover:bg-gray-50 block rounded-lg m-3 p-3 transition duration-200'
           >
             Sponsor
-          </a>
-          <a
-            href='#'
+          </Link>
+          <Link
+            to='#register'
+            onClick={() => {
+              setShowNavDialog("hidden");
+            }}
             className='font-medium hover:text-pinkGradientText hover:bg-gray-50 block rounded-lg m-3 p-3 transition duration-200'
           >
             Register
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
