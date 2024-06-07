@@ -17,11 +17,12 @@ const Hero = () => {
         <span className='text-gray-gradient font-bold'>Around India</span>
       </h1>
 
-      <p className='max-w-xl text-center px-6 mb-8 text-white'>
+      <p className='max-w-xl text-sm text-center px-6 mb-8 text-white'>
         Join us for the Watch Party Around India in Ahmedabad, Delhi, Mumbai,
         Bengaluru, and Hyderabad! Watch the unveiling of the latest Apple
         platforms, technologies, and tools together and discuss. Engage and
-        connect with the developer community of India.&nbsp;
+        connect with the developer community of India.
+        <br />
         <span className='font-semibold'>
           Registration is free (Both offline and online).
         </span>
