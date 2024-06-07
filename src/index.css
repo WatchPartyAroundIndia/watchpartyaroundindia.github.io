@@ -57,7 +57,7 @@
 }
 
 :root {
-  @apply leading-normal font-normal text-[#FFFFFF] bg-[#010117];
+  @apply leading-normal font-normal bg-[#010117];
 
   font-family: "SfProDisplay", sans-serif;
   font-optical-sizing: auto;

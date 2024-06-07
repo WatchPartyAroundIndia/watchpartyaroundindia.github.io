@@ -28,17 +28,19 @@ const Speakers = () => {
 
   return (
     <div className='flex flex-col justify-center mt-10 mb-16'>
-      <h5 className='text-2xl text-center font-semibold mb-6'>Our Speakers</h5>
+      <h5 className='text-2xl text-white text-center font-semibold mb-6'>
+        Our Speakers
+      </h5>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center mx-auto gap-8'>
         {listOfSpeakers.map((speaker) => (
           <div key={speaker.id} className='flex flex-col items-center'>
             <div className='w-40 h-40 rounded-full bg-slate-200 mb-4' />
-            <p className='font-semibold text-xl'>{speaker.name}</p>
-            <p className='text-base mb-2 text-grayGradientText'>
+            <p className='font-semibold text-xl text-white'>{speaker.name}</p>
+            <p className='text-base mb-2 text-slate-400'>
               {speaker.designation}
             </p>
-            <p className='text-sm font-medium'>Keynote Speaker</p>
-            <p className='text-sm font-medium'>{speaker.location}</p>
+            <p className='text-sm font-medium text-white'>Keynote Speaker</p>
+            <p className='text-sm font-medium text-white'>{speaker.location}</p>
           </div>
         ))}
       </div>

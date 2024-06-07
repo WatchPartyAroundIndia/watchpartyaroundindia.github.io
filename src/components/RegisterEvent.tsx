@@ -59,11 +59,11 @@ const RegisterEvent = () => {
   return (
     <>
       <div id='register' className='h-2' />
-      <div className='flex flex-col justify-center mb-6'>
-        <h5 className='text-2xl text-center font-semibold'>
+      <div className='flex flex-col justify-center mt-12 mb-6'>
+        <h5 className='text-2xl text-white text-center font-semibold'>
           Register for the Event
         </h5>
-        <h5 className='text-2xl text-center text-grayGradientText font-semibold mb-8'>
+        <h5 className='text-2xl text-center text-slate-400 font-semibold mb-8'>
           Offline and Online
         </h5>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center mx-auto gap-8'>
@@ -73,8 +73,12 @@ const RegisterEvent = () => {
               className={`${schedule.bgColor} w-60 h-52 rounded-2xl p-5 flex flex-col justify-between`}
             >
               <div>
-                <p className='font-bold text-xl'>{schedule.venueName}</p>
-                <p className='font-base text-base'>{schedule.location}</p>
+                <p className='font-bold text-xl text-white'>
+                  {schedule.venueName}
+                </p>
+                <p className='font-base text-base text-white'>
+                  {schedule.location}
+                </p>
               </div>
               <button
                 className={`${schedule.textColor} bg-white rounded-2xl w-full py-2 font-semibold text-sm hover:bg-gray-100 hover:shadow-md`}

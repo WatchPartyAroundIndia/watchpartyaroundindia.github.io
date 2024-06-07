@@ -9,16 +9,15 @@ const Hero = () => {
         alt='watch party india'
       />
       <h1 className='text-3xl md:text-5xl lg:text-7xl text-center mb-8'>
-        {/* TODO: Make it gradient */}
-        <span className='text-blueGradientText font-bold'>WWDC</span>&nbsp;
-        <span className='text-orangeGradientText font-bold'>Watch</span>
+        <span className='text-blue-gradient font-bold'>WWDC</span>&nbsp;
+        <span className='text-orange-gradient font-bold'>Watch</span>
         &nbsp;
-        <span className='text-pinkGradientText font-bold'>Party</span>&nbsp;
+        <span className='text-pink-gradient font-bold'>Party</span>&nbsp;
         <br />
-        <span className='text-grayGradientText font-bold'>Around India</span>
+        <span className='text-gray-gradient font-bold'>Around India</span>
       </h1>
 
-      <p className='max-w-xl text-center px-6 mb-8'>
+      <p className='max-w-xl text-center px-6 mb-8 text-white'>
         Join us for the Watch Party Around India in Ahmedabad, Delhi, Mumbai,
         Bengaluru, and Hyderabad! Watch the unveiling of the latest Apple
         platforms, technologies, and tools together and discuss. Engage and
@@ -29,10 +28,10 @@ const Hero = () => {
       </p>
 
       <div className='max-w-xl px-6 text-center'>
-        <h3 className='font-bold text-xl md:text-2xl lg:text-3xl'>
+        <h3 className='font-bold text-xl md:text-2xl lg:text-3xl text-white'>
           10th June 2024, Monday
         </h3>
-        <h4 className='text-grayGradientText font-bold text-base md:text-xl lg:text-2xl'>
+        <h4 className='text-slate-400 font-bold text-base md:text-xl lg:text-2xl'>
           7:30 PM IST to 12:30 AM IST
         </h4>
       </div>

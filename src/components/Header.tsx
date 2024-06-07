@@ -12,22 +12,27 @@ const Header = () => {
       }`}
     >
       <Link to='#' id='brand'>
-        <span className='text-lg font-medium'>Watch Party Around India</span>
+        <span className='text-lg font-medium text-white'>
+          Watch Party Around India
+        </span>
       </Link>
 
       <div id='nav-menu' className='hidden md:flex gap-12'>
-        <Link to='#about' className='font-medium hover:text-blueGradientText'>
+        <Link
+          to='#about'
+          className='font-medium hover:text-blue-gradient text-slate-300 text-sm'
+        >
           About
         </Link>
         <Link
           to='#sponsor'
-          className='font-medium hover:text-orangeGradientText'
+          className='font-medium hover:text-orange-gradient text-slate-300 text-sm'
         >
           Sponsor
         </Link>
         <Link
           to='#register'
-          className='font-medium hover:text-pinkGradientText'
+          className='font-medium hover:text-pink-gradient text-slate-300 text-sm'
         >
           Register
         </Link>
@@ -39,7 +44,7 @@ const Header = () => {
           setShowNavDialog("fixed");
         }}
       >
-        <i className='fa-solid fa-bars'></i>
+        <i className='fa-solid fa-bars text-white'></i>
       </button>
 
       <div
@@ -51,7 +56,7 @@ const Header = () => {
           className='flex z-100 justify-between items-center px-6'
         >
           <Link to='#' id='brand'>
-            <span className='text-lg font-medium'>
+            <span className='text-lg font-medium text-white'>
               Watch Party Around India
             </span>
           </Link>
@@ -61,7 +66,7 @@ const Header = () => {
               setShowNavDialog("hidden");
             }}
           >
-            <i className='fa-solid fa-xmark'></i>
+            <i className='fa-solid fa-xmark text-white'></i>
           </button>
         </div>
 
@@ -71,7 +76,7 @@ const Header = () => {
             onClick={() => {
               setShowNavDialog("hidden");
             }}
-            className='font-medium hover:text-blueGradientText hover:bg-gray-50 block rounded-lg m-3 p-3 transition duration-200'
+            className='font-medium text-slate-300 hover:text-blue-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
             About
           </Link>
@@ -80,7 +85,7 @@ const Header = () => {
             onClick={() => {
               setShowNavDialog("hidden");
             }}
-            className='font-medium hover:text-orangeGradientText hover:bg-gray-50 block rounded-lg m-3 p-3 transition duration-200'
+            className='font-medium text-slate-300 hover:text-orange-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
             Sponsor
           </Link>
@@ -89,7 +94,7 @@ const Header = () => {
             onClick={() => {
               setShowNavDialog("hidden");
             }}
-            className='font-medium hover:text-pinkGradientText hover:bg-gray-50 block rounded-lg m-3 p-3 transition duration-200'
+            className='font-medium text-slate-300 hover:text-pink-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
             Register
           </Link>

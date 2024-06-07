@@ -84,9 +84,11 @@ const About = () => {
   return (
     <>
       <div id='about' className='h-2' />
-      <div className='flex flex-col items-center justify-center mt-10 mb-16'>
-        <h5 className='text-2xl text-center font-semibold'>About Us</h5>
-        <p className='text-center font-base w-full px-6 lg:w-2/5'>
+      <div className='flex flex-col items-center justify-center mt-12 mb-16'>
+        <h5 className='text-2xl text-center font-semibold text-white'>
+          About Us
+        </h5>
+        <p className='text-center font-base w-full px-6 lg:w-2/5 text-white'>
           This event is organised in collaboration of Swift Communities of
           Mumbai, Bengaluru and Hyderabad along with Watch Party Delhi and
           Ahemdabad.
@@ -102,7 +104,7 @@ const About = () => {
                     className='w-9 mr-2'
                   />
                 )}
-                <p className='font-semibold'>{chapter.name}</p>
+                <p className='font-semibold text-white'>{chapter.name}</p>
               </div>
 
               <div className='grid grid-cols-2 md:grid-cols-3 items-center justify-items-center mx-auto gap-8'>
@@ -112,8 +114,12 @@ const About = () => {
                     className='flex flex-col items-center justify-center mx-4'
                   >
                     <div className='w-24 h-24 rounded-full bg-slate-200 mb-4' />
-                    <p className='font-semibold text-xl'>{voulenteer.name}</p>
-                    <p className='text-sm font-medium'>{voulenteer.location}</p>
+                    <p className='font-semibold text-xl text-white'>
+                      {voulenteer.name}
+                    </p>
+                    <p className='text-sm font-medium text-white'>
+                      {voulenteer.location}
+                    </p>
                   </div>
                 ))}
               </div>
