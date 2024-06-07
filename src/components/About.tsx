@@ -84,7 +84,7 @@ const About = () => {
   return (
     <>
       <div id='about' className='h-2' />
-      <div className='flex flex-col items-center justify-center mt-12 mb-16'>
+      <div className='flex flex-col items-center justify-center mt-12 mb-56'>
         <h5 className='text-2xl text-center font-semibold text-white'>
           About Us
         </h5>
