@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`p-3 flex justify-between items-center px-10 ${
+      className={`p-4 flex justify-between items-center ${
         showNavDialog === "hidden" &&
         "backdrop-filter backdrop-blur-lg bg-opacity-30 fixed w-full top-0"
       }`}
@@ -49,11 +49,11 @@ const Header = () => {
 
       <div
         id='nav-dialog'
-        className={`${showNavDialog} md:hidden bg-[#010117] inset-0 p-3`}
+        className={`${showNavDialog} md:hidden bg-[#010117] inset-0`}
       >
         <div
           id='nav-bar'
-          className='flex z-100 justify-between items-center px-6'
+          className='flex z-100 justify-between items-center p-4'
         >
           <Link to='#' id='brand'>
             <span className='text-lg font-medium text-white'>
