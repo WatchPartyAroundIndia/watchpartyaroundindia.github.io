@@ -33,7 +33,7 @@ const Speakers = () => {
         Our Speakers
       </h5>
       <div className='h-8'></div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-items-center mx-auto gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center mx-auto gap-8'>
         {listOfSpeakers.map((speaker) => (
           <div key={speaker.id} className='flex flex-col items-center'>
             <div className='w-40 h-40 rounded-full bg-slate-200 mb-4' />
