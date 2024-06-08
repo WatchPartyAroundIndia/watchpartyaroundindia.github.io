@@ -10,7 +10,7 @@ import About from "./components/About";
 
 const App = () => {
   return (
-    <>
+    <div>
       <Header />
       <Hero />
       <Organisers />
@@ -20,7 +20,7 @@ const App = () => {
       <RegisterEvent />
       <Support />
       <About />
-    </>
+    </div>
   );
 };
 

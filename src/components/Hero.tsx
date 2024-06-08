@@ -3,9 +3,10 @@ import heroImage from "../assets/images/hero/swift-icons.svg";
 const Hero = () => {
   return (
     <div className='w-full flex flex-col items-center mt-20'>
+      <div className='h-8'></div>
       <img
         src={heroImage}
-        className='max-w-48 md:max-w-xs mb-4'
+        className='max-w-56 md:max-w-sm mb-4'
         alt='watch party india'
       />
       <h1 className='text-3xl md:text-5xl lg:text-7xl text-center mb-8'>
@@ -17,7 +18,7 @@ const Hero = () => {
         <span className='text-gray-gradient font-bold'>Around India</span>
       </h1>
 
-      <p className='max-w-xl text-sm md:text-lg text-center px-6 mb-8 text-white'>
+      <p className='max-w-xl text-base md:text-lg text-center px-6 mb-8 text-white'>
         Join us for the Watch Party Around India in Ahmedabad, Delhi, Mumbai,
         Bengaluru, and Hyderabad! Watch the unveiling of the latest Apple
         platforms, technologies, and tools together and discuss. Engage and

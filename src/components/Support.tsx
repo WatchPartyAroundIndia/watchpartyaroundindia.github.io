@@ -22,16 +22,17 @@ const Support = () => {
 
   return (
     <>
-      <div id='sponsor' className='h-2' />
-      <div className='flex flex-col justify-center my-12'>
-        <h5 className='text-xl text-white text-center text-gray-gradient font-semibold mb-8'>
+      <div id='sponsor' className='h-16'></div>
+      <div className='flex flex-col justify-center'>
+        <h5 className='text-xl text-white text-center text-gray-gradient font-semibold'>
           Want to show your support?
         </h5>
+        <div className='h-8'></div>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-items-center mx-auto gap-8'>
           {listOfSupporters.map((schedule) => (
             <div
               key={schedule.id}
-              className={`${schedule.bgColor} w-60 h-52 rounded-2xl p-5 flex flex-col justify-between`}
+              className={`${schedule.bgColor} w-[90%] md:w-[80%] lg:w-60 h-52 rounded-2xl p-5 flex flex-col justify-between`}
             >
               <div>
                 <p className='font-bold text-xl text-white'>

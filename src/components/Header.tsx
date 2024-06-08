@@ -11,11 +11,9 @@ const Header = () => {
         "backdrop-filter backdrop-blur-lg bg-opacity-30 fixed w-full top-0"
       }`}
     >
-      <Link to='#' id='brand'>
-        <span className='text-lg font-medium text-white'>
-          Watch Party Around India
-        </span>
-      </Link>
+      <span className='text-lg font-medium text-white'>
+        Watch Party Around India
+      </span>
 
       <div id='nav-menu' className='hidden md:flex gap-12'>
         <Link
@@ -55,28 +53,26 @@ const Header = () => {
           id='nav-bar'
           className='flex z-100 justify-between items-center p-4'
         >
-          <Link to='#' id='brand'>
-            <span className='text-lg font-medium text-white'>
-              Watch Party Around India
-            </span>
-          </Link>
+          <span className='text-lg font-medium text-white'>
+            Watch Party Around India
+          </span>
           <button
             className='p-2 md:hidden'
             onClick={() => {
               setShowNavDialog("hidden");
             }}
           >
-            <i className='fa-solid fa-xmark text-white'></i>
+            <i className='fa-solid fa-xmark text-white text-xl'></i>
           </button>
         </div>
 
-        <div className='mt-6'>
+        <div className='mt-6 text-center'>
           <Link
             to='#about'
             onClick={() => {
               setShowNavDialog("hidden");
             }}
-            className='font-medium text-slate-300 hover:text-blue-gradient block rounded-lg m-3 p-3 transition duration-200'
+            className='font-medium text-xl text-slate-300 hover:text-blue-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
             About
           </Link>
@@ -85,7 +81,7 @@ const Header = () => {
             onClick={() => {
               setShowNavDialog("hidden");
             }}
-            className='font-medium text-slate-300 hover:text-orange-gradient block rounded-lg m-3 p-3 transition duration-200'
+            className='font-medium text-xl text-slate-300 hover:text-orange-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
             Sponsor
           </Link>
@@ -94,7 +90,7 @@ const Header = () => {
             onClick={() => {
               setShowNavDialog("hidden");
             }}
-            className='font-medium text-slate-300 hover:text-pink-gradient block rounded-lg m-3 p-3 transition duration-200'
+            className='font-medium text-xl text-slate-300 hover:text-pink-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
             Register
           </Link>

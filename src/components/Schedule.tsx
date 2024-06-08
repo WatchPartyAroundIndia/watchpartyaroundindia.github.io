@@ -33,17 +33,19 @@ const Schedule = () => {
   ];
 
   return (
-    <div className='flex flex-col justify-center mb-6'>
+    <div className='flex flex-col justify-center'>
+      <div className='h-8'></div>
       <h5 className='text-2xl text-center font-semibold text-white'>
         Schedule
       </h5>
-      <h5 className='text-xl text-center text-slate-400 font-semibold mb-8'>
+      <h5 className='text-xl text-center text-slate-400 font-semibold'>
         Indian Standard Time
       </h5>
+      <div className='h-8'></div>
       <div className='flex flex-col mx-auto w-2/3 md:w-1/2'>
         {listOfSchedule.map((schedule) => (
           <div key={schedule.id} className='md:flex md:justify-between mb-2'>
-            <p className='font-semibold text-xl text-white'>
+            <p className='font-semibold text-lg text-slate-400'>
               {schedule.timings}
             </p>
             <p className='font-semibold text-xl md:text-right text-white'>
