@@ -59,7 +59,7 @@
 :root {
   @apply leading-normal font-normal bg-[#010117];
 
-  font-family: "SfProDisplay", sans-serif;
+  font-family: "SfProDisplay";
   font-optical-sizing: auto;
 
   font-synthesis: none;
