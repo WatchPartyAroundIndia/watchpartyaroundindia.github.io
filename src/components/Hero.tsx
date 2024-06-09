@@ -33,9 +33,11 @@ const Hero = () => {
         <h3 className='font-bold text-xl md:text-2xl lg:text-3xl text-white'>
           10th June 2024, Monday
         </h3>
+        <div className='h-4'></div>
+        {/* TODO: Add after entire schedule is confirmed
         <h4 className='text-slate-400 font-bold text-base md:text-xl lg:text-2xl'>
           7:30 PM IST to 12:30 AM IST
-        </h4>
+        </h4> */}
       </div>
     </div>
   );

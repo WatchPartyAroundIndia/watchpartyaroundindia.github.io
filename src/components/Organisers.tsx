@@ -35,7 +35,7 @@ const Organisers = () => {
         organised by
       </h5>
       <div className='h-4'></div>
-      <div className='overflow-x-auto flex items-center md:mx-auto'>
+      <div className='overflow-x-auto flex items-center md:mx-auto no-scrollbar'>
         {listOfOrganisers.map((organiser) => (
           <div key={organiser.id} className='flex items-center mx-2 min-w-fit'>
             {organiser.icon && (

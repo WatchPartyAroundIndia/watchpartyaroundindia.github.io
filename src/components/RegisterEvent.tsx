@@ -82,7 +82,7 @@ const RegisterEvent = () => {
                 </p>
               </div>
               <button
-                className={`${schedule.textColor} bg-white rounded-2xl w-full py-2 font-semibold text-sm hover:bg-gray-100 hover:shadow-md`}
+                className={`${schedule.textColor} bg-white rounded-3xl w-full py-2 font-semibold text-sm hover:bg-gray-100 hover:shadow-md`}
               >
                 {schedule.buttonText}
               </button>
