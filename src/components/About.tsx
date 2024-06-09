@@ -13,6 +13,8 @@ import leader08 from "../assets/images/about/bengaluru/02.svg";
 import leader09 from "../assets/images/about/bengaluru/03.svg";
 import leader10 from "../assets/images/about/hyderabad/01.svg";
 import leader11 from "../assets/images/about/hyderabad/02.svg";
+import leader12 from "../assets/images/about/delhi/02.svg";
+import leader13 from "../assets/images/about/delhi/03.svg";
 
 const About = () => {
   const listOfChapters = [
@@ -27,6 +29,24 @@ const About = () => {
           company: "Freelance",
           imageSrc: leader01,
           linkedIn: "",
+          twitter: "",
+        },
+        {
+          id: 2,
+          name: "Simran Rout",
+          designation: "iOS Engineer",
+          company: "Gojek",
+          imageSrc: leader12,
+          linkedIn: "https://www.linkedin.com/in/simran-rout/",
+          twitter: "https://x.com/simranrout10",
+        },
+        {
+          id: 3,
+          name: "Maninder Singh",
+          designation: "iOS Dev",
+          company: "BlueSmart",
+          imageSrc: leader13,
+          linkedIn: "https://www.linkedin.com/in/manindersinghh",
           twitter: "",
         },
       ],
@@ -100,8 +120,8 @@ const About = () => {
           designation: "Senior Software Engineer",
           company: "",
           imageSrc: leader10,
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/irangareddy/",
+          twitter: "https://twitter.com/irangareddy",
         },
         {
           id: 12,
@@ -110,7 +130,7 @@ const About = () => {
           company: "IRIS",
           imageSrc: leader11,
           linkedIn: "",
-          twitter: "",
+          twitter: "https://x.com/nirudhuuu",
         },
       ],
     },
