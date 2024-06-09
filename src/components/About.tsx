@@ -90,6 +90,31 @@ const About = () => {
       ],
     },
     {
+      id: 5,
+      name: "Swift Hyderabad",
+      icon: swiftHyderabad,
+      voulenteers: [
+        {
+          id: 11,
+          name: "Ranga Reddy",
+          designation: "Senior Software Engineer",
+          company: "",
+          imageSrc: leader10,
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          id: 12,
+          name: "Anirudh Jwala",
+          designation: "Senior Software Engineer",
+          company: "IRIS",
+          imageSrc: leader11,
+          linkedIn: "",
+          twitter: "",
+        },
+      ],
+    },
+    {
       id: 4,
       name: "Swift Bengaluru",
       icon: swiftBengaluru,
@@ -123,31 +148,6 @@ const About = () => {
         },
       ],
     },
-    {
-      id: 5,
-      name: "Swift Hyderabad",
-      icon: swiftHyderabad,
-      voulenteers: [
-        {
-          id: 11,
-          name: "Ranga Reddy",
-          designation: "Senior Software Engineer",
-          company: "",
-          imageSrc: leader10,
-          linkedIn: "",
-          twitter: "",
-        },
-        {
-          id: 12,
-          name: "Anirudh Jwala",
-          designation: "Senior Software Engineer",
-          company: "IRIS",
-          imageSrc: leader11,
-          linkedIn: "",
-          twitter: "",
-        },
-      ],
-    },
   ];
 
   return (
@@ -160,7 +160,7 @@ const About = () => {
         <div className='h-2'></div>
         <p className='text-center font-base w-full px-6 md:w-4/5 lg:w-3/5 text-white'>
           Watch Party Around India is a collaborative initiative by the Swift
-          communities of Bengaluru, Mumbai, Hyderabad, Delhi, and Ahmedabad. Our
+          communities of Delhi, Ahmedabad, Mumbai, Hyderabad and Bengaluru. Our
           mission is to unite and uplift the Indian Apple developer community
           through shared learning and networking. This event marks the first
           inter-city gathering in India focused on Apple's development

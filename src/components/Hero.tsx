@@ -19,8 +19,8 @@ const Hero = () => {
       </h1>
 
       <p className='max-w-xl text-base md:text-lg text-center px-6 mb-8 text-white'>
-        Join us for the Watch Party Around India in Ahmedabad, Delhi, Mumbai,
-        Bengaluru, and Hyderabad! Watch the unveiling of the latest Apple
+        Join us for the Watch Party Around India in Delhi, Ahmedabad, Mumbai,
+        Hyderabad and Bengaluru! Watch the unveiling of the latest Apple
         platforms, technologies, and tools together and discuss. Engage and
         connect with the developer community of India.
         <br />

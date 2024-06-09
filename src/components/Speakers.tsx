@@ -9,16 +9,6 @@ import speaker07 from "../assets/images/speakers/07.svg";
 const Speakers = () => {
   const listOfSpeakers = [
     {
-      id: 1,
-      name: "Nishant Desai",
-      designation: "iOS Engineer",
-      company: "PSPDFKit",
-      location: "Swift Mumbai",
-      imageSrc: speaker01,
-      linkedIn: "https://www.linkedin.com/in/nishantdesai1",
-      twitter: "https://x.com/nish_desai",
-    },
-    {
       id: 2,
       name: "Dishant Nagpal",
       designation: "WWDC23 Scholar iOS Intern",
@@ -27,6 +17,16 @@ const Speakers = () => {
       imageSrc: speaker02,
       linkedIn: "https://www.linkedin.com/in/dishant-nagpal-6a365019a/",
       twitter: "https://x.com/DishantNagpal10",
+    },
+    {
+      id: 1,
+      name: "Nishant Desai",
+      designation: "iOS Engineer",
+      company: "PSPDFKit",
+      location: "Swift Mumbai",
+      imageSrc: speaker01,
+      linkedIn: "https://www.linkedin.com/in/nishantdesai1",
+      twitter: "https://x.com/nish_desai",
     },
     {
       id: 3,

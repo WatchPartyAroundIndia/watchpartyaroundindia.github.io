@@ -18,21 +18,21 @@ const Organisers = () => {
       icon: swiftMumbai,
     },
     {
-      id: 4,
-      name: "Swift Bengaluru",
-      icon: swiftBengaluru,
-    },
-    {
       id: 5,
       name: "Swift Hyderabad",
       icon: swiftHyderabad,
+    },
+    {
+      id: 4,
+      name: "Swift Bengaluru",
+      icon: swiftBengaluru,
     },
   ];
 
   return (
     <div className='flex flex-col justify-center mt-4'>
       <h5 className='text-base text-center font-semibold text-slate-400'>
-        organised by
+        Organised by
       </h5>
       <div className='h-4'></div>
       <div className='md:overflow-x-auto flex flex-col md:flex-row items-center md:mx-auto md:no-scrollbar'>

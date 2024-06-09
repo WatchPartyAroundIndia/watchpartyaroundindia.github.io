@@ -31,21 +31,21 @@ const RegisterEvent = () => {
       buttonText: "Register",
     },
     {
-      id: 4,
-      venueName: "Benagluru Venue",
-      location: "Swiggy HO, Devarabisanahalli, Bellandur, Bengaluru - 560103",
-      registrationUrl:
-        "https://www.meetup.com/swiftbengaluru/events/300922614/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
-      textColor: "text-[#0ECDC1]",
-      bgColor: "bg-[#0ECDC1]",
-      buttonText: "Register",
-    },
-    {
       id: 5,
       venueName: "Hyderabad Venue",
       location:
         "Draper Startup House Hyderabad, Rajiv gandhi Nagar, Gachibowli, Hyderabad",
       registrationUrl: "https://lu.ma/cmbd8h87",
+      textColor: "text-[#0ECDC1]",
+      bgColor: "bg-[#0ECDC1]",
+      buttonText: "Register",
+    },
+    {
+      id: 4,
+      venueName: "Bengaluru Venue",
+      location: "Swiggy HO, Devarabisanahalli, Bellandur, Bengaluru - 560103",
+      registrationUrl:
+        "https://www.meetup.com/swiftbengaluru/events/300922614/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
       textColor: "text-[#6900EE]",
       bgColor: "bg-[#6900EE]",
       buttonText: "Register",
