@@ -33,7 +33,7 @@ const About = () => {
     },
     {
       id: 2,
-      name: "Swift Ahemdadbad",
+      name: "Swift Ahmedabad",
       voulenteers: [
         {
           id: 3,
@@ -90,31 +90,6 @@ const About = () => {
       ],
     },
     {
-      id: 5,
-      name: "Swift Hyderabad",
-      icon: swiftHyderabad,
-      voulenteers: [
-        {
-          id: 11,
-          name: "Ranga Reddy",
-          designation: "Senior Software Engineer",
-          company: "",
-          imageSrc: leader10,
-          linkedIn: "",
-          twitter: "",
-        },
-        {
-          id: 12,
-          name: "Anirudh Jwala",
-          designation: "Senior Software Engineer",
-          company: "IRIS",
-          imageSrc: leader11,
-          linkedIn: "",
-          twitter: "",
-        },
-      ],
-    },
-    {
       id: 4,
       name: "Swift Bengaluru",
       icon: swiftBengaluru,
@@ -143,6 +118,31 @@ const About = () => {
           designation: "R & D Engineer",
           company: "",
           imageSrc: leader09,
+          linkedIn: "",
+          twitter: "",
+        },
+      ],
+    },
+    {
+      id: 5,
+      name: "Swift Hyderabad",
+      icon: swiftHyderabad,
+      voulenteers: [
+        {
+          id: 11,
+          name: "Ranga Reddy",
+          designation: "Senior Software Engineer",
+          company: "",
+          imageSrc: leader10,
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          id: 12,
+          name: "Anirudh Jwala",
+          designation: "Senior Software Engineer",
+          company: "IRIS",
+          imageSrc: leader11,
           linkedIn: "",
           twitter: "",
         },
