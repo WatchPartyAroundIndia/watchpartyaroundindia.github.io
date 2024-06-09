@@ -158,10 +158,14 @@ const About = () => {
           About Us
         </h5>
         <div className='h-2'></div>
-        <p className='text-center font-base w-full px-6 lg:w-3/5 text-white'>
-          This event is organised in collaboration of Swift Communities of
-          Mumbai, Bengaluru and Hyderabad along with Watch Party Delhi and
-          Ahemdabad.
+        <p className='text-center font-base w-full px-6 md:w-4/5 lg:w-3/5 text-white'>
+          Watch Party Around India is a collaborative initiative by the Swift
+          communities of Bengaluru, Mumbai, Hyderabad, Delhi, and Ahmedabad. Our
+          mission is to unite and uplift the Indian Apple developer community
+          through shared learning and networking. This event marks the first
+          inter-city gathering in India focused on Apple's development
+          ecosystem. Join us to connect, learn, and grow together as we
+          celebrate WWDC.
         </p>
         <div className='h-8'></div>
         <div className='flex flex-col'>
