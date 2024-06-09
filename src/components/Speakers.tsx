@@ -85,7 +85,7 @@ const Speakers = () => {
         Our Speakers
       </h5>
       <div className='h-8'></div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto w-4/5 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto w-3/5 gap-8'>
         {listOfSpeakers.map((speaker) => (
           <div key={speaker.id} className='flex flex-col items-center'>
             <img
@@ -93,7 +93,9 @@ const Speakers = () => {
               alt={speaker.name}
               className='w-40 h-40 rounded-full mb-4 object-cover'
             />
-            <p className='font-semibold text-xl text-white'>{speaker.name}</p>
+            <p className='font-semibold text-xl text-white text-center'>
+              {speaker.name}
+            </p>
             <p className='text-base text-slate-400 text-center'>
               {speaker.designation}
             </p>
