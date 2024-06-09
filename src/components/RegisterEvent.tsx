@@ -3,35 +3,39 @@ const RegisterEvent = () => {
     {
       id: 1,
       venueName: "Delhi Venue",
-      location: "GOJEK Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      registrationUrl: "https://www.example.com",
+      location:
+        "Niyat Studios, H 1462, Block H, Chittaranjan Park, New Delhi, Delhi",
+      registrationUrl: "https://lu.ma/jem3g0yq",
       textColor: "text-[#6171FF]",
       bgColor: "bg-[#6171FF]",
       buttonText: "Register",
     },
     {
       id: 2,
-      venueName: "Mumbai Venue",
-      location: "GOJEK Office, Bandra Kurla Complex, Mumbai.",
-      registrationUrl: "https://www.example.com",
+      venueName: "Ahmedabad Venue",
+      location:
+        "MobileFirst Applications - Fintegration, A 1101 EastFace, Near, Ambli - Bopal Rd, Ambli, Ahmedabad, Gujarat",
+      registrationUrl: "https://lu.ma/5xjx8hm4",
       textColor: "text-[#AF52DE]",
       bgColor: "bg-[#AF52DE]",
       buttonText: "Register",
     },
     {
       id: 3,
-      venueName: "Bangalore Venue",
-      location: "GOJEK Office, Indiranagar, Bangalore.",
-      registrationUrl: "https://www.example.com",
+      venueName: "Mumbai Venue",
+      location:
+        "ITM Institute of Design and Media, Suvidha Square, Swami Vivekananda Rd, Andheri West",
+      registrationUrl: "https://lu.ma/crifnkmg",
       textColor: "text-[#FB7C06]",
       bgColor: "bg-[#FB7C06]",
       buttonText: "Register",
     },
     {
       id: 4,
-      venueName: "Online",
-      location: "Virtual Event",
-      registrationUrl: "https://www.example.com",
+      venueName: "Benagluru Venue",
+      location: "Swiggy HO, Devarabisanahalli, Bellandur, Bengaluru - 560103",
+      registrationUrl:
+        "https://www.meetup.com/swiftbengaluru/events/300922614/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
       textColor: "text-[#0ECDC1]",
       bgColor: "bg-[#0ECDC1]",
       buttonText: "Register",
@@ -39,19 +43,11 @@ const RegisterEvent = () => {
     {
       id: 5,
       venueName: "Hyderabad Venue",
-      location: "GOJEK Office, Hitech City, Hyderabad.",
-      registrationUrl: "https://www.example.com",
+      location:
+        "Draper Startup House Hyderabad, Rajiv gandhi Nagar, Gachibowli, Hyderabad",
+      registrationUrl: "https://lu.ma/cmbd8h87",
       textColor: "text-[#6900EE]",
       bgColor: "bg-[#6900EE]",
-      buttonText: "Register",
-    },
-    {
-      id: 6,
-      venueName: "Chennai Venue",
-      location: "GOJEK Office, T Nagar, Chennai.",
-      registrationUrl: "https://www.example.com",
-      textColor: "text-[#CD0E69]",
-      bgColor: "bg-[#CD0E69]",
       buttonText: "Register",
     },
   ];
@@ -83,6 +79,9 @@ const RegisterEvent = () => {
               </div>
               <button
                 className={`${schedule.textColor} bg-white rounded-3xl w-full py-2 font-semibold text-sm hover:bg-gray-100 hover:shadow-md`}
+                onClick={() => {
+                  window.open(schedule.registrationUrl, "_blank");
+                }}
               >
                 {schedule.buttonText}
               </button>

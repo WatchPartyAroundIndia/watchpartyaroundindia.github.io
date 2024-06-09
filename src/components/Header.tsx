@@ -22,12 +22,13 @@ const Header = () => {
         >
           About
         </Link>
-        <Link
-          to='#sponsor'
+        <a
+          href='https://docs.google.com/document/d/1I4Jr1OWuk5C_ZjlbrUzQv2Qb2PJApntWghPpVojfh2o/view'
+          target='_blank'
           className='font-medium hover:text-orange-gradient text-slate-300 text-sm'
         >
-          Sponsor
-        </Link>
+          Code of Conduct
+        </a>
         <Link
           to='#register'
           className='font-medium hover:text-pink-gradient text-slate-300 text-sm'
@@ -76,15 +77,16 @@ const Header = () => {
           >
             About
           </Link>
-          <Link
-            to='#sponsor'
+          <a
+            href='https://docs.google.com/document/d/1I4Jr1OWuk5C_ZjlbrUzQv2Qb2PJApntWghPpVojfh2o/view'
+            target='_blank'
             onClick={() => {
               setShowNavDialog("hidden");
             }}
             className='font-medium text-xl text-slate-300 hover:text-orange-gradient block rounded-lg m-3 p-3 transition duration-200'
           >
-            Sponsor
-          </Link>
+            Code of Conduct
+          </a>
           <Link
             to='#register'
             onClick={() => {

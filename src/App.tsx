@@ -18,7 +18,7 @@ const App = () => {
       <PanelDiscussion />
       <Schedule />
       <RegisterEvent />
-      <Support />
+      {/* <Support /> */}
       <About />
     </div>
   );

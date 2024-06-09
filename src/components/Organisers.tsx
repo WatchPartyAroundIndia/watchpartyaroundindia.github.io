@@ -10,7 +10,7 @@ const Organisers = () => {
     },
     {
       id: 2,
-      name: "Watch Party Ahemdadbad",
+      name: "Swift Ahemdadbad",
     },
     {
       id: 3,
@@ -35,9 +35,9 @@ const Organisers = () => {
         organised by
       </h5>
       <div className='h-4'></div>
-      <div className='overflow-x-auto flex items-center md:mx-auto no-scrollbar'>
+      <div className='md:overflow-x-auto flex flex-col md:flex-row items-center md:mx-auto md:no-scrollbar'>
         {listOfOrganisers.map((organiser) => (
-          <div key={organiser.id} className='flex items-center mx-2 min-w-fit'>
+          <div key={organiser.id} className='flex items-center m-2 min-w-fit'>
             {organiser.icon && (
               <img
                 src={organiser.icon}

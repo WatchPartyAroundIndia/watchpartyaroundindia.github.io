@@ -15,6 +15,8 @@ const Speakers = () => {
       company: "PSPDFKit",
       location: "Swift Mumbai",
       imageSrc: speaker01,
+      linkedIn: "https://www.linkedin.com/in/nishantdesai1",
+      twitter: "https://x.com/nish_desai",
     },
     {
       id: 2,
@@ -33,6 +35,8 @@ const Speakers = () => {
       company: "A23 Rummy",
       location: "Swift Hyderabad",
       imageSrc: speaker03,
+      linkedIn: "https://www.linkedin.com/in/akshaypakanati/",
+      twitter: "https://x.com/akshaypakanati",
     },
     {
       id: 4,
@@ -81,7 +85,7 @@ const Speakers = () => {
         Our Speakers
       </h5>
       <div className='h-8'></div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center mx-auto w-4/5 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto w-4/5 gap-8'>
         {listOfSpeakers.map((speaker) => (
           <div key={speaker.id} className='flex flex-col items-center'>
             <img
