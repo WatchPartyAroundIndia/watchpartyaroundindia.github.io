@@ -43,7 +43,7 @@ const RegisterEvent = () => {
     {
       id: 4,
       venueName: "Bengaluru Venue",
-      location: "Swiggy HO, Devarabisanahalli, Bellandur, Bengaluru - 560103",
+      location: "Swiggy HO, Devarabisanahalli, Bellandur, Bengaluru",
       registrationUrl:
         "https://www.meetup.com/swiftbengaluru/events/300922614/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link",
       textColor: "text-[#6900EE]",
