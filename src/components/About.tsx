@@ -143,10 +143,10 @@ const About = () => {
           id: 8,
           name: "Amit Samant",
           designation: "Senior iOS Engineer",
-          company: "",
+          company: "Gojek Tech",
           imageSrc: leader07,
           linkedIn: "",
-          twitter: "",
+          twitter: "https://twitter.com/amitsamant_dev",
         },
         {
           id: 9,

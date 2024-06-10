@@ -102,7 +102,6 @@ const Speakers = () => {
             <p className='text-base mb-1 text-slate-400 text-center'>
               {speaker.company}
             </p>
-            <p className='text-sm font-medium text-white'>Keynote Speaker</p>
             <p className='text-sm font-medium text-white'>{speaker.location}</p>
             <div className='h-2'></div>
             <div
