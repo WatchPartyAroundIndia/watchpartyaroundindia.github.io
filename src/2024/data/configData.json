@@ -1,0 +1,116 @@
+{
+  "heroTitle": "Watch Party Around India 🇮🇳",
+  "heroDescription": "Gathering of passionate developer watching the WWDC Keynote and Platform State of Union Together, in Bangalore, Mumbai, and Hyderabad.",
+  "events": [
+    {
+      "chapterName": "Swift Bengaluru",
+      "title": "Swift Bengaluru WWDC Watchparty",
+      "imageUrl": "https://pbs.twimg.com/media/GMZjwfwWcAAW1B4?format=jpg&name=large",
+      "category": "Watch Party",
+      "description": "Join us for an exhilarating evening at the WWDC 2024 Keynote and Platform State of the Union Watch Party in Bangalore! Get ready to witness the latest innovations from Apple as we watch the Keynote together, dissecting every announcement with excitement. Engage in insightful discussions with prominent developers from around the city, as they share firsthand experiences of how the previous year's APIs have propelled their app businesses forward. Plus, don't miss the share panel discussion between Bengaluru, Mumbai, and Hyderabad, where expectations for new APIs will be explored. It's an event not to be missed for tech enthusiasts and developers alike!",
+      "registrationUrl": "https://www.meetup.com/swiftbengaluru/events/300922614/",
+      "sponsorRegistrationUrl": "https://forms.gle/UtQstyNsR5DhTHkM6",
+      "partners": [],
+      "volunteers": [
+        {
+          "id": 1,
+          "name": "Amit Samant",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1769619769798410240/2XrQsCdB_400x400.jpg",
+          "socials": "https://x.com/amitsamant_dev"
+        },
+        {
+          "id": 2,
+          "name": "Nayyan",
+          "imageUrl": "https://media.licdn.com/dms/image/C5603AQGCmNWBRdYMdg/profile-displayphoto-shrink_800_800/0/1606022883839?e=1720656000&v=beta&t=yFvrovXnmKDGi6EV1EJq5yJgZc9cLpSJEpe0_SCuhpU",
+          "socials": "https://www.linkedin.com/in/nayyanmujadiya/"
+        },
+        {
+          "id": 3,
+          "name": "Sinchan",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1343615190965735424/8BZtR_hR_400x400.jpg",
+          "socials": "https://x.com/sinchanmaitri"
+        },
+        {
+          "id": 3,
+          "name": "Gokul",
+          "imageUrl": "https://media.licdn.com/dms/image/C4E03AQEhHtetAWiKtw/profile-displayphoto-shrink_800_800/0/1618524417515?e=1720656000&v=beta&t=6u7P6iI2ZNTWf1t3u-afiyG0zmizpqi6zJ9NBb_pK2Q",
+          "socials": "https://www.linkedin.com/in/gokul-bvb/"
+        }
+      ]
+    },
+    {
+      "chapterName": "Swift Mumbai",
+      "title": "Swift Mumbai WWDC Watchparty",
+      "imageUrl": "https://pbs.twimg.com/media/GM3hTF5WkAEAqeB?format=jpg",
+      "category": "Watch Party",
+      "description": "Join us for the WWDC 2024 Keynote Watch Party in Mumbai. We will watch the Keynote together and discuss the new announcements.",
+      "registrationUrl": "https://www.linkedin.com/company/swift-mumbai/",
+      "sponsorRegistrationUrl": "https://forms.gle/UtQstyNsR5DhTHkM6",
+      "partners": [],
+      "volunteers": [
+        {
+          "id": 1,
+          "name": "Yogesh",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1626843866434535424/KOWYjHsa.jpg",
+          "socials": "https://x.com/_yogeshsingh"
+        },
+        {
+          "id": 2,
+          "name": "Raj Raval",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1694968755678289920/Yb_7_qev.jpg",
+          "socials": "https://x.com/rajhraval"
+        },
+        {
+          "id": 3,
+          "name": "Akanksha Sharma",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1026524499456319488/zUf3VWTR.jpg",
+          "socials": "https://x.com/akanksharmaa"
+        }
+      ]
+    },
+    {
+      "chapterName": "Swift Hyderabad",
+      "title": "Swift Hyderabad WWDC Watchparty",
+      "imageUrl": "https://pbs.twimg.com/media/EPHghV4X0AIt2sf?format=jpg&name=medium",
+      "category": "Watch Party",
+      "description": "Join us for the WWDC 2024 Keynote Watch Party in Hyderabad. We will watch the Keynote together and discuss the new announcements.",
+      "registrationUrl": "https://www.linkedin.com/company/swifthyderabad/",
+      "sponsorRegistrationUrl": "https://forms.gle/UtQstyNsR5DhTHkM6",
+      "partners": [],
+      "volunteers": [
+        {
+          "id": 1,
+          "name": "Ranga Reddy",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1508519283613073408/1bfjIgH_.jpg",
+          "socials": "https://x.com/irangareddy"
+        },
+        {
+          "id": 2,
+          "name": "Anirudh Jwala",
+          "imageUrl": "https://pbs.twimg.com/profile_images/1791705109350731776/2WOTn-_R_400x400.jpg",
+          "socials": "https://x.com/nirudhuuu"
+        }
+      ]
+    }
+  ],
+  "volunteers": [
+    {
+      "id": 1,
+      "name": "Example 1",
+      "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "socials": "https://x.com/"
+    },
+    {
+      "id": 2,
+      "name": "Example 2",
+      "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "socials": "https://x.com/"
+    },
+    {
+      "id": 3,
+      "name": "Example 3",
+      "imageUrl": "https://randomuser.me/api/portraits/lego/7.jpg",
+      "socials": "https://x.com/"
+    }
+  ]
+}

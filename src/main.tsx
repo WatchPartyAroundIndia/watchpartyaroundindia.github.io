@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
+import App2024 from "./2024/App.tsx";
 
 import "./index.css";
 
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/2024",
+    element: <App2024 />,
   },
 ]);
 
