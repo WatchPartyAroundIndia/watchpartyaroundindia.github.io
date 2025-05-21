@@ -2,38 +2,43 @@ import heroImage from "../assets/images/hero/swift-icons.svg";
 
 const Hero = () => {
   return (
-    <div className='w-full flex flex-col items-center mt-20'>
-      <div className='h-8'></div>
+    <div className="w-full flex flex-col items-center mt-20 bg-gradient-to-b from-[#010117] via-[#141432] to-[#1a1a3a] min-h-screen">
+      <div className="h-8"></div>
       <img
         src={heroImage}
-        className='max-w-56 md:max-w-sm mb-4'
-        alt='watch party india'
+        className="max-w-56 md:max-w-sm mb-6"
+        alt="watch party india"
       />
-      <h1 className='text-3xl md:text-5xl lg:text-7xl text-center mb-8'>
-        <span className='text-blue-gradient font-bold'>WWDC</span>&nbsp;
-        <span className='text-orange-gradient font-bold'>Watch</span>
+      <h1 className="text-2xl md:text-4xl lg:text-5xl text-center mb-10 font-bold tracking-tight">
+        <span className="bg-gradient-to-r from-blue-400 to-blue-600 inline-block text-transparent bg-clip-text">
+          WWDC
+        </span>
         &nbsp;
-        <span className='text-pink-gradient font-bold'>Party</span>&nbsp;
+        <span className="bg-gradient-to-r from-orange-400 to-orange-600 inline-block text-transparent bg-clip-text">
+          Watch
+        </span>
+        &nbsp;
+        <span className="bg-gradient-to-r from-pink-400 to-pink-600 inline-block text-transparent bg-clip-text">
+          Party
+        </span>
+        &nbsp;
         <br />
-        <span className='text-gray-gradient font-bold'>Around India</span>
+        <span className="bg-gradient-to-r from-gray-200 to-gray-400 inline-block text-transparent bg-clip-text">
+          Around India
+        </span>
       </h1>
 
-      <p className='max-w-xl text-base md:text-lg text-center px-6 mb-8 text-white'>
-        Join us for the Watch Party Around India in Delhi, Ahmedabad, Mumbai,
-        Hyderabad and Bengaluru! Watch the unveiling of the latest Apple
-        platforms, technologies, and tools together and discuss. Engage and
-        connect with the developer community of India.
-        <br />
-        <span className='font-semibold'>
-          Registration is free (Both offline and online).
-        </span>
-      </p>
-
-      <div className='max-w-xl px-6 text-center'>
-        <h3 className='font-bold text-xl md:text-2xl lg:text-3xl text-white'>
-          10th June 2024, Monday
-        </h3>
-        <div className='h-4'></div>
+      <div className="max-w-xl px-6 text-center">
+        <div className="relative inline-block">
+          <h3 className="font-extrabold text-6xl lg:text-8xl text-white drop-shadow-[0_0_16px_rgba(255,255,255,0.5)] drop-shadow-[0_0_32px_rgba(255,192,203,0.5)] animate-pulse-glow">
+            Coming Soon
+          </h3>
+          <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 rounded-full blur-lg opacity-70 animate-glow" />
+        </div>
+        <div className="h-8"></div>
+        <p className="text-lg md:text-xl text-gray-300 mt-4">
+          Stay tuned for updates on India's biggest WWDC Watch Party!
+        </p>
       </div>
     </div>
   );
