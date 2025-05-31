@@ -1,3 +1,5 @@
+import Navbar from "./components/navbar";
+
 const App = () => {
   return (
     <div
@@ -8,6 +10,7 @@ const App = () => {
       }}
     >
       {/* Navbar */}
+      <Navbar />
       {/* Hero section */}
       {/* Organized by */}
       {/* Sponsors */}
