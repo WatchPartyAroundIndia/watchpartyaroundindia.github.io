@@ -6,7 +6,19 @@ const App = () => {
         backgroundImage: "radial-gradient(#ccc 1px, transparent 1px)",
         backgroundSize: "20px 20px",
       }}
-    ></div>
+    >
+      {/* Navbar */}
+      {/* Hero section */}
+      {/* Organized by */}
+      {/* Sponsors */}
+      {/* Organisers */}
+      {/* Testimonials */}
+      {/* Register now */}
+      {/* Meet the team */}
+      {/* Experiences */}
+      {/* Memories */}
+      {/* Footer */}
+    </div>
   );
 };
 
