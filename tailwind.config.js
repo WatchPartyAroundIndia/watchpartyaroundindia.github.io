@@ -9,6 +9,9 @@ export default {
         "pink-gradient": "linear-gradient(180deg, #DE9CFF 0%, #AF52DE 100%)",
         "gray-gradient": "linear-gradient(180deg, #FFFFFF 0%, #C8C8C8 100%)",
       },
+      fontFamily: {
+        prompt: ['"Prompt"', "sans-serif"],
+      },
     },
   },
   plugins: [
