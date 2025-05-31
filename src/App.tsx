@@ -1,12 +1,12 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Hero />
-    </div>
+    <div
+      className="min-h-screen bg-white"
+      style={{
+        backgroundImage: "radial-gradient(#ccc 1px, transparent 1px)",
+        backgroundSize: "20px 20px",
+      }}
+    ></div>
   );
 };
 
