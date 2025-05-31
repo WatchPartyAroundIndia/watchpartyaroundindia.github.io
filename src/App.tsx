@@ -1,3 +1,4 @@
+import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 
 const App = () => {
@@ -9,9 +10,8 @@ const App = () => {
         backgroundSize: "20px 20px",
       }}
     >
-      {/* Navbar */}
       <Navbar />
-      {/* Hero section */}
+      <Hero />
       {/* Organized by */}
       {/* Sponsors */}
       {/* Organisers */}
