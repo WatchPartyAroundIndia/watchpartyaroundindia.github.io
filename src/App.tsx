@@ -1,5 +1,6 @@
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
+import OrganizedBy from "./components/organized-by";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
     >
       <Navbar />
       <Hero />
-      {/* Organized by */}
+      <OrganizedBy />
       {/* Sponsors */}
       {/* Organisers */}
       {/* Testimonials */}
