@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import OrganizedBy from "./components/organized-by";
+import Sponsors from "./components/sponsors";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <OrganizedBy />
-      {/* Sponsors */}
+      <Sponsors />
       {/* Organisers */}
       {/* Testimonials */}
       {/* Register now */}
