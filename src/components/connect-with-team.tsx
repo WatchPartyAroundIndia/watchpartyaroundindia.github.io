@@ -9,8 +9,11 @@ const ConnectWithTeam: FC<ConnectWithTeamProps> = () => {
       <h4 className="font-bold text-3xl font-sans">
         Connect with passionate developers from across India
       </h4>
-      <div className="flex justify-start items-center mt-4 gap-6 mb-10 overflow-x-auto scrollbar-thin max-w-full w-full">
-        {[...Array(9)].map((_, i) => (
+      <div
+        className="flex justify-start items-center mt-4 gap-6 mb-10 w-full overflow-x-auto"
+        style={{ WebkitOverflowScrolling: "touch" }}
+      >
+        {[...Array(10)].map((_, i) => (
           <img
             key={i}
             src={swiftLogo}
