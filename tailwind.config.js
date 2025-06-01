@@ -13,6 +13,7 @@ export default {
         prompt: ['"Prompt"', "sans-serif"],
         oliver: ['"Oliver"', "cursive"],
         calSans: ['"Cal Sans"'],
+        nunitoSans: ['"Nunito Sans"'],
       },
     },
   },
