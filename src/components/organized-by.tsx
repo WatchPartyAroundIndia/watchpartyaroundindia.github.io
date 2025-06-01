@@ -9,21 +9,21 @@ interface OrganizedByProps {}
 const OrganizedBy: FC<OrganizedByProps> = () => {
   return (
     <div className="flex flex-col max-w-6xl mx-auto">
-      <h2 className="text-2xl text-center mb-12 uppercase font-oliver">
+      <h2 className="text-xl md:text-2xl lg:text-3xl text-center mb-12 uppercase font-oliver">
         organized with ❤️ by
       </h2>
-      <div className="flex flex-wrap justify-center items-center gap-x-14 gap-y-12">
+      <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-x-14 lg:gap-y-12">
         <div className="flex justify-center items-center gap-2">
           <img src={swiftLogo} alt="Swift Delhi" className="h-9 w-9" />
-          <p className="font-calSans text-lg">Swift Delhi</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Delhi</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img src={swiftLogo} alt="Swift Bengaluru" className="h-9 w-9" />
-          <p className="font-calSans text-lg">Swift Bengaluru</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Bengaluru</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img src={swiftMumbaiLogo} alt="Swift Mumbai" className="h-9 w-9" />
-          <p className="font-calSans text-lg">Swift Mumbai</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Mumbai</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img
@@ -31,7 +31,7 @@ const OrganizedBy: FC<OrganizedByProps> = () => {
             alt="Swift Hyderabad"
             className="h-9 w-9"
           />
-          <p className="font-calSans text-lg">Swift Hyderabad</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Hyderabad</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img
@@ -39,15 +39,15 @@ const OrganizedBy: FC<OrganizedByProps> = () => {
             alt="Swift Ahmedabad"
             className="h-9 w-9"
           />
-          <p className="font-calSans text-lg">Swift Ahmedabad</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Ahmedabad</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img src={swiftLogo} alt="Swift Surat" className="h-9 w-9" />
-          <p className="font-calSans text-lg">Swift Surat</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Surat</p>
         </div>
         <div className="flex justify-center items-center gap-2">
           <img src={swiftLogo} alt="Swift Chennai" className="h-9 w-9" />
-          <p className="font-calSans text-lg">Swift Chennai</p>
+          <p className="font-calSans text-base lg:text-lg">Swift Chennai</p>
         </div>
       </div>
       <div className="h-24" />
