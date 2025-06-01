@@ -157,6 +157,7 @@ const Sponsors: FC<SponsorsProps> = () => {
         </div>
         <div className="h-16" />
       </div>
+      <div className="h-44" />
     </div>
   );
 };
