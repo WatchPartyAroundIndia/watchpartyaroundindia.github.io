@@ -9,20 +9,19 @@ const Hero: FC<HeroProps> = () => {
       <img
         src={wwdcLogo}
         alt="wwdc 2025 watch party around india"
-        width={850}
-        height={490}
+        className="w-96 md:w-[480px] lg:w-[850px] h-auto"
       />
-      <h3 className="font-black text-6xl text-[#4B2828] italic font-sans">
+      <h3 className="font-black text-3xl md:text-5xl lg:text-6xl text-[#4B2828] italic font-sans">
         June 9
       </h3>
       <div className="h-12" />
-      <p className="text-center text-lg">
+      <p className="text-center text-base md:text-base lg:text-lg">
         Join us for the Watch Party Around India in Ahmedabad, Delhi, Mumbai,
         Bengaluru, and Hyderabad! Watch the unveiling of the latest Apple
         platforms, technologies, and tools together and discuss. Engage and
         connect with the developer community of India.
       </p>
-      <p className="font-bold text-lg">
+      <p className="font-bold text-sm md:text-base lg:text-lg">
         Registration is free (Both offline and online).
       </p>
       <div className="h-12" />
