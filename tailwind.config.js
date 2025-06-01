@@ -11,6 +11,8 @@ export default {
       },
       fontFamily: {
         prompt: ['"Prompt"', "sans-serif"],
+        oliver: ['"Oliver"', "cursive"],
+        calSans: ['"Cal Sans"'],
       },
     },
   },

@@ -110,6 +110,17 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: "Oliver";
+  src: url("/fonts/Oliver-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Cal Sans";
+  src: url("/fonts/CalSans-Regular.ttf");
+}
+
 :root {
   @apply leading-normal font-normal bg-[#010117];
 
