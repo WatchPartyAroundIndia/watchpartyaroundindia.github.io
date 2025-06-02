@@ -110,11 +110,13 @@ const RegisterNow: FC<RegisterNowProps> = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="h-24" />
-      <h2 className="font-sans font-bold text-4xl mb-5">Register Now</h2>
-      <h4 className="font-sans font-bold text-2xl text-[#A4A4A4]">
+      <h2 className="font-sans font-bold text-3xl md:text-4xl mb-3">
+        Register Now
+      </h2>
+      <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4]">
         Seats are limited - save yours today!
       </h4>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full max-w-6xl mt-8 px-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mt-8 px-8 lg:px-4">
         {swiftEvents.map((event) => (
           <div
             key={event.id}
@@ -129,9 +131,9 @@ const RegisterNow: FC<RegisterNowProps> = () => {
                 <img
                   src={swiftLogo}
                   alt="swift"
-                  className="w-7 h-7 flex-shrink-0"
+                  className="w-8 h-8 flex-shrink-0"
                 />
-                <h6 className="font-semibold text-white text-base">
+                <h6 className="font-semibold text-white text-lg">
                   {event.chapterName}
                 </h6>
               </div>
@@ -141,7 +143,7 @@ const RegisterNow: FC<RegisterNowProps> = () => {
               </h4>
 
               <div className="flex items-center justify-between w-full text-white mt-auto">
-                <div className="flex items-center font-semibold text-sm">
+                <div className="flex items-center font-semibold text-base">
                   <img
                     src={locationPinLogo}
                     alt="location pin"
@@ -163,7 +165,6 @@ const RegisterNow: FC<RegisterNowProps> = () => {
           </div>
         ))}
       </div>
-      <div className="h-24" />
     </div>
   );
 };
