@@ -51,4 +51,15 @@ export default {
       });
     },
   ],
+  safelist: [
+    "bg-gradient-to-b",
+    "from-[#FFC677]",
+    "from-[#A8D7FF]",
+    "from-[#DE9CFF]",
+    "from-[#BB5BF3]",
+    "to-[#FF9500]",
+    "to-[#6171FF]",
+    "to-[#AF52DE]",
+    "to-[#6900EE]",
+  ],
 };
