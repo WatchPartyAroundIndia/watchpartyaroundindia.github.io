@@ -5,7 +5,7 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = () => {
   return (
-    <div className="flex items-center w-full px-8 py-10 font-prompt">
+    <div className="flex items-center w-full px-2 md:px-4 lg:px-8 py-10 font-prompt">
       <img
         src={wwdcLogo}
         alt="WWDC 2025"

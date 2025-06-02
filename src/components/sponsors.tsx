@@ -85,18 +85,22 @@ const Sponsors: FC<SponsorsProps> = () => {
   return (
     <div className="flex flex-col items-center gap-2 text-center">
       <div className="flex flex-col">
-        <div className="relative w-fit mx-auto">
-          <img
-            src={sponsorsRound}
-            alt="Sponsors"
-            className="absolute w-44 h-16 lg:w-[350px] lg:h-[120px] right-0 top-[-10px] lg:right-[-65px] lg:top-[-28px]"
-          />
-          <h2 className="text-4xl lg:text-6xl font-bold">
-            Powered By Our Sponsors
+        <div className="relative w-fit mx-auto flex items-center">
+          <h2 className="text-4xl lg:text-6xl font-bold relative z-10">
+            Powered By Our{" "}
+            <span className="relative inline-block align-bottom">
+              <span className="relative z-10">Sponsors</span>
+              <img
+                src={sponsorsRound}
+                alt="Sponsors"
+                width={2480}
+                className="absolute left-0 bottom-0 pointer-events-none"
+              />
+            </span>
           </h2>
         </div>
         <div className="h-10" />
-        <h3 className="text-2xl lg:text-4xl font-calSans">
+        <h3 className="text-xl md:text-2xl lg:text-4xl font-calSans">
           Meet the sponsors supporting our mission
         </h3>
         <div className="h-12" />
@@ -104,7 +108,7 @@ const Sponsors: FC<SponsorsProps> = () => {
           <h2 className="text-base md:text-xl lg:text-2xl text-center mb-4 font-calSans">
             Venue Sponsor
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-x-14 lg:gap-y-12">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:gap-10">
             {sponsors.map((sponsor) => (
               <div
                 key={sponsor.sponsorId}
@@ -131,7 +135,7 @@ const Sponsors: FC<SponsorsProps> = () => {
           <h2 className="text-base md:text-xl lg:text-2xl text-center mb-4 font-calSans">
             Other Sponsors
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-x-14 lg:gap-y-12">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:gap-10">
             {otherSponsors.map((sponsor) => (
               <div
                 key={sponsor.sponsorId}
@@ -157,7 +161,6 @@ const Sponsors: FC<SponsorsProps> = () => {
         </div>
         <div className="h-16" />
       </div>
-      <div className="h-44" />
     </div>
   );
 };

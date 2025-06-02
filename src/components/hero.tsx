@@ -15,7 +15,7 @@ const Hero: FC<HeroProps> = () => {
         June 9
       </h3>
       <div className="h-12" />
-      <p className="text-center text-base md:text-base lg:text-lg">
+      <p className="text-center text-base md:text-base lg:text-lg px-1">
         Join us for the Watch Party Around India in Ahmedabad, Delhi, Mumbai,
         Bengaluru, and Hyderabad! Watch the unveiling of the latest Apple
         platforms, technologies, and tools together and discuss. Engage and
