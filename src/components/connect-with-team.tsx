@@ -22,6 +22,7 @@ const ConnectWithTeam: FC<ConnectWithTeamProps> = () => {
       <button className="rounded-lg bg-[#f6f6f6] font-sans font-semibold w-52 h-12">
         Meet the team →
       </button>
+      <div className="h-12" />
     </div>
   );
 };
