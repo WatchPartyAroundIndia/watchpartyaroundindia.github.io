@@ -1,6 +1,7 @@
 import ConnectWithTeam from "./components/connect-with-team";
 import Experiences from "./components/experiences";
 import Hero from "./components/hero";
+import MeetTheTeam from "./components/meet-the-team";
 import Navbar from "./components/navbar";
 import OrganizedBy from "./components/organized-by";
 import RegisterNow from "./components/register-now";
@@ -22,7 +23,7 @@ const App = () => {
       <ConnectWithTeam />
       <Experiences />
       <RegisterNow />
-      {/* Meet the team */}
+      <MeetTheTeam />
       {/* Experiences */}
       {/* Memories */}
       {/* Footer */}
