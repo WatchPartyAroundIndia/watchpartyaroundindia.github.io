@@ -1,50 +1,17 @@
-import { FC } from "react";
 import { Tweet } from "react-tweet";
 
-interface TestimonialsProps {}
-
-const Testimonials: FC<TestimonialsProps> = () => {
+const Testimonials = () => {
   const tweets = [
-    {
-      id: 1,
-      tweetId: "1802058968841208259",
-    },
-    {
-      id: 2,
-      tweetId: "1802055170723024898",
-    },
-    {
-      id: 3,
-      tweetId: "1802118173648658603",
-    },
-    {
-      id: 4,
-      tweetId: "1801905908647448851",
-    },
-    {
-      id: 5,
-      tweetId: "1802072899647410579",
-    },
-    {
-      id: 6,
-      tweetId: "1801803967430856949",
-    },
-    {
-      id: 7,
-      tweetId: "1666213689803030529",
-    },
-    {
-      id: 8,
-      tweetId: "1404280679634980868",
-    },
-    {
-      id: 9,
-      tweetId: "1403221154832302082",
-    },
-    {
-      id: 10,
-      tweetId: "1800993559224385645",
-    },
+    "1802058968841208259",
+    "1802055170723024898",
+    "1802118173648658603",
+    "1801905908647448851",
+    "1802072899647410579",
+    "1801803967430856949",
+    "1666213689803030529",
+    "1404280679634980868",
+    "1403221154832302082",
+    "1800993559224385645",
   ];
 
   return (
@@ -61,8 +28,8 @@ const Testimonials: FC<TestimonialsProps> = () => {
       </h4>
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 w-full max-w-7xl mt-8 mx-auto px-3 space-y-4">
         {tweets.map((tweet) => (
-          <div key={tweet.id} className="light break-inside-avoid mb-4">
-            <Tweet id={tweet.tweetId} />
+          <div key={tweet} className="light break-inside-avoid mb-4 px-1">
+            <Tweet id={tweet} />
           </div>
         ))}
       </div>

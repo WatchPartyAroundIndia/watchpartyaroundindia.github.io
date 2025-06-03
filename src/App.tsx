@@ -12,13 +12,7 @@ import Testimonials from "./components/testimonials";
 
 const App = () => {
   return (
-    <div
-      className="min-h-screen bg-white"
-      style={{
-        backgroundImage: "radial-gradient(#ccc 1px, transparent 1px)",
-        backgroundSize: "20px 20px",
-      }}
-    >
+    <div className="min-h-screen bg-white bg-[radial-gradient(#ccc_1px,transparent_1px)] bg-[length:20px_20px]">
       <Navbar />
       <Hero />
       <OrganizedBy />

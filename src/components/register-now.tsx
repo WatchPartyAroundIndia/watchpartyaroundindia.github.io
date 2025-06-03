@@ -1,10 +1,7 @@
-import { FC } from "react";
 import locationPinLogo from "../assets/2025/location-pin.svg";
 import swiftLogo from "../assets/2025/swift.svg";
 
-interface RegisterNowProps {}
-
-const RegisterNow: FC<RegisterNowProps> = () => {
+const RegisterNow = () => {
   const swiftEvents = [
     {
       id: 1,
@@ -114,13 +111,13 @@ const RegisterNow: FC<RegisterNowProps> = () => {
         Register Now
       </h2>
       <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4]">
-        Seats are limited - save yours today!
+        Seats are limited—save yours today!
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mt-8 px-8 lg:px-4">
         {swiftEvents.map((event) => (
           <div
             key={event.id}
-            className={`aspect-square rounded-3xl bg-gradient-to-b from-[${event.startColour}] to-[${event.endColour}] shadow transition max-h-[265px] w-full`}
+            className={`aspect-square rounded-3xl bg-gradient-to-b from-[${event.startColour}] to-[${event.endColour}] shadow max-h-[265px] w-full transform transition-transform hover:scale-[1.02] hover:shadow-lg`}
           >
             <div className="flex flex-col items-start justify-center gap-3 p-6">
               <div className="text-white font-medium bg-black/80 px-3 py-1 rounded-md text-xs">
@@ -129,8 +126,10 @@ const RegisterNow: FC<RegisterNowProps> = () => {
 
               <div className="flex items-center gap-2">
                 <img
+                  loading="lazy"
                   src={swiftLogo}
-                  alt="swift"
+                  aria-hidden="true"
+                  alt={`${event.chapterName} logo`}
                   className="w-8 h-8 flex-shrink-0"
                 />
                 <h6 className="font-semibold text-white text-lg">
@@ -145,6 +144,7 @@ const RegisterNow: FC<RegisterNowProps> = () => {
               <div className="flex items-center justify-between w-full text-white mt-auto">
                 <div className="flex items-center font-semibold text-base">
                   <img
+                    loading="lazy"
                     src={locationPinLogo}
                     alt="location pin"
                     className="inline w-4 h-4 mr-1"
@@ -154,7 +154,9 @@ const RegisterNow: FC<RegisterNowProps> = () => {
                 <button
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open(event.registerLink, "_blank");
+                    if (event.registerLink !== "#") {
+                      window.open(event.registerLink, "_blank");
+                    }
                   }}
                   className="rounded-lg bg-[#2A282F]/80 font-sans font-medium p-2 px-3 text-sm"
                 >

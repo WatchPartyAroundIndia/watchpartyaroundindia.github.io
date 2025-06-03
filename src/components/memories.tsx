@@ -1,4 +1,3 @@
-import { FC } from "react";
 import memoriesArrowLogo from "../assets/2025/memories-arrow.svg";
 import memories01 from "../assets/2025/memories/01.png";
 import memories02 from "../assets/2025/memories/02.png";
@@ -8,9 +7,7 @@ import memories05 from "../assets/2025/memories/05.png";
 import memories06 from "../assets/2025/memories/06.png";
 import memories07 from "../assets/2025/memories/07.png";
 
-interface MemoriesProps {}
-
-const Memories: FC<MemoriesProps> = () => {
+const Memories = () => {
   const imagesRow1 = [
     {
       id: 1,
@@ -51,32 +48,45 @@ const Memories: FC<MemoriesProps> = () => {
       <h2 className="font-coveredByYourGrace text-[#BDA6A6] text-4xl md:text-5xl text-center">
         Memories of 2024
       </h2>
-      <img src={memoriesArrowLogo} alt="Memories" className="w-40 h-36 my-12" />
-      <div className="relative overflow-x-hidden h-full w-full">
+      <img
+        loading="lazy"
+        alt="Memories"
+        src={memoriesArrowLogo}
+        className="w-40 h-36 my-12"
+      />
+      <div
+        aria-label="Scrolling event photos from 2024"
+        className="relative overflow-x-hidden h-full w-full"
+      >
         <div className="flex w-max animate-scroll-left">
-          {[...imagesRow1, ...imagesRow1].map((image) => (
+          {[...imagesRow1, ...imagesRow1, ...imagesRow1].map((image) => (
             <div
               key={image.id}
               className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
             >
               <img
-                src={image.imageSrc || "https://placehold.co/600x400"}
+                loading="lazy"
                 alt={`Memory ${image.id}`}
+                src={image.imageSrc || "https://placehold.co/600x400"}
                 className="rounded-xl shadow-lg h-full w-auto object-cover p-0 m-0"
               />
             </div>
           ))}
         </div>
       </div>
-      <div className="h-8" />
-      <div className="relative overflow-x-hidden h-full w-full">
+      <div className="h-4" />
+      <div
+        aria-label="Scrolling event photos from 2024"
+        className="relative overflow-x-hidden h-full w-full"
+      >
         <div className="flex w-max animate-scroll-right">
-          {[...imagesRow2, ...imagesRow2].map((image) => (
+          {[...imagesRow2, ...imagesRow2, ...imagesRow2].map((image) => (
             <div
               key={image.id}
               className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
             >
               <img
+                loading="lazy"
                 src={image.imageSrc || "https://placehold.co/600x400"}
                 alt={`Memory ${image.id}`}
                 className="rounded-xl shadow-lg h-full w-auto object-cover p-0 m-0"

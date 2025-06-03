@@ -1,11 +1,8 @@
-import { FC } from "react";
 import wwdcLogo from "../assets/2025/hero.svg";
 
-interface HeroProps {}
-
-const Hero: FC<HeroProps> = () => {
+const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
+    <main className="flex flex-col items-center justify-center max-w-2xl mx-auto">
       <img
         src={wwdcLogo}
         alt="wwdc 2025 watch party around india"
@@ -25,11 +22,11 @@ const Hero: FC<HeroProps> = () => {
         Registration is free (Both offline and online).
       </p>
       <div className="h-12" />
-      <button className="font-prompt text-2xl text-white bg-[#4884FF] font-medium px-8 py-2 border-2 border-[#0B2131] shadow-[-3px_3px_0_1px_#0B2131]">
+      <button className="font-prompt text-2xl text-white bg-[#4884FF] font-medium px-8 py-2 border-2 border-[#0B2131] shadow-[-3px_3px_0_1px_#0B2131] hover:bg-[#366fd1] transition-colors duration-200">
         Register Now
       </button>
       <div className="h-24" />
-    </div>
+    </main>
   );
 };
 
