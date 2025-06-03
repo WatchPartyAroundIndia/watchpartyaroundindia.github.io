@@ -136,9 +136,11 @@ const SponsorsSection: FC<SponsorsSectionProps> = ({ title, sponsors }) => {
             className={`flex gap-2 items-start justify-start p-2 min-w-80 font-sans bg-white rounded-2xl shadow-md hover:scale-[1.02] transition-transform ${
               sponsor.website ? "cursor-pointer" : "cursor-default"
             }`}
-            onClick={() =>
-              window.open(sponsor.website, "_blank", "noopener, noreferrer")
-            }
+            onClick={() => {
+              if (sponsor.website) {
+                window.open(sponsor.website, "_blank", "noopener, noreferrer");
+              }
+            }}
             role="button"
           >
             <img
