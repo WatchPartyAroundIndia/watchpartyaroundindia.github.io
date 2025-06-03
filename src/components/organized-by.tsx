@@ -1,57 +1,73 @@
-import { FC } from "react";
 import swiftAhmedabadLogo from "../assets/2025/swift-ahmedabad.svg";
 import swiftHyderabadLogo from "../assets/2025/swift-hyderabad.svg";
 import swiftMumbaiLogo from "../assets/2025/swift-mumbai.svg";
 import swiftLogo from "../assets/2025/swift.svg";
 
-interface OrganizedByProps {}
+const OrganizedBy = () => {
+  const organizedChapters = [
+    {
+      id: 1,
+      name: "Swift Delhi",
+      logo: swiftLogo,
+    },
+    {
+      id: 2,
+      name: "Swift Bengaluru",
+      logo: swiftLogo,
+    },
+    {
+      id: 3,
+      name: "Swift Mumbai",
+      logo: swiftMumbaiLogo,
+    },
+    {
+      id: 4,
+      name: "Swift Hyderabad",
+      logo: swiftHyderabadLogo,
+    },
+    {
+      id: 5,
+      name: "Swift Ahmedabad",
+      logo: swiftAhmedabadLogo,
+    },
+    {
+      id: 6,
+      name: "Swift Surat",
+      logo: swiftLogo,
+    },
+    {
+      id: 7,
+      name: "Swift Chennai",
+      logo: swiftLogo,
+    },
+  ];
 
-const OrganizedBy: FC<OrganizedByProps> = () => {
   return (
-    <div className="flex flex-col max-w-6xl mx-auto">
+    <section
+      className="flex flex-col max-w-6xl mx-auto"
+      aria-labelledby="organized-by-heading"
+    >
       <h2 className="text-xl md:text-2xl lg:text-3xl text-center mb-12 uppercase font-oliver">
         organized with ❤️ by
       </h2>
       <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-x-14 lg:gap-y-12">
-        <div className="flex justify-center items-center gap-2">
-          <img src={swiftLogo} alt="Swift Delhi" className="h-9 w-9" />
-          <p className="font-calSans text-base lg:text-lg">Swift Delhi</p>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img src={swiftLogo} alt="Swift Bengaluru" className="h-9 w-9" />
-          <p className="font-calSans text-base lg:text-lg">Swift Bengaluru</p>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img src={swiftMumbaiLogo} alt="Swift Mumbai" className="h-9 w-9" />
-          <p className="font-calSans text-base lg:text-lg">Swift Mumbai</p>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img
-            src={swiftHyderabadLogo}
-            alt="Swift Hyderabad"
-            className="h-9 w-9"
-          />
-          <p className="font-calSans text-base lg:text-lg">Swift Hyderabad</p>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img
-            src={swiftAhmedabadLogo}
-            alt="Swift Ahmedabad"
-            className="h-9 w-9"
-          />
-          <p className="font-calSans text-base lg:text-lg">Swift Ahmedabad</p>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img src={swiftLogo} alt="Swift Surat" className="h-9 w-9" />
-          <p className="font-calSans text-base lg:text-lg">Swift Surat</p>
-        </div>
-        <div className="flex justify-center items-center gap-2">
-          <img src={swiftLogo} alt="Swift Chennai" className="h-9 w-9" />
-          <p className="font-calSans text-base lg:text-lg">Swift Chennai</p>
-        </div>
+        {organizedChapters.map((chapter) => (
+          <div
+            key={chapter.id}
+            className="flex justify-center items-center gap-2"
+          >
+            <img
+              src={chapter.logo}
+              alt={chapter.name}
+              className="h-9 w-9 object-contain"
+              loading="lazy"
+            />
+            <p className="font-calSans text-base lg:text-lg">{chapter.name}</p>
+          </div>
+        ))}
       </div>
       <div className="h-24" />
-    </div>
+    </section>
   );
 };
 
