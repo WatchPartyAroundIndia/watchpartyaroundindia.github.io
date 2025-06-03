@@ -99,16 +99,27 @@ const Navbar = () => {
         } flex flex-col items-center pt-12 gap-8 px-6`}
       >
         <img src={wwdcLogo} alt="WWDC 2025 logo" className="w-32 h-12" />
-        {navItems.map((item) => (
-          <a
-            key={item.id}
-            href={item.link}
-            className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
-            onClick={() => setMenuOpen(false)}
-          >
-            {item.label}
-          </a>
-        ))}
+        {navItems.map((item) =>
+          item.section ? (
+            <Link
+              key={item.id}
+              to={item.section}
+              className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ) : (
+            <a
+              key={item.id}
+              href={item.link}
+              className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </a>
+          )
+        )}
         <button
           type="button"
           className="mt-4 text-xl text-white bg-[#4884FF] font-medium px-6 py-2 border-2 border-[#0B2131] hover:bg-[#366fd1] transition-colors duration-200"
