@@ -1,5 +1,6 @@
 import ConnectWithTeam from "./components/connect-with-team";
 import Experiences from "./components/experiences";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import MeetTheTeam from "./components/meet-the-team";
 import Memories from "./components/memories";
@@ -28,7 +29,7 @@ const App = () => {
       <MeetTheTeam />
       <Testimonials />
       <Memories />
-      {/* Footer */}
+      <Footer />
     </div>
   );
 };
