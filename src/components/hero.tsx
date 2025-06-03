@@ -5,7 +5,7 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = () => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-2xl mx-auto">
+    <main className="flex flex-col items-center justify-center max-w-2xl mx-auto">
       <img
         src={wwdcLogo}
         alt="wwdc 2025 watch party around india"
@@ -29,7 +29,7 @@ const Hero: FC<HeroProps> = () => {
         Register Now
       </button>
       <div className="h-24" />
-    </div>
+    </main>
   );
 };
 
