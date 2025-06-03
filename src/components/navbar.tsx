@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import wwdcLogo from "../assets/2025/logo.svg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 1, label: "About", link: "#about" },
-    { id: 2, label: "Sponsors", link: "#sponsors" },
-    { id: 3, label: "Speakers", link: "#speakers" },
+    { id: 1, label: "About", section: "#" },
+    { id: 2, label: "Sponsors", section: "#sponsors" },
+    { id: 3, label: "Speakers", section: "#team" },
     { id: 4, label: "2024", link: "/#2024" },
   ];
 
@@ -29,20 +30,31 @@ const Navbar = () => {
   return (
     <nav className="relative w-full font-prompt">
       <div className="flex items-center w-full px-2 md:px-4 lg:px-8 py-10">
-        <img
-          src={wwdcLogo}
-          alt="WWDC 2025 logo"
-          className="w-24 h-9 md:w-32 md:h-11 lg:w-[148px] lg:h-[54px]"
-        />
+        <Link to="#">
+          <img
+            src={wwdcLogo}
+            alt="WWDC 2025 logo"
+            className="w-24 h-9 md:w-32 md:h-11 lg:w-[148px] lg:h-[54px]"
+          />
+        </Link>
         <ul className="items-center justify-end flex-1 space-x-8 hidden md:flex mr-8">
           {navItems.map((item) => (
             <li key={item.id}>
-              <a
-                href={item.link}
-                className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
-              >
-                {item.label}
-              </a>
+              {item.section ? (
+                <Link
+                  to={item.section}
+                  className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  href={item.link}
+                  className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
+                >
+                  {item.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>

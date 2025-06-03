@@ -81,7 +81,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-2 text-center">
+    <div id="sponsors" className="flex flex-col items-center gap-2 text-center">
       <div className="flex flex-col">
         <div className="relative w-fit mx-auto flex items-center">
           <h2 className="text-4xl lg:text-6xl font-bold relative z-10">
