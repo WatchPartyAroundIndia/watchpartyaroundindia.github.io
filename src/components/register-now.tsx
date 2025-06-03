@@ -126,10 +126,11 @@ const RegisterNow = () => {
 
               <div className="flex items-center gap-2">
                 <img
+                  loading="lazy"
                   src={swiftLogo}
+                  aria-hidden="true"
                   alt={`${event.chapterName} logo`}
                   className="w-8 h-8 flex-shrink-0"
-                  aria-hidden="true"
                 />
                 <h6 className="font-semibold text-white text-lg">
                   {event.chapterName}
@@ -143,6 +144,7 @@ const RegisterNow = () => {
               <div className="flex items-center justify-between w-full text-white mt-auto">
                 <div className="flex items-center font-semibold text-base">
                   <img
+                    loading="lazy"
                     src={locationPinLogo}
                     alt="location pin"
                     className="inline w-4 h-4 mr-1"

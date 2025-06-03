@@ -14,6 +14,7 @@ const ConnectWithTeam = () => {
             key={i}
             src={swiftLogo}
             alt="swift"
+            loading="lazy"
             className="w-16 h-16 flex-shrink-0"
           />
         ))}
