@@ -80,7 +80,9 @@ const MeetTheTeam = () => {
               tabIndex={0}
               onClick={(e) => {
                 e.preventDefault();
-                window.open(member.socialLink, "_blank");
+                if (member.socialLink !== "#") {
+                  window.open(member.socialLink, "_blank");
+                }
               }}
               onKeyDown={(e) =>
                 e.key === "Enter" && window.open(member.socialLink, "_blank")

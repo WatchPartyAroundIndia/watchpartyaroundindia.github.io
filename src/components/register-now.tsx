@@ -154,7 +154,9 @@ const RegisterNow = () => {
                 <button
                   onClick={(e) => {
                     e.preventDefault();
-                    window.open(event.registerLink, "_blank");
+                    if (event.registerLink !== "#") {
+                      window.open(event.registerLink, "_blank");
+                    }
                   }}
                   className="rounded-lg bg-[#2A282F]/80 font-sans font-medium p-2 px-3 text-sm"
                 >
