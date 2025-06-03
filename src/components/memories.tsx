@@ -57,12 +57,12 @@ const Memories: FC<MemoriesProps> = () => {
           {[...imagesRow1, ...imagesRow1].map((image) => (
             <div
               key={image.id}
-              className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto"
+              className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
             >
               <img
                 src={image.imageSrc || "https://placehold.co/600x400"}
                 alt={`Memory ${image.id}`}
-                className="rounded-xl shadow-lg w-full h-full object-fill p-0 m-0"
+                className="rounded-xl shadow-lg h-full w-auto object-cover p-0 m-0"
               />
             </div>
           ))}
@@ -74,12 +74,12 @@ const Memories: FC<MemoriesProps> = () => {
           {[...imagesRow2, ...imagesRow2].map((image) => (
             <div
               key={image.id}
-              className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto"
+              className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
             >
               <img
                 src={image.imageSrc || "https://placehold.co/600x400"}
                 alt={`Memory ${image.id}`}
-                className="rounded-xl shadow-lg w-full h-full object-fill p-0 m-0"
+                className="rounded-xl shadow-lg h-full w-auto object-cover p-0 m-0"
               />
             </div>
           ))}
