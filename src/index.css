@@ -129,6 +129,11 @@
 }
 
 @font-face {
+  font-family: "Covered By Your Grace";
+  src: url("/fonts/CoveredByYourGrace-Regular.ttf");
+}
+
+@font-face {
   font-family: "Nunito Sans";
   src: url("/fonts/Nunito-Italic-VariableFont_wght.ttf");
   font-weight: 100 900;
@@ -156,4 +161,30 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 60s linear infinite;
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 60s linear infinite;
 }

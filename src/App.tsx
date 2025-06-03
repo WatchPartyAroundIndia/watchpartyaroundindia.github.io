@@ -1,11 +1,14 @@
 import ConnectWithTeam from "./components/connect-with-team";
 import Experiences from "./components/experiences";
+import Footer from "./components/footer";
 import Hero from "./components/hero";
 import MeetTheTeam from "./components/meet-the-team";
+import Memories from "./components/memories";
 import Navbar from "./components/navbar";
 import OrganizedBy from "./components/organized-by";
 import RegisterNow from "./components/register-now";
 import Sponsors from "./components/sponsors";
+import Testimonials from "./components/testimonials";
 
 const App = () => {
   return (
@@ -24,9 +27,9 @@ const App = () => {
       <Experiences />
       <RegisterNow />
       <MeetTheTeam />
-      {/* Experiences */}
-      {/* Memories */}
-      {/* Footer */}
+      <Testimonials />
+      <Memories />
+      <Footer />
     </div>
   );
 };

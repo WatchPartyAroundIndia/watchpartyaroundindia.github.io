@@ -66,8 +66,10 @@ const MeetTheTeam: FC<MeetTheTeamProps> = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="h-24" />
-      <h2 className="font-sans font-bold text-4xl mb-5">Meet The Team</h2>
-      <h4 className="font-sans font-bold text-2xl text-[#A4A4A4]">
+      <h2 className="font-sans font-bold text-3xl md:text-4xl mb-3">
+        Meet The Team
+      </h2>
+      <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4]">
         Build by devs, for devs
       </h4>
       <div className="flex justify-center max-w-7xl mt-8 px-4">
@@ -77,6 +79,10 @@ const MeetTheTeam: FC<MeetTheTeamProps> = () => {
               key={member.id}
               className="flex flex-col items-center justify-end w-48 h-48 rounded-full shadow transition relative"
               style={{ backgroundColor: member.backgroundColour }}
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(member.socialLink, "_blank");
+              }}
             >
               <img
                 src={member.memojiLogo}
@@ -90,7 +96,6 @@ const MeetTheTeam: FC<MeetTheTeamProps> = () => {
           ))}
         </div>
       </div>
-      <div className="h-24" />
     </div>
   );
 };

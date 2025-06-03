@@ -14,6 +14,7 @@ export default {
         oliver: ['"Oliver"', "cursive"],
         calSans: ['"Cal Sans"'],
         nunitoSans: ['"Nunito Sans"'],
+        coveredByYourGrace: ['"Covered By Your Grace"'],
       },
     },
   },
