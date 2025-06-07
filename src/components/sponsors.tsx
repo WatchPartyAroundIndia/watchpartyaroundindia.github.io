@@ -2,7 +2,7 @@ import { FC } from "react";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
 import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
 import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
-import ixigoLogo from "../assets/2025/sponsors/ixigo.jpeg";
+import ixigoLogo from "../assets/2025/sponsors/ixigo.png";
 import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
 import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
 import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
@@ -57,7 +57,15 @@ const Sponsors = () => {
       description: "Learn, start, grow and scale",
       logo: keralaStartupMissionLogo,
       contact: "Kozhikode",
-      website: "https://kissflow.com/",
+      website: "https://startupmission.kerala.gov.in/",
+    },
+    {
+      sponsorId: 7,
+      name: "ixigo",
+      description: "Know & Go",
+      logo: ixigoLogo,
+      contact: "Delhi",
+      website: "https://www.ixigo.com/",
     },
   ];
 
@@ -72,14 +80,6 @@ const Sponsors = () => {
     },
     {
       sponsorId: 2,
-      name: "ixigo",
-      description: "Know & Go",
-      logo: ixigoLogo,
-      contact: "Delhi",
-      website: "https://www.ixigo.com/",
-    },
-    {
-      sponsorId: 3,
       name: "Tuist",
       description: "Build better apps faster",
       logo: tuistLogo,
@@ -140,7 +140,7 @@ const SponsorsSection: FC<SponsorsSectionProps> = ({ title, sponsors }) => {
   return (
     <>
       <h2 className="text-xl lg:text-2xl text-center font-calSans">{title}</h2>
-      <div className="flex flex-wrap justify-center items-center gap-x-24 gap-y-4 px-8">
+      <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 px-8">
         {sponsors.map((sponsor) => (
           <div
             key={sponsor.sponsorId}
