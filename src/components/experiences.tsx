@@ -69,25 +69,22 @@ const Experiences = () => {
       <StickyNote
         position="top-[24%] md:top-[24%] left-[4%]"
         rotation="rotate-[1.55deg]"
-        quote="Innovative, playful — I like that I don't have to think about data anymore."
-        author="Marian, Product Designer"
+        quote="For me WWDC watch party served as a hub for community-driven learning, collaboration, and celebration, reinforcing the importance of a supportive and inclusive developer ecosystem"
       />
       <StickyNote
         position="top-[20%] md:top-[18%] right-[5%]"
         rotation="rotate-[18deg]"
-        quote="Love how clean the design is. Doesn't look overwhelming like many project tools"
-        author="Leszek, Project Manager"
+        quote="The WWDC24 Watch Party was an incredible experience. The Community bonding, Knowledge Sharing and Networking it brought was unparalleled."
       />
       <StickyNote
         position="bottom-[24%] md:bottom-[20%] left-[1%]"
         rotation="rotate-[-9deg]"
-        quote="Super simple, fun to set up a project, and immediately multi-"
+        quote="The watch party helped me connect with fellow apple enthusiasts and professionals in the tech community. It was great talking to them and exchanging ideas."
       />
       <StickyNote
         position="bottom-[20%] md:bottom-[15%] right-[5%]"
         rotation="rotate-[18deg]"
-        quote="Feels very plug-and-play and is great at showing when the project is at risk"
-        author="Madjid, Graphic Designer"
+        quote="The panel members knowledge and networking with developers was welcoming and worth it."
       />
     </div>
   );
