@@ -22,9 +22,13 @@ const StickyNote: FC<StickyNoteProps> = ({
       <p className="font-bold font-nunitoSans text-[#634200] italic text-xs md:text-sm lg:text-base">
         {quote}
       </p>
-      {author && (
+      {author ? (
         <p className="text-xs lg:text-sm text-[#634200]/35 font-semibold mt-1">
           {author}
+        </p>
+      ) : (
+        <p>
+          <br />
         </p>
       )}
     </div>
@@ -67,7 +71,7 @@ const Experiences = () => {
 
       {/* Sticky Notes */}
       <StickyNote
-        position="top-[24%] md:top-[24%] left-[4%]"
+        position="top-[18%] md:top-[18%] left-[4%]"
         rotation="rotate-[1.55deg]"
         quote="For me WWDC watch party served as a hub for community-driven learning, collaboration, and celebration, reinforcing the importance of a supportive and inclusive developer ecosystem"
       />
@@ -77,7 +81,7 @@ const Experiences = () => {
         quote="The WWDC24 Watch Party was an incredible experience. The Community bonding, Knowledge Sharing and Networking it brought was unparalleled."
       />
       <StickyNote
-        position="bottom-[24%] md:bottom-[20%] left-[1%]"
+        position="bottom-[20%] md:bottom-[14%] left-[1%]"
         rotation="rotate-[-9deg]"
         quote="The watch party helped me connect with fellow apple enthusiasts and professionals in the tech community. It was great talking to them and exchanging ideas."
       />
