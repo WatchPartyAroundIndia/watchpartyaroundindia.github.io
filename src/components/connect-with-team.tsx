@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link";
 import teamMember1 from "../assets/2025/team/Adithya Balaji.jpeg";
 import teamMember2 from "../assets/2025/team/Akshay Pakanati.png";
 import teamMember3 from "../assets/2025/team/Bhavin Vaghela.jpg";
@@ -8,7 +9,6 @@ import teamMember7 from "../assets/2025/team/Nayyan Mujadiya.jpeg";
 import teamMember8 from "../assets/2025/team/Nishant Desai.png";
 import teamMember9 from "../assets/2025/team/Raghav Sethi.png";
 import teamMember10 from "../assets/2025/team/Rushit Rakhasiya.png";
-import { HashLink as Link } from "react-router-hash-link";
 
 const ConnectWithTeam = () => {
   const teamMembers = [

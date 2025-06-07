@@ -1,10 +1,10 @@
 import locationPinLogo from "../assets/2025/location-pin.svg";
-import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
-import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
 import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
-import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
+import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
 import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
 import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
+import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
+import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
 import swiftLogo from "../assets/2025/swift.svg";
 
 const RegisterNow = () => {

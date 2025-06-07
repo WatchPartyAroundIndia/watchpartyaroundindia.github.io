@@ -1,10 +1,10 @@
 import { FC } from "react";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
-import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
-import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
-import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
 import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
+import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
+import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
+import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 
 const Sponsors = () => {
   const venueSponsors = [
