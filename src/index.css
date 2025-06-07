@@ -173,7 +173,7 @@
 }
 
 .animate-scroll-left {
-  animation: scroll-left 60s linear infinite;
+  animation: scroll-left 120s linear infinite;
 }
 
 @keyframes scroll-right {
@@ -186,5 +186,5 @@
 }
 
 .animate-scroll-right {
-  animation: scroll-right 60s linear infinite;
+  animation: scroll-right 120s linear infinite;
 }
