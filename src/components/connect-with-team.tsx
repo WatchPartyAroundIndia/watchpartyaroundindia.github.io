@@ -8,6 +8,7 @@ import teamMember7 from "../assets/2025/team/Nayyan Mujadiya.jpeg";
 import teamMember8 from "../assets/2025/team/Nishant Desai.png";
 import teamMember9 from "../assets/2025/team/Raghav Sethi.png";
 import teamMember10 from "../assets/2025/team/Rushit Rakhasiya.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
@@ -79,9 +80,12 @@ const ConnectWithTeam = () => {
           />
         ))}
       </div>
-      <button className="rounded-lg bg-[#f6f6f6] font-sans font-semibold w-52 h-12">
+      <Link
+        to="#team"
+        className="rounded-lg bg-[#f6f6f6] font-sans font-semibold w-52 py-2.5"
+      >
         Meet the team →
-      </button>
+      </Link>
       <div className="h-12" />
     </div>
   );

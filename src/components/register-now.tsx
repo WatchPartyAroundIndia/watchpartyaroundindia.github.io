@@ -89,7 +89,7 @@ const RegisterNow = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div id="register" className="flex flex-col items-center justify-center">
       <div className="h-24" />
       <h2 className="font-sans font-bold text-3xl md:text-4xl mb-3">
         Register Now
