@@ -1,4 +1,17 @@
-import memoji from "../assets/2025/team/memoji.png";
+import adityaBalaji from "../assets/2025/team/Adithya Balaji.jpeg";
+import akshayPakanati from "../assets/2025/team/Akshay Pakanati.png";
+import amitSamant from "../assets/2025/team/Amit Samant.png";
+import bhavinVaghela from "../assets/2025/team/Bhavin Vaghela.jpg";
+import bhumikaPatel from "../assets/2025/team/Bhumika Patel.jpeg";
+import devanshi from "../assets/2025/team/Devanshi.png";
+import gokulB from "../assets/2025/team/Gokul B.jpeg";
+import kajalSheth from "../assets/2025/team/Kajal Sheth.png";
+import maninderSingh from "../assets/2025/team/Maninder Singh.jpeg";
+import nayyanMujadiya from "../assets/2025/team/Nayyan Mujadiya.jpeg";
+import nishantDesai from "../assets/2025/team/Nishant Desai.png";
+import raghavSethi from "../assets/2025/team/Raghav Sethi.png";
+import rajRaval from "../assets/2025/team/Raj Raval.png";
+import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -6,99 +19,99 @@ const MeetTheTeam = () => {
       id: 1,
       socialLink: "https://www.linkedin.com/in/fuglyab",
       name: "Adithya Balaji",
-      memojiLogo: memoji,
+      memojiLogo: adityaBalaji,
       backgroundColour: "#FFB069",
     },
     {
       id: 2,
       socialLink: "https://www.linkedin.com/in/kajal-sheth",
       name: "Kajal Sheth",
-      memojiLogo: memoji,
+      memojiLogo: kajalSheth,
       backgroundColour: "#FFDEC0",
     },
     {
       id: 3,
       socialLink: "https://www.linkedin.com/in/bhavin-vaghela",
       name: "Bhavin Vaghela",
-      memojiLogo: memoji,
+      memojiLogo: bhavinVaghela,
       backgroundColour: "#A6CCFA",
     },
     {
       id: 4,
       socialLink: "https://www.linkedin.com/in/nayyanmujadiya/",
       name: "Nayyan Mujadiya",
-      memojiLogo: memoji,
+      memojiLogo: nayyanMujadiya,
       backgroundColour: "#FFE5F8",
     },
     {
       id: 5,
       socialLink: "https://www.linkedin.com/in/manindersinghh",
       name: "Maninder Singh",
-      memojiLogo: memoji,
+      memojiLogo: maninderSingh,
       backgroundColour: "#D6D6D6",
     },
     {
       id: 6,
       socialLink: "https://www.linkedin.com/in/bhumika-ios",
       name: "Bhumika Patel",
-      memojiLogo: memoji,
+      memojiLogo: bhumikaPatel,
       backgroundColour: "#FF69E1",
     },
     {
       id: 7,
       socialLink: "https://www.linkedin.com/in/rushit-r-757aa0167/",
       name: "Rushit Rakhasiya",
-      memojiLogo: memoji,
+      memojiLogo: rushitRakhasiya,
       backgroundColour: "#BEFF93",
     },
     {
       id: 8,
       socialLink: "https://www.linkedin.com/in/nishantdesai1/",
       name: "Nishant Desai",
-      memojiLogo: memoji,
+      memojiLogo: nishantDesai,
       backgroundColour: "#FFB069",
     },
     {
       id: 9,
       socialLink: "https://www.linkedin.com/in/akshaypakanati/",
       name: "Akshay Pakanati",
-      memojiLogo: memoji,
+      memojiLogo: akshayPakanati,
       backgroundColour: "#A6CCFA",
     },
     {
       id: 10,
       socialLink: "https://www.linkedin.com/in/sforsethi/",
       name: "Raghav Sethi",
-      memojiLogo: memoji,
+      memojiLogo: raghavSethi,
       backgroundColour: "#FFDEC0",
     },
     {
       id: 11,
       socialLink: "https://www.linkedin.com/in/amitsamant-dev",
       name: "Amit Samant",
-      memojiLogo: memoji,
+      memojiLogo: amitSamant,
       backgroundColour: "#FFE5F8",
     },
     {
       id: 12,
       socialLink: "https://www.linkedin.com/in/gokul-bvb",
       name: "Gokul B",
-      memojiLogo: memoji,
+      memojiLogo: gokulB,
       backgroundColour: "#D6D6D6",
     },
     {
       id: 13,
       socialLink: "https://www.linkedin.com/in/devanshimodha/",
       name: "Devanshi",
-      memojiLogo: memoji,
+      memojiLogo: devanshi,
       backgroundColour: "#FF69E1",
     },
     {
       id: 14,
       socialLink: "https://www.linkedin.com/in/rajhraval/",
       name: "Raj Raval",
-      memojiLogo: memoji,
-      backgroundColour: "#BEFF93",
+      memojiLogo: rajRaval,
+      backgroundColour: "#FFDEC0",
     },
   ];
 
@@ -134,7 +147,7 @@ const MeetTheTeam = () => {
                 loading="lazy"
                 src={member.memojiLogo}
                 alt={`${member.name} logo`}
-                className="w-36 h-36 rounded-full mb-1 absolute top-4 left-1/2 -translate-x-1/2"
+                className="w-36 h-36 rounded-full mb-1 absolute top-4 left-1/2 -translate-x-1/2 object-cover"
               />
               <div
                 title={`View ${member.name}'s profile`}
