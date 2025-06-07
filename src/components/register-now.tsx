@@ -1,60 +1,66 @@
 import locationPinLogo from "../assets/2025/location-pin.svg";
+import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
+import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
+import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
+import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
+import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
+import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
 import swiftLogo from "../assets/2025/swift.svg";
 
 const RegisterNow = () => {
   const swiftEvents = [
     {
       id: 1,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
+      time: "7:00 PM",
+      logo: swiftBengaluruLogo,
+      chapterName: "Swift Bengaluru",
+      venue: "Swiggy HO, Ground Floor, Embassy TechVillage",
+      location: "Varthur",
+      registerLink: "https://lu.ma/9mfibs65",
       startColour: "#FFC677",
       endColour: "#FF9500",
     },
     {
       id: 2,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
+      time: "7:30 PM",
+      logo: swiftMumbaiLogo,
+      chapterName: "Swift Mumbai",
+      venue: "BookMyShow Office, Empressa 14",
+      location: "Andheri East",
+      registerLink: "https://lu.ma/cbn8zy6m",
       startColour: "#A8D7FF",
       endColour: "#6171FF",
     },
     {
       id: 3,
       time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
+      logo: swiftAhmedabadLogo,
+      chapterName: "Swift Ahmedabad",
+      venue: "7Span, 201, Isquare Corporate Park",
+      location: "Sola",
+      registerLink: "https://lu.ma/kne1yfpm",
       startColour: "#DE9CFF",
       endColour: "#AF52DE",
     },
     {
       id: 4,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
+      time: "8:00 PM",
+      logo: swiftSuratLogo,
+      chapterName: "Swift Surat",
+      venue: "JBcodeapp, 536, 5, Square Point, M.V Circle",
+      location: "Dahin Nagar",
+      registerLink: "https://lu.ma/j41uncut",
       startColour: "#BB5BF3",
       endColour: "#6900EE",
     },
     {
       id: 5,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
+      time: "8:00 PM",
+      logo: swiftChennaiLogo,
+      chapterName: "Swift Chennai",
+      venue: "Kissflow, No. 5, Tower-B, 10th Floor",
+      location: "Perungudi",
+      registerLink: "https://lu.ma/9engu1qy",
       startColour: "#A8D7FF",
       endColour: "#6171FF",
     },
@@ -63,44 +69,22 @@ const RegisterNow = () => {
       time: "9:00 PM",
       logo: swiftLogo,
       chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
+      venue: "Ixigo Office, 2nd Floor, Veritas Building",
       location: "Gurugram",
-      registerLink: "#",
-      startColour: "#FFC677",
-      endColour: "#FF9500",
-    },
-    {
-      id: 7,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
-      startColour: "#BB5BF3",
-      endColour: "#6900EE",
-    },
-    {
-      id: 8,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
+      registerLink: "https://lu.ma/pry2tx7d",
       startColour: "#A8D7FF",
       endColour: "#6171FF",
     },
     {
-      id: 9,
-      time: "9:00 PM",
-      logo: swiftLogo,
-      chapterName: "Swift Delhi",
-      venue: "IXIGO Office, Rajouri Garden Rajiv Chowk, Delhi.",
-      location: "Gurugram",
-      registerLink: "#",
-      startColour: "#FFC677",
-      endColour: "#FF9500",
+      id: 7,
+      time: "7:00 PM",
+      logo: swiftHyderabadLogo,
+      chapterName: "Swift Hyderabad",
+      venue: "Draper Startup House, Rajiv gandhi Nagar",
+      location: "Gachibowli",
+      registerLink: "https://lu.ma/jehijqln",
+      startColour: "#A8D7FF",
+      endColour: "#6171FF",
     },
   ];
 
@@ -127,10 +111,10 @@ const RegisterNow = () => {
               <div className="flex items-center gap-2">
                 <img
                   loading="lazy"
-                  src={swiftLogo}
+                  src={event.logo}
                   aria-hidden="true"
                   alt={`${event.chapterName} logo`}
-                  className="w-8 h-8 flex-shrink-0"
+                  className="w-8 h-8 flex-shrink-0 rounded-full"
                 />
                 <h6 className="font-semibold text-white text-lg">
                   {event.chapterName}
