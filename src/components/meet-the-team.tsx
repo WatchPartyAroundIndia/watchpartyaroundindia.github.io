@@ -12,6 +12,7 @@ import nishantDesai from "../assets/2025/team/Nishant Desai.png";
 import raghavSethi from "../assets/2025/team/Raghav Sethi.png";
 import rajRaval from "../assets/2025/team/Raj Raval.png";
 import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
+import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -112,6 +113,13 @@ const MeetTheTeam = () => {
       name: "Raj Raval",
       memojiLogo: rajRaval,
       backgroundColour: "#FFDEC0",
+    },
+    {
+      id: 15,
+      socialLink: "http://linkedin.com/in/shamil-roshan",
+      name: "Shamil Roshan",
+      memojiLogo: shamilRoshan,
+      backgroundColour: "#A6CCFA",
     },
   ];
 

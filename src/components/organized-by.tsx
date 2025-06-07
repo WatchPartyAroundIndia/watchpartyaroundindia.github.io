@@ -1,35 +1,52 @@
 import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
 import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
 import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
+import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
 import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
 import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
+import swiftLogo from "../assets/2025/swift.svg";
 
 const OrganizedBy = () => {
   const organizedChapters = [
     {
       id: 1,
+      name: "Swift Delhi",
+      logo: swiftLogo,
+    },
+    {
+      id: 2,
       name: "Swift Bengaluru",
       logo: swiftBengaluruLogo,
     },
     {
-      id: 2,
+      id: 3,
       name: "Swift Mumbai",
       logo: swiftMumbaiLogo,
     },
     {
-      id: 3,
+      id: 4,
+      name: "Swift Hyderabad",
+      logo: swiftHyderabadLogo,
+    },
+    {
+      id: 5,
       name: "Swift Ahmedabad",
       logo: swiftAhmedabadLogo,
     },
     {
-      id: 4,
+      id: 6,
       name: "Swift Surat",
       logo: swiftSuratLogo,
     },
     {
-      id: 5,
+      id: 7,
       name: "Swift Chennai",
       logo: swiftChennaiLogo,
+    },
+    {
+      id: 8,
+      name: "Swift Kozhikode",
+      logo: swiftLogo,
     },
   ];
 

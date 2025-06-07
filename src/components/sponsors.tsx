@@ -2,9 +2,12 @@ import { FC } from "react";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
 import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
 import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
+import ixigoLogo from "../assets/2025/sponsors/ixigo.jpeg";
 import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
+import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
 import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
+import tuistLogo from "../assets/2025/sponsors/tuist.jpeg";
 
 const Sponsors = () => {
   const venueSponsors = [
@@ -48,6 +51,14 @@ const Sponsors = () => {
       contact: "Mumbai",
       website: "https://in.bookmyshow.com/",
     },
+    {
+      sponsorId: 6,
+      name: "Kerala Startup Mission",
+      description: "Learn, start, grow and scale",
+      logo: keralaStartupMissionLogo,
+      contact: "Kozhikode",
+      website: "https://kissflow.com/",
+    },
   ];
 
   const supportingSponsors = [
@@ -58,6 +69,22 @@ const Sponsors = () => {
       logo: swiggyLogo,
       contact: "Bengaluru",
       website: "https://www.swiggy.com/",
+    },
+    {
+      sponsorId: 2,
+      name: "ixigo",
+      description: "Know & Go",
+      logo: ixigoLogo,
+      contact: "Delhi",
+      website: "https://www.ixigo.com/",
+    },
+    {
+      sponsorId: 3,
+      name: "Tuist",
+      description: "Build better apps faster",
+      logo: tuistLogo,
+      contact: "Delhi",
+      website: "https://tuist.dev/",
     },
   ];
 
@@ -128,11 +155,11 @@ const SponsorsSection: FC<SponsorsSectionProps> = ({ title, sponsors }) => {
             <img
               src={sponsor.logo}
               alt={sponsor.name}
-              className="h-14 w-auto rounded"
+              className="h-12 w-auto rounded"
               loading="lazy"
             />
             <div className="flex flex-col justify-start items-start">
-              <p className="font-bold text-base">{sponsor.name}</p>
+              <p className="font-bold text-base text-left">{sponsor.name}</p>
               <p className="text-xs mb-1 opacity-80 text-left">
                 {sponsor.description}
               </p>
