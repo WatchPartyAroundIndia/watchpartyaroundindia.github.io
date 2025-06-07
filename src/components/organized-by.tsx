@@ -1,44 +1,35 @@
-import swiftAhmedabadLogo from "../assets/2025/swift-ahmedabad.svg";
-import swiftHyderabadLogo from "../assets/2025/swift-hyderabad.svg";
-import swiftMumbaiLogo from "../assets/2025/swift-mumbai.svg";
-import swiftLogo from "../assets/2025/swift.svg";
+import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
+import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
+import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
+import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
+import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
 
 const OrganizedBy = () => {
   const organizedChapters = [
     {
       id: 1,
-      name: "Swift Delhi",
-      logo: swiftLogo,
+      name: "Swift Bengaluru",
+      logo: swiftBengaluruLogo,
     },
     {
       id: 2,
-      name: "Swift Bengaluru",
-      logo: swiftLogo,
-    },
-    {
-      id: 3,
       name: "Swift Mumbai",
       logo: swiftMumbaiLogo,
     },
     {
-      id: 4,
-      name: "Swift Hyderabad",
-      logo: swiftHyderabadLogo,
-    },
-    {
-      id: 5,
+      id: 3,
       name: "Swift Ahmedabad",
       logo: swiftAhmedabadLogo,
     },
     {
-      id: 6,
+      id: 4,
       name: "Swift Surat",
-      logo: swiftLogo,
+      logo: swiftSuratLogo,
     },
     {
-      id: 7,
+      id: 5,
       name: "Swift Chennai",
-      logo: swiftLogo,
+      logo: swiftChennaiLogo,
     },
   ];
 
@@ -59,7 +50,7 @@ const OrganizedBy = () => {
             <img
               src={chapter.logo}
               alt={chapter.name}
-              className="h-9 w-9 object-contain"
+              className="h-9 w-9 object-contain rounded-full"
               loading="lazy"
             />
             <p className="font-calSans text-base lg:text-lg">{chapter.name}</p>
