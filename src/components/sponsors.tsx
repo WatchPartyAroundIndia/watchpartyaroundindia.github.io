@@ -1,82 +1,63 @@
 import { FC } from "react";
-import azamSharpLogo from "../assets/2025/azam-sharp.svg";
-import exploringFreelancingLogo from "../assets/2025/exploring-freelancing.svg";
-import helmLogo from "../assets/2025/helm.svg";
-import lumyLogo from "../assets/2025/lumy.svg";
-import mediateLogo from "../assets/2025/mediate.svg";
-import practicalIosBooksLogo from "../assets/2025/practical-ios-books.svg";
-import rocketsimLogo from "../assets/2025/rocketsim.svg";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
-import tasksLogo from "../assets/2025/tasks.svg";
+import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
+import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
+import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
+import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
+import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 
 const Sponsors = () => {
   const venueSponsors = [
     {
       sponsorId: 1,
-      name: "Tasks",
-      description: "Daily Planner, Manage Projects",
-      logo: tasksLogo,
-      contact: "Mustafa Yusuf",
-      website: "",
+      name: "Kissflow",
+      description: "'People-First' people",
+      logo: kissflowLogo,
+      contact: "Chennai",
+      website: "https://kissflow.com/",
     },
     {
       sponsorId: 2,
-      name: "Mediate",
-      description: "Timer. Tracker. Motivator.",
-      logo: mediateLogo,
-      contact: "Mithil Jadhav",
-      website: "",
+      name: "JBCodeapp",
+      description: "Your Trusted Development Partner",
+      logo: jbcodeappLogo,
+      contact: "Surat",
+      website: "https://jbcodeapp.com/",
     },
     {
       sponsorId: 3,
-      name: "Lumy",
-      description: "The Beautiful Sun Tracking App",
-      logo: lumyLogo,
-      contact: "Raja Vijayaram",
-      website: "",
+      name: "Swiggy",
+      description: "No Order Too Small",
+      logo: swiggyLogo,
+      contact: "Bengaluru",
+      website: "https://www.swiggy.com/",
     },
     {
       sponsorId: 4,
-      name: "Helm",
-      description: "macOS App for App Store Connect",
-      logo: helmLogo,
-      contact: "Pol Piella",
-      website: "",
+      name: "7Span",
+      description: "Your Growth Is Our Sword!",
+      logo: sevenSpanlogo,
+      contact: "Ahmedabad",
+      website: "https://7span.com/",
     },
     {
       sponsorId: 5,
-      name: "RocketSim",
-      description: "Build Apps Faster on Xcode",
-      logo: rocketsimLogo,
-      contact: "Antoine van der Lee",
-      website: "",
+      name: "BookMyShow",
+      description: "It All Starts Here",
+      logo: bookMyShowLogo,
+      contact: "Mumbai",
+      website: "https://in.bookmyshow.com/",
     },
   ];
 
-  const otherSponsors = [
+  const supportingSponsors = [
     {
       sponsorId: 1,
-      name: "Practical iOS Books",
-      description: "Concurrency, Combine, Core Data",
-      logo: practicalIosBooksLogo,
-      contact: "Donny Wals",
-      website: "",
-    },
-    {
-      sponsorId: 2,
-      name: "Free Courses",
-      description: "on Azamsharp School",
-      logo: azamSharpLogo,
-      contact: "Mohammad Azam",
-      website: "",
-    },
-    {
-      sponsorId: 3,
-      name: "Exploring Freelancing",
-      description: "Start your freelance journey!",
-      logo: exploringFreelancingLogo,
-      contact: "Rudrank Riyamm",
-      website: "",
+      name: "Swiggy",
+      description: "No Order Too Small",
+      logo: swiggyLogo,
+      contact: "Bengaluru",
+      website: "https://www.swiggy.com/",
     },
   ];
 
@@ -105,7 +86,10 @@ const Sponsors = () => {
         <div className="h-12" />
         <div className="flex flex-col max-w-6xl mx-auto gap-8">
           <SponsorsSection title="Venue Sponsors" sponsors={venueSponsors} />
-          <SponsorsSection title="Other Sponsors" sponsors={otherSponsors} />
+          <SponsorsSection
+            title="Other Sponsors"
+            sponsors={supportingSponsors}
+          />
         </div>
         <div className="h-16" />
       </div>
@@ -129,13 +113,11 @@ const SponsorsSection: FC<SponsorsSectionProps> = ({ title, sponsors }) => {
   return (
     <>
       <h2 className="text-xl lg:text-2xl text-center font-calSans">{title}</h2>
-      <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-x-24 gap-y-4 px-8">
         {sponsors.map((sponsor) => (
           <div
             key={sponsor.sponsorId}
-            className={`flex gap-2 items-start justify-start p-2 min-w-80 font-sans bg-white rounded-2xl shadow-md hover:scale-[1.02] transition-transform ${
-              sponsor.website ? "cursor-pointer" : "cursor-default"
-            }`}
+            className="flex gap-2 items-start justify-start font-sans bg-white rounded-2xl shadow-md hover:scale-[1.02] transition-transform cursor-pointer w-full sm:w-72 px-2 py-3"
             onClick={() => {
               if (sponsor.website) {
                 window.open(sponsor.website, "_blank", "noopener, noreferrer");
@@ -146,13 +128,15 @@ const SponsorsSection: FC<SponsorsSectionProps> = ({ title, sponsors }) => {
             <img
               src={sponsor.logo}
               alt={sponsor.name}
-              className="w-16 h-16"
+              className="h-14 w-auto rounded"
               loading="lazy"
             />
             <div className="flex flex-col justify-start items-start">
               <p className="font-bold text-base">{sponsor.name}</p>
-              <p className="text-xs mb-1 opacity-80">{sponsor.description}</p>
-              <p className="text-[14px] opacity-80">{sponsor.contact}</p>
+              <p className="text-xs mb-1 opacity-80 text-left">
+                {sponsor.description}
+              </p>
+              <p className="text-xs opacity-60">{sponsor.contact}</p>
             </div>
           </div>
         ))}

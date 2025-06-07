@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link";
 import wwdcLogo from "../assets/2025/hero.svg";
 
 const Hero = () => {
@@ -22,9 +23,12 @@ const Hero = () => {
         Registration is free (Both offline and online).
       </p>
       <div className="h-12" />
-      <button className="font-prompt text-2xl text-white bg-[#4884FF] font-medium px-8 py-2 border-2 border-[#0B2131] shadow-[-3px_3px_0_1px_#0B2131] hover:bg-[#366fd1] transition-colors duration-200">
+      <Link
+        to="#register"
+        className="font-prompt text-2xl text-white bg-[#4884FF] font-medium px-8 py-2 border-2 border-[#0B2131] shadow-[-3px_3px_0_1px_#0B2131] hover:bg-[#366fd1] transition-colors duration-200"
+      >
         Register Now
-      </button>
+      </Link>
       <div className="h-24" />
     </main>
   );

@@ -18,7 +18,9 @@ const Footer = () => {
       </p>
       <div className="h-24" />
       <img src={heartLogo} alt="Made with love" className="w-8 h-8" />
-      <h3 className="font-bold text-black/50">Made by me for me</h3>
+      <h3 className="font-bold text-black/50">
+        Made by developers for developers
+      </h3>
       <h4 className="font-bold text-black/30">Developed in India in 2025</h4>
     </footer>
   );

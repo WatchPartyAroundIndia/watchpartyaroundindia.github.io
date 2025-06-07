@@ -58,12 +58,12 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button
-          type="button"
-          className="ml-auto md:ml-0 text-lg md:text-xl lg:text-2xl text-white bg-[#4884FF] font-medium px-4 md:px-6 lg:px-8 py-1 md:py-1.5 lg:py-2 border-2 border-[#0B2131] hidden md:block hover:bg-[#366fd1] transition-colors duration-200"
+        <Link
+          to="#register"
+          className="ml-auto md:ml-0 text-lg md:text-xl lg:text-2xl text-white bg-[#4884FF] font-medium px-4 md:px-6 lg:px-8 py-1 md:py-1.5 lg:py-2 border-2 border-[#0B2131] hidden md:block hover:bg-[#366fd1] transition-colors duration-200 text-center"
         >
           Register
-        </button>
+        </Link>
 
         {/* Hamburger Icon */}
         <button
