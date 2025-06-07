@@ -2,10 +2,12 @@ import { FC } from "react";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
 import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
 import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
+import ixigoLogo from "../assets/2025/sponsors/ixigo.jpeg";
 import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
 import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
 import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
+import tuistLogo from "../assets/2025/sponsors/tuist.jpeg";
 
 const Sponsors = () => {
   const venueSponsors = [
@@ -67,6 +69,22 @@ const Sponsors = () => {
       logo: swiggyLogo,
       contact: "Bengaluru",
       website: "https://www.swiggy.com/",
+    },
+    {
+      sponsorId: 2,
+      name: "ixigo",
+      description: "Know & Go",
+      logo: ixigoLogo,
+      contact: "Delhi",
+      website: "https://www.ixigo.com/",
+    },
+    {
+      sponsorId: 3,
+      name: "Tuist",
+      description: "Build better apps faster",
+      logo: tuistLogo,
+      contact: "Delhi",
+      website: "https://tuist.dev/",
     },
   ];
 
