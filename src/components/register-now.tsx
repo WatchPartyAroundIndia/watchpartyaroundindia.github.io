@@ -86,6 +86,17 @@ const RegisterNow = () => {
       startColour: "#A8D7FF",
       endColour: "#6171FF",
     },
+    {
+      id: 8,
+      time: "7:30 PM",
+      logo: swiftLogo,
+      chapterName: "Swift Kozhikode",
+      venue: "1650D, Palazhi, Kozhikode",
+      location: "Pantheeramkavu",
+      registerLink: "#",
+      startColour: "#FFC677",
+      endColour: "#FF9500",
+    },
   ];
 
   return (
