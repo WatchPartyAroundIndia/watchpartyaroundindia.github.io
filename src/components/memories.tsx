@@ -179,7 +179,7 @@ const Memories = () => {
         className="relative overflow-x-hidden h-full w-full"
       >
         <div className="flex w-max animate-scroll-left">
-          {[...imagesRow1, ...imagesRow1, ...imagesRow1].map((image) => (
+          {[...imagesRow1, ...imagesRow1].map((image) => (
             <div
               key={image.id}
               className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
@@ -200,7 +200,7 @@ const Memories = () => {
         className="relative overflow-x-hidden h-full w-full"
       >
         <div className="flex w-max animate-scroll-right">
-          {[...imagesRow2, ...imagesRow2, ...imagesRow2].map((image) => (
+          {[...imagesRow2, ...imagesRow2].map((image) => (
             <div
               key={image.id}
               className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
