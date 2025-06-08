@@ -1,6 +1,8 @@
 import adityaBalaji from "../assets/2025/team/Adithya Balaji.jpeg";
 import akshayPakanati from "../assets/2025/team/Akshay Pakanati.png";
 import amitSamant from "../assets/2025/team/Amit Samant.png";
+import anirudhJwala from "../assets/2025/team/Anirudh Jwala.png";
+import ayushSingh from "../assets/2025/team/Ayush Singh.png";
 import bhavinVaghela from "../assets/2025/team/Bhavin Vaghela.jpg";
 import bhumikaPatel from "../assets/2025/team/Bhumika Patel.jpeg";
 import devanshi from "../assets/2025/team/Devanshi.png";
@@ -11,6 +13,7 @@ import nayyanMujadiya from "../assets/2025/team/Nayyan Mujadiya.jpeg";
 import nishantDesai from "../assets/2025/team/Nishant Desai.png";
 import raghavSethi from "../assets/2025/team/Raghav Sethi.png";
 import rajRaval from "../assets/2025/team/Raj Raval.png";
+import rangaReddy from "../assets/2025/team/Ranga Reddy.png";
 import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
 import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
 
@@ -120,6 +123,27 @@ const MeetTheTeam = () => {
       name: "Shamil Roshan",
       memojiLogo: shamilRoshan,
       backgroundColour: "#A6CCFA",
+    },
+    {
+      id: 16,
+      socialLink: "http://www.linkedin.com/in/ayush21082",
+      name: "Ayush Singh",
+      memojiLogo: ayushSingh,
+      backgroundColour: "#fff3ea",
+    },
+    {
+      id: 17,
+      socialLink: "https://www.linkedin.com/in/irangareddy/",
+      name: "Ranga Reddy",
+      memojiLogo: rangaReddy,
+      backgroundColour: "#dee6f1",
+    },
+    {
+      id: 18,
+      socialLink: "https://x.com/nirudhuuu",
+      name: "Anirudh Jwala",
+      memojiLogo: anirudhJwala,
+      backgroundColour: "#e5d5bd",
     },
   ];
 
