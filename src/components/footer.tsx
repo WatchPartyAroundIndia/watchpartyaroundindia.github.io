@@ -22,6 +22,7 @@ const Footer = () => {
         Made by developers for developers
       </h3>
       <h4 className="font-bold text-black/30">Developed in India in 2025</h4>
+      <div className="h-28" />
     </footer>
   );
 };

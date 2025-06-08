@@ -71,8 +71,8 @@ const Experiences = () => {
 
       {/* Sticky Notes */}
       <StickyNote
-        position="top-[18%] md:top-[18%] left-[4%]"
-        rotation="rotate-[1.55deg]"
+        position="top-[14%] md:top-[18%] left-[4%]"
+        rotation="rotate-[2.8deg]"
         quote="For me WWDC watch party served as a hub for community-driven learning, collaboration, and celebration, reinforcing the importance of a supportive and inclusive developer ecosystem"
       />
       <StickyNote
