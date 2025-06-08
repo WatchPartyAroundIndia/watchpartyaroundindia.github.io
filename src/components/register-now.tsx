@@ -4,9 +4,9 @@ import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
 import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
 import swiftDelhiLogo from "../assets/2025/organisers/swift-delhi.jpeg";
 import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
+import swiftKozhikodeLogo from "../assets/2025/organisers/swift-kozhikode.svg";
 import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
 import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
-import swiftLogo from "../assets/2025/swift.svg";
 
 const RegisterNow = () => {
   const swiftEvents = [
@@ -90,7 +90,7 @@ const RegisterNow = () => {
     {
       id: 8,
       time: "7:30 PM",
-      logo: swiftLogo,
+      logo: swiftKozhikodeLogo,
       chapterName: "Swift Kozhikode",
       venue: "Kerala Startup Mission, 1650D, Palazhi, Kozhikode",
       location: "Pantheeramkavu",
