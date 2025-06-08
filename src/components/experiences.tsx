@@ -37,22 +37,22 @@ const StickyNote: FC<StickyNoteProps> = ({
 
 const Experiences = () => {
   return (
-    <div className="relative flex items-center justify-center text-center px-4 max-w-6xl mx-auto h-[750px] overflow-x-hidden">
+    <div className="relative flex items-center justify-center text-center px-4 max-w-6xl mx-auto h-[800px] overflow-hidden">
       {/* Arrows */}
       <div className="absolute top-4 md:top-0 left-1/2 transform -translate-x-1/2">
         <img
-          alt=""
+          alt="arrow tail"
           aria-hidden="true"
           src={arrowTopLogo}
-          className="h-40 md:h-60 lg:h-100"
+          className="h-40 md:h-60"
         />
       </div>
-      <div className="absolute bottom-0 md:bottom-[-4%] left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
         <img
-          alt=""
+          alt="arrow pointing down"
           aria-hidden="true"
           src={arrowBottomLogo}
-          className="h-40 md:h-60 lg:h-100"
+          className="h-40 md:h-60"
         />
       </div>
 
