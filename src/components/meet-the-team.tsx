@@ -130,7 +130,7 @@ const MeetTheTeam = () => {
         Meet The Team
       </h2>
       <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4]">
-        Build by devs, for devs
+        Built by devs, for devs
       </h4>
       <div className="flex justify-center max-w-7xl mt-8 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
