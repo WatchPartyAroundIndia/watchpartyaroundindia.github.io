@@ -1,6 +1,7 @@
 import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
 import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
 import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
+import swiftDelhiLogo from "../assets/2025/organisers/swift-delhi.jpeg";
 import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
 import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
 import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
@@ -11,7 +12,7 @@ const OrganizedBy = () => {
     {
       id: 1,
       name: "Swift Delhi",
-      logo: swiftLogo,
+      logo: swiftDelhiLogo,
     },
     {
       id: 2,

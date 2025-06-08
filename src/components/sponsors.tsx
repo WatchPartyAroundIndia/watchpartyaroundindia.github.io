@@ -8,6 +8,7 @@ import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mis
 import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import tuistLogo from "../assets/2025/sponsors/tuist.jpeg";
+import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
 
 const Sponsors = () => {
   const venueSponsors = [
@@ -66,6 +67,14 @@ const Sponsors = () => {
       logo: ixigoLogo,
       contact: "Delhi",
       website: "https://www.ixigo.com/",
+    },
+    {
+      sponsorId: 8,
+      name: "Draper StartUp House",
+      description: "The Global Home for Entrepreneurs",
+      logo: draperStartUpHouseLogo,
+      contact: "Hyderabad",
+      website: "https://draperstartuphouse.com/hyderabad",
     },
   ];
 
