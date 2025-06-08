@@ -2,6 +2,7 @@ import locationPinLogo from "../assets/2025/location-pin.svg";
 import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
 import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
 import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
+import swiftDelhiLogo from "../assets/2025/organisers/swift-delhi.jpeg";
 import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
 import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
 import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
@@ -67,7 +68,7 @@ const RegisterNow = () => {
     {
       id: 6,
       time: "9:00 PM",
-      logo: swiftLogo,
+      logo: swiftDelhiLogo,
       chapterName: "Swift Delhi",
       venue: "Ixigo Office, 2nd Floor, Veritas Building",
       location: "Gurugram",
