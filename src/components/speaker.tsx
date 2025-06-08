@@ -12,10 +12,10 @@ const MeetTheTeam = () => {
   return (
     <div id="speakers" className="flex flex-col items-center justify-center">
       <div className="h-24" />
-      <h2 className="font-sans font-bold text-3xl md:text-4xl mb-3">
+      <h2 className="font-sans font-bold text-2xl lg:text-4xl mb-3">
         Watch Party Around India Keynote
       </h2>
-      <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4]">
+      <h4 className="font-sans font-bold text-lg lg:text:3xl text-[#A4A4A4]">
         Design for India
       </h4>
       <div className="flex flex-col items-center justify-center max-w-7xl mt-8 px-4">
@@ -47,7 +47,7 @@ const MeetTheTeam = () => {
             {speaker.name}
           </div>
         </div>
-        <h2 className="font-sans font-semibold text-xl text-center mt-8">
+        <h2 className="font-sans font-semibold text-base lg:text-xl text-center mt-8">
           2025 Apple Design Award Finalist&nbsp;
           <span className="text-3xl font-coveredByYourGrace text-[#BDA6A6]">
             Denim
