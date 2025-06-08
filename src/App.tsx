@@ -1,3 +1,4 @@
+import Speakers from "./components/speaker";
 import ConnectWithTeam from "./components/connect-with-team";
 import Experiences from "./components/experiences";
 import Footer from "./components/footer";
@@ -20,6 +21,7 @@ const App = () => {
       <ConnectWithTeam />
       <Experiences />
       <RegisterNow />
+      <Speakers />
       <MeetTheTeam />
       <Testimonials />
       <Memories />
