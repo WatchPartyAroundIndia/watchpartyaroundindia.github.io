@@ -15,6 +15,7 @@ import raghavSethi from "../assets/2025/team/Raghav Sethi.png";
 import rajRaval from "../assets/2025/team/Raj Raval.png";
 import rangaReddy from "../assets/2025/team/Ranga Reddy.png";
 import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
+import akshayNjarangal from "../assets/2025/team/Akshay Njarangal.jpeg";
 import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
 
 const MeetTheTeam = () => {
@@ -144,6 +145,13 @@ const MeetTheTeam = () => {
       name: "Anirudh Jwala",
       memojiLogo: anirudhJwala,
       backgroundColour: "#e5d5bd",
+    },
+    {
+      id: 19,
+      socialLink: "https://www.linkedin.com/in/akshay-njarangal/",
+      name: "Akshay Njarangal",
+      memojiLogo: akshayNjarangal,
+      backgroundColour: "#f0f0f0",
     },
   ];
 
