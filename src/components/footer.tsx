@@ -22,6 +22,28 @@ const Footer = () => {
         Made by developers for developers
       </h3>
       <h4 className="font-bold text-black/30">Developed in India in 2025</h4>
+      <p className="text-xs text-black/40 mt-2">
+        Designed by&nbsp;
+        <span className="hover:text-blue-500 transition-colors hover:underline">
+          <a
+            href="http://www.linkedin.com/in/ayush21082"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ayush Singh
+          </a>
+        </span>
+        &nbsp;&amp; developed by&nbsp;
+        <span className="hover:text-blue-500 transition-colors hover:underline">
+          <a
+            href="https://x.com/nirudhuuu"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Anirudh Jwala
+          </a>
+        </span>
+      </p>
       <div className="h-28" />
     </footer>
   );
