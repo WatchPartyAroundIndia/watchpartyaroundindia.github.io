@@ -1,11 +1,12 @@
-import swiftAhmedabadLogo from "../assets/2025/organisers/swift-ahmedabad.svg";
-import swiftBengaluruLogo from "../assets/2025/organisers/swift-bengaluru.png";
-import swiftChennaiLogo from "../assets/2025/organisers/swift-chennai.png";
-import swiftDelhiLogo from "../assets/2025/organisers/swift-delhi.jpeg";
-import swiftHyderabadLogo from "../assets/2025/organisers/swift-hyderabad.svg";
-import swiftKozhikodeLogo from "../assets/2025/organisers/swift-kozhikode.svg";
-import swiftMumbaiLogo from "../assets/2025/organisers/swift-mumbai.png";
-import swiftSuratLogo from "../assets/2025/organisers/swift-surat.jpeg";
+import swiftAhmedabadLogo from "../assets/organisers/swift-ahmedabad.svg";
+import swiftBengaluruLogo from "../assets/organisers/swift-bengaluru.png";
+import swiftChennaiLogo from "../assets/organisers/swift-chennai.png";
+import swiftDelhiLogo from "../assets/organisers/swift-delhi.jpeg";
+import swiftHyderabadLogo from "../assets/organisers/swift-hyderabad.svg";
+import swiftKozhikodeLogo from "../assets/organisers/swift-kozhikode.svg";
+import swiftMumbaiLogo from "../assets/organisers/swift-mumbai.png";
+import swiftSuratLogo from "../assets/organisers/swift-surat.jpeg";
+import swiftPuneLogo from "../assets/organisers/swift-pune.png";
 
 const OrganizedBy = () => {
   const organizedChapters = [
@@ -48,6 +49,11 @@ const OrganizedBy = () => {
       id: 8,
       name: "Swift Kozhikode",
       logo: swiftKozhikodeLogo,
+    },
+    {
+      id: 9,
+      name: "Swift Pune",
+      logo: swiftPuneLogo,
     },
   ];
 

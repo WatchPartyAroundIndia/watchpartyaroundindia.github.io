@@ -9,6 +9,7 @@ import teamMember7 from "../assets/2025/team/Nayyan Mujadiya.jpeg";
 import teamMember8 from "../assets/2025/team/Nishant Desai.png";
 import teamMember9 from "../assets/2025/team/Raghav Sethi.png";
 import teamMember10 from "../assets/2025/team/Rushit Rakhasiya.png";
+import teamMember11 from "../assets/2026/team/NikhilN.jpg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
@@ -62,6 +63,11 @@ const ConnectWithTeam = () => {
       name: "Rushit Rakhasiya",
       image: teamMember10,
     },
+    {
+      id: 11,
+      name: "Nikhil Nigade",
+      image: teamMember11,
+    },
   ];
 
   return (
@@ -69,7 +75,7 @@ const ConnectWithTeam = () => {
       <h4 className="font-bold text-xl md:text-2xl lg:text-3xl font-sans mb-3">
         Connect with passionate developers from across India
       </h4>
-      <div className="flex justify-start items-center mt-4 gap-6 mb-10 w-full overflow-x-auto">
+      <div className="flex flex-wrap justify-start items-center mt-4 gap-6 mb-12 w-full overflow-x-auto">
         {teamMembers.map((team) => (
           <img
             key={team.id}

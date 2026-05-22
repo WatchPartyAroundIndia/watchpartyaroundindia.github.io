@@ -6,6 +6,7 @@ import { hyderabadEvent } from "./city-events/hyderabad";
 import { kozhikodeEvent } from "./city-events/kozhikode";
 import { mumbaiEvent } from "./city-events/mumbai";
 import { suratEvent } from "./city-events/surat";
+import { puneEvent } from "./city-events/pune";
 import type { CityEvent } from "./city-events/types";
 
 export type { CityEvent } from "./city-events/types";
@@ -19,6 +20,7 @@ export const cityEvents: CityEvent[] = [
   delhiEvent,
   hyderabadEvent,
   kozhikodeEvent,
+  puneEvent
 ];
 
 export const getCityEventBySlug = (slug?: string) => {
