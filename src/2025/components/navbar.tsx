@@ -9,8 +9,7 @@ const Navbar = () => {
     { id: 1, label: "About", section: "#" },
     { id: 2, label: "Sponsors", section: "#sponsors" },
     { id: 3, label: "Speakers", section: "#speakers" },
-    { id: 4, label: "2025", link: "/2025" },
-    { id: 5, label: "2024", link: "/#2024" },
+    { id: 4, label: "2024", link: "/#2024" },
   ];
 
   useEffect(() => {
