@@ -3,60 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-regular.otf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-bold.otf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-semibold.otf");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-medium.otf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-light.otf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-thin.otf");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-ultralight.otf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-heavy.otf");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "SfProDisplay";
-  src: url("/fonts/sfpd-black.otf");
-  font-weight: 800;
-}
-
-@font-face {
   font-family: "Prompt";
   src: url("/fonts/Prompt-Thin.ttf");
   font-weight: 100;
@@ -142,7 +88,7 @@
 :root {
   @apply leading-normal font-normal bg-[#010117];
 
-  font-family: "SfProDisplay";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
 
   font-synthesis: none;

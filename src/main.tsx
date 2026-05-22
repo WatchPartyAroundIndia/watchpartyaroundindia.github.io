@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
+import App2025 from "./2025/App.tsx";
 import App2024 from "./2024/App.tsx";
 import CityEventPage from "./components/city-event-page.tsx";
 
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/2025",
+    element: <App2025 />,
   },
   {
     path: "/2024",

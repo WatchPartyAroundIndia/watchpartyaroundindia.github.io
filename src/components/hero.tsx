@@ -10,15 +10,11 @@ const Hero = () => {
         className="w-96 md:w-[480px] lg:w-[850px] h-auto"
       />
       <h3 className="font-black text-3xl md:text-5xl lg:text-6xl text-[#4B2828] italic font-sans">
-        June 9
+        June 8
       </h3>
       <div className="h-12" />
       <p className="text-center text-base md:text-base lg:text-lg px-1">
-        Join us for the Watch Party Around India in Ahmedabad, Bengaluru,
-        Chennai, Delhi, Hyderabad, Kozhikode, Mumbai and Surat! Watch the
-        unveiling of the latest Apple platforms, technologies, and tools
-        together and discuss. Engage and connect with the developer community of
-        India.
+        Join us for the Watch Party Around India in Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kozhikode, Mumbai, Pune, and Surat! Watch the unveiling of the latest software, technologies, &amp; tools, and gather around to connect with the developer community of India.
       </p>
       <p className="font-bold text-sm md:text-base lg:text-lg">
         Registration is free (Both offline and online).

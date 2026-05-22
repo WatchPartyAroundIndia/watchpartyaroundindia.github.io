@@ -6,10 +6,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 1, label: "About", section: "/" },
-    { id: 2, label: "Sponsors", section: "/#sponsors" },
-    { id: 3, label: "Speakers", section: "/#speakers" },
-    { id: 4, label: "2024", section: "/2024" },
+    { id: 1, label: "About", link: "/" },
+    { id: 2, label: "Sponsors", link: "/#sponsors" },
+    { id: 3, label: "2025", link: "/2025" },
+    { id: 4, label: "2024", link: "/2024" },
   ];
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={wwdcLogo}
-            alt="WWDC 2025 logo"
+            alt="WWDC 2026 logo"
             className="w-24 h-9 md:w-32 md:h-11 lg:w-[148px] lg:h-[54px]"
           />
         </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li key={item.id}>
               <Link
-                to={item.section}
+                to={item.link}
                 className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
               >
                 {item.label}

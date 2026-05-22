@@ -173,7 +173,7 @@ const CityEventPage = () => {
                 >
                   Register on Luma
                 </a>
-
+                {event.sponsorName != null && event.sponsorLogo != null && (
                 <div className="mt-6 border-t border-black/10 pt-5">
                   <p className="text-sm font-bold text-black/45 uppercase">
                     Venue partner
@@ -187,6 +187,7 @@ const CityEventPage = () => {
                     <p className="font-bold">{event.sponsorName}</p>
                   </div>
                 </div>
+                )}
               </div>
             </div>
           </aside>
