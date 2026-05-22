@@ -2,6 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function (location) {
+        if (location.search[1] === "/") {
+          var decoded = location.search
+            .slice(1)
+            .split("&")
+            .map(function (segment) {
+              return segment.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          window.history.replaceState(
+            null,
+            null,
+            location.pathname.slice(0, -1) + decoded + location.hash
+          );
+        }
+      })(window.location);
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>WWDC25 - Watch Party Around India</title>

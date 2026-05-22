@@ -6,11 +6,11 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 1, label: "About", section: "#" },
-    { id: 2, label: "Sponsors", section: "#sponsors" },
-    { id: 3, label: "Speakers", section: "#speakers" },
+    { id: 1, label: "About", section: "/" },
+    { id: 2, label: "Sponsors", section: "/#sponsors" },
+    { id: 3, label: "Speakers", section: "/#speakers" },
     { id: 4, label: "2025", link: "/2025" },
-    { id: 5, label: "2024", link: "/#2024" },
+    { id: 5, label: "2024", link: "/2024" },
   ];
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="relative w-full font-prompt">
       <div className="flex items-center w-full px-2 md:px-4 lg:px-8 py-10">
-        <Link to="#">
+        <Link to="/">
           <img
             src={wwdcLogo}
             alt="WWDC 2025 logo"
@@ -41,26 +41,17 @@ const Navbar = () => {
         <ul className="items-center justify-end flex-1 space-x-8 hidden md:flex mr-8">
           {navItems.map((item) => (
             <li key={item.id}>
-              {item.section ? (
-                <Link
-                  to={item.section}
-                  className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a
-                  href={item.link}
-                  className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
-                >
-                  {item.label}
-                </a>
-              )}
+              <Link
+                to={item.section}
+                className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
+              >
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>
         <Link
-          to="#register"
+          to="/#register"
           className="ml-auto md:ml-0 text-lg md:text-xl lg:text-2xl text-white bg-[#4884FF] font-medium px-4 md:px-6 lg:px-8 py-1 md:py-1.5 lg:py-2 border-2 border-[#0B2131] hidden md:block hover:bg-[#366fd1] transition-colors duration-200 text-center"
         >
           Register
@@ -101,32 +92,22 @@ const Navbar = () => {
       >
         <img src={wwdcLogo} alt="WWDC 2025 logo" className="w-32 h-12" />
         {navItems.map((item) =>
-          item.section ? (
-            <Link
-              key={item.id}
-              to={item.section}
-              className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </Link>
-          ) : (
-            <a
-              key={item.id}
-              href={item.link}
-              className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
-              onClick={() => setMenuOpen(false)}
-            >
-              {item.label}
-            </a>
-          )
+          <Link
+            key={item.id}
+            to={item.section}
+            className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
+            onClick={() => setMenuOpen(false)}
+          >
+            {item.label}
+          </Link>
         )}
-        <button
-          type="button"
+        <Link
+          to="/#register"
+          onClick={() => setMenuOpen(false)}
           className="mt-4 text-xl text-white bg-[#4884FF] font-medium px-6 py-2 border-2 border-[#0B2131] hover:bg-[#366fd1] transition-colors duration-200"
         >
           Register
-        </button>
+        </Link>
       </div>
     </nav>
   );
