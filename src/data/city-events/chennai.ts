@@ -1,5 +1,5 @@
 import swiftChennaiLogo from "../../assets/2025/organisers/swift-chennai.png";
-import kissflowLogo from "../../assets/2025/sponsors/kissflow.png";
+import sedinLogo from "../../assets/2026/sponsors/sedin.png";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -9,39 +9,39 @@ export const chennaiEvent: CityEvent = {
   aliases: [],
   city: "Chennai",
   chapterName: "Swift Chennai",
-  date: "June 9, 2025",
+  date: "June 8, 2026",
   time: "8:00 PM",
-  startDate: "2025-06-09T20:00:00+05:30",
-  endDate: "2025-06-10T00:30:00+05:30",
+  startDate: "2026-06-09T20:00:00+05:30",
+  endDate: "2026-06-10T00:30:00+05:30",
   logo: swiftChennaiLogo,
-  venue: "Kissflow, No. 5, Tower-B, 10th Floor",
-  address: "Kissflow, No. 5, Tower-B, 10th Floor, Perungudi, Chennai",
+  venue: "Sedin Technologies",
+  address: "Sedin Technologies, A1/1, 49th Street, 7th Ave, Ashok Nagar, Chennai, Tamil Nadu 600083",
   structuredAddress: {
-    streetAddress: "Kissflow, No. 5, Tower-B, 10th Floor, Perungudi",
+    streetAddress: "Sedin Technologies, A1/1, 49th Street, 7th Ave, Ashok Nagar",
     addressLocality: "Chennai",
     addressRegion: "Tamil Nadu",
     addressCountry: "IN",
   },
-  location: "Perungudi",
-  lumaUrl: "https://lu.ma/9engu1qy",
+  location: "Ashok Nagar",
+  lumaUrl: "https://luma.com/q86j02km",
   mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=Kissflow%20Tower-B%2010th%20Floor%20Perungudi%20Chennai",
-  sponsorName: "Kissflow",
-  sponsorLogo: kissflowLogo,
+    "https://maps.app.goo.gl/Vo6fM33zLCqecRh56",
+  sponsorName: "Sedin Technologies",
+  sponsorLogo: sedinLogo,
   gradient: {
     from: "#A8D7FF",
     to: "#6171FF",
   },
-  description: makeDescription("Swift Chennai", "Kissflow", "Chennai"),
+  description: makeDescription("Swift Chennai", "Sedin Technologies", "Chennai"),
   highlights: [
     "Hosted with Swift Chennai",
-    "Venue support from Kissflow",
+    "Venue support from Sedin Technologies",
     "Free registration through Luma",
   ],
   agenda: [
     {
       time: "8:00 PM",
-      title: "Arrival at Kissflow",
+      title: "Arrival at Sedin Technologies",
       description:
         "Check in, meet the Swift Chennai organizers, and get settled for the evening.",
     },
