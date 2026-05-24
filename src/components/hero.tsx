@@ -6,7 +6,7 @@ const Hero = () => {
     <main className="flex flex-col items-center justify-center max-w-2xl mx-auto">
       <img
         src={wwdcLogo}
-        alt="wwdc 2025 watch party around india"
+        alt="wwdc 2026 watch party around india"
         className="w-96 md:w-[480px] lg:w-[850px] h-auto"
       />
       <h3 className="font-black text-3xl md:text-5xl lg:text-6xl text-[#4B2828] italic font-sans">

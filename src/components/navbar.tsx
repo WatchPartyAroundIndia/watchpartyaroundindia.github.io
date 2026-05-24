@@ -92,7 +92,7 @@ const Navbar = () => {
           menuOpen ? "translate-x-0" : "translate-x-full"
         } flex flex-col items-center pt-12 gap-8 px-6`}
       >
-        <img src={wwdcLogo} alt="WWDC 2025 logo" className="w-32 h-12" />
+        <img src={wwdcLogo} alt="WWDC 2026 logo" className="w-32 h-12" />
         {navItems.map((item) =>
           <Link
             key={item.id}
