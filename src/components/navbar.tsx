@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import wwdcLogo from "../assets/2025/logo.svg";
+import wwdcLogo from "../assets/2026/logo.svg";
+import wwdcLogo2x from "../assets/2026/logo.png";
+const logoSrcSet = `${wwdcLogo} 1x, ${wwdcLogo2x} 2x`;
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,6 +35,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={wwdcLogo}
+            srcset={logoSrcSet}
             alt="WWDC 2026 logo"
             className="w-24 h-9 md:w-32 md:h-11 lg:w-[148px] lg:h-[54px]"
           />

@@ -1,5 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
-import wwdcLogo from "../assets/2025/hero.svg";
+import wwdcLogo from "../assets/2026/hero.svg";
 
 const Hero = () => {
   return (
