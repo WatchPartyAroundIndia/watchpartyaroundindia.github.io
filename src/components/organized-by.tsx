@@ -7,6 +7,7 @@ import swiftKozhikodeLogo from "../assets/organisers/swift-kozhikode.svg";
 import swiftMumbaiLogo from "../assets/organisers/swift-mumbai.png";
 import swiftSuratLogo from "../assets/organisers/swift-surat.jpeg";
 import swiftPuneLogo from "../assets/organisers/swift-pune.png";
+import swiftNagpurLogo from "../assets/organisers/swift-nagpur.jpeg";
 
 const OrganizedBy = () => {
   const organizedChapters = [
@@ -55,6 +56,11 @@ const OrganizedBy = () => {
       name: "Swift Pune",
       logo: swiftPuneLogo,
     },
+    {
+      id: 11,
+      name: "Swift Nagpur",
+      logo: swiftNagpurLogo
+    }
   ];
 
   return (

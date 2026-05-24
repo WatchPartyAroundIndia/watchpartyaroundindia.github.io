@@ -14,7 +14,7 @@ const Hero = () => {
       </h3>
       <div className="h-12" />
       <p className="text-center text-base md:text-base lg:text-lg px-1">
-        Join us for the Watch Party Around India in Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kozhikode, Mumbai, Pune, and Surat! Watch the unveiling of the latest software, technologies, &amp; tools, and gather around to connect with the developer community of India.
+        Join us for the Watch Party Around India in Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kozhikode, Mumbai, Nagpur, Pune, and Surat! Watch the unveiling of the latest software, technologies, &amp; tools, and gather around to connect with the developer community of India.
       </p>
       <p className="font-bold text-sm md:text-base lg:text-lg">
         Registration is free (Both offline and online).
