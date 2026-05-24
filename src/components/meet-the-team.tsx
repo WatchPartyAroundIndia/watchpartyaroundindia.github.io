@@ -18,6 +18,7 @@ import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
 import akshayNjarangal from "../assets/2025/team/Akshay Njarangal.jpeg";
 import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
 import nikhilNigade from "../assets/2026/team/NikhilN.jpg";
+import rimeshJotaniya from "../assets/2026/team/RimeshJ.jpeg";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -159,6 +160,13 @@ const MeetTheTeam = () => {
       socialLink: "https://www.linkedin.com/in/dezinezync/",
       name: "Nikhil Nigade",
       memojiLogo: nikhilNigade,
+      backgroundColour: "#f1ae5c",
+    },
+    {
+      id: 20,
+      socialLink: "https://www.linkedin.com/in/recursiveswift//",
+      name: "Rimesh Jotaniya",
+      memojiLogo: rimeshJotaniya,
       backgroundColour: "#f1ae5c",
     },
   ];
