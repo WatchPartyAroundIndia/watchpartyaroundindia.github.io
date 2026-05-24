@@ -14,7 +14,7 @@ const EventStructuredData = ({ event }: EventStructuredDataProps) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Event",
-    name: `WWDC25 Watch Party Around India: ${event.city}`,
+    name: `WWDC26 Watch Party Around India: ${event.city}`,
     description: event.description,
     startDate: event.startDate,
     endDate: event.endDate,
