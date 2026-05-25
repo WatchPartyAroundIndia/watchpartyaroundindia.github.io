@@ -1,4 +1,29 @@
-import { Tweet } from "react-tweet";
+import {
+  EmbeddedTweet,
+  TweetNotFound,
+  TweetSkeleton,
+  useTweet,
+} from "react-tweet";
+
+// Twitter's syndication API now omits empty entity arrays (hashtags/urls/
+// user_mentions/symbols), which crashes react-tweet@3.3.0's enrichTweet.
+// Default them back to [] before handing the data to EmbeddedTweet.
+const SafeTweet = ({ id }: { id: string }) => {
+  const { data, error, isLoading } = useTweet(id);
+  if (isLoading) return <TweetSkeleton />;
+  if (error || !data) return <TweetNotFound error={error} />;
+  const tweet = {
+    ...data,
+    entities: {
+      ...data.entities,
+      hashtags: data.entities.hashtags ?? [],
+      urls: data.entities.urls ?? [],
+      user_mentions: data.entities.user_mentions ?? [],
+      symbols: data.entities.symbols ?? [],
+    },
+  };
+  return <EmbeddedTweet tweet={tweet} />;
+};
 
 const Testimonials = () => {
   const tweets = [
@@ -7,6 +32,7 @@ const Testimonials = () => {
     "1800203162286182516",
     "1800240372443943400",
     "1808320576135586092",
+    "1932356043746795868",
   ];
 
   return (
@@ -24,7 +50,7 @@ const Testimonials = () => {
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 w-full max-w-7xl mt-8 mx-auto px-3 space-y-4">
         {tweets.map((tweet) => (
           <div key={tweet} className="light break-inside-avoid mb-4 px-1">
-            <Tweet id={tweet} />
+            <SafeTweet id={tweet} />
           </div>
         ))}
       </div>

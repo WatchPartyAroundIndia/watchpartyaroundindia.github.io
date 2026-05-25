@@ -1,5 +1,5 @@
 import swiftMumbaiLogo from "../../assets/2025/organisers/swift-mumbai.png";
-import bookMyShowLogo from "../../assets/2025/sponsors/bookmyshow.png";
+import atlasLogo from "../../assets/2025/sponsors/atlas.svg";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -9,33 +9,33 @@ export const mumbaiEvent: CityEvent = {
   aliases: [],
   city: "Mumbai",
   chapterName: "Swift Mumbai",
-  date: "June 9, 2025",
+  date: "June 8, 2026",
   time: "7:30 PM",
-  startDate: "2025-06-09T19:30:00+05:30",
-  endDate: "2025-06-10T00:30:00+05:30",
+  startDate: "2026-06-08T19:30:00+05:30",
+  endDate: "2026-06-08T00:30:00+05:30",
   logo: swiftMumbaiLogo,
-  venue: "BookMyShow Office, Empressa 14",
-  address: "BookMyShow Office, Empressa 14, Andheri East, Mumbai",
+  venue: "Atlas University",
+  address: "Atlas University, BKC, Mumbai",
   structuredAddress: {
-    streetAddress: "BookMyShow Office, Empressa 14, Andheri East",
+    streetAddress: "Atlas University, Ambedkar Nagar, Kurla West",
     addressLocality: "Mumbai",
     addressRegion: "Maharashtra",
     addressCountry: "IN",
   },
-  location: "Andheri East",
-  lumaUrl: "https://lu.ma/cbn8zy6m",
+  location: "BKC",
+  lumaUrl: "https://luma.com/ct1h2pul",
   mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=BookMyShow%20Office%20Empressa%2014%20Andheri%20East%20Mumbai",
-  sponsorName: "BookMyShow",
-  sponsorLogo: bookMyShowLogo,
+    "https://maps.app.goo.gl/5w57gH3UMq87f2Hu7",
+  sponsorName: "Atlas University",
+  sponsorLogo: atlasLogo,
   gradient: {
     from: "#A8D7FF",
     to: "#6171FF",
   },
-  description: makeDescription("Swift Mumbai", "BookMyShow Office", "Mumbai"),
+  description: makeDescription("Swift Mumbai", "Atlas University, BKC", "Mumbai"),
   highlights: [
     "Hosted with Swift Mumbai",
-    "Venue support from BookMyShow",
+    "Venue support from Atlas University",
     "Free registration through Luma",
   ],
   agenda: [
@@ -55,7 +55,7 @@ export const mumbaiEvent: CityEvent = {
       time: "10:30 PM",
       title: "WWDC keynote watch",
       description:
-        "Watch the keynote live from the BookMyShow office with the Mumbai community.",
+        "Watch the keynote live from Atlas University with the Mumbai community.",
     },
     {
       time: "After keynote",
