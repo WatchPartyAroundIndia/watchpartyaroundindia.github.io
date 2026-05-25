@@ -17,6 +17,7 @@ import rangaReddy from "../assets/2025/team/Ranga Reddy.png";
 import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
 import akshayNjarangal from "../assets/2025/team/Akshay Njarangal.jpeg";
 import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
+import yogeshSingh from "../assets/2025/team/Yogesh Singh.jpg";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -152,6 +153,13 @@ const MeetTheTeam = () => {
       name: "Akshay Njarangal",
       memojiLogo: akshayNjarangal,
       backgroundColour: "#f0f0f0",
+    },
+    {
+      id: 20,
+      socialLink: "https://www.linkedin.com/in/yogeshsingh2810/",
+      name: "Yogesh Singh",
+      memojiLogo: yogeshSingh,
+      backgroundColour: "#BEFF93",
     },
   ];
 

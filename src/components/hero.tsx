@@ -1,12 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
-import wwdcLogo from "../assets/2025/hero.svg";
+import wwdcLogo from "../assets/2026/hero.svg";
 
 const Hero = () => {
   return (
     <main className="flex flex-col items-center justify-center max-w-2xl mx-auto">
       <img
         src={wwdcLogo}
-        alt="wwdc 2025 watch party around india"
+        alt="wwdc 2026 watch party around india"
         className="w-96 md:w-[480px] lg:w-[850px] h-auto"
       />
       <h3 className="font-black text-3xl md:text-5xl lg:text-6xl text-[#4B2828] italic font-sans">
@@ -14,7 +14,7 @@ const Hero = () => {
       </h3>
       <div className="h-12" />
       <p className="text-center text-base md:text-base lg:text-lg px-1">
-        Join us for the Watch Party Around India in Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kozhikode, Mumbai, Pune, and Surat! Watch the unveiling of the latest software, technologies, &amp; tools, and gather around to connect with the developer community of India.
+        Join us for the Watch Party Around India in Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kozhikode, Mumbai, Nagpur, Pune, and Surat! Watch the unveiling of the latest software, technologies, &amp; tools, and gather around to connect with the developer community of India.
       </p>
       <p className="font-bold text-sm md:text-base lg:text-lg">
         Registration is free (Both offline and online).

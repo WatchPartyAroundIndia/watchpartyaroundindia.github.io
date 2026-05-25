@@ -1,32 +1,23 @@
 import { HashLink as Link } from "react-router-hash-link";
-import teamMember1 from "../assets/2025/team/Adithya Balaji.jpeg";
 import teamMember2 from "../assets/2025/team/Akshay Pakanati.png";
-import teamMember3 from "../assets/2025/team/Bhavin Vaghela.jpg";
 import teamMember4 from "../assets/2025/team/Bhumika Patel.jpeg";
 import teamMember5 from "../assets/2025/team/Gokul B.jpeg";
-import teamMember6 from "../assets/2025/team/Kajal Sheth.png";
 import teamMember7 from "../assets/2025/team/Nayyan Mujadiya.jpeg";
 import teamMember8 from "../assets/2025/team/Nishant Desai.png";
 import teamMember9 from "../assets/2025/team/Raghav Sethi.png";
 import teamMember10 from "../assets/2025/team/Rushit Rakhasiya.png";
 import teamMember11 from "../assets/2026/team/NikhilN.jpg";
+import teamMember12 from "../assets/2026/team/RimeshJ.jpeg";
+import teamMember13 from "../assets/2026/team/VedangK.png";
+import teamMember14 from "../assets/2026/team/YogeshS.jpg";
+import teamMember15 from "../assets/2026/team/AkankshaS.jpeg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
     {
-      id: 1,
-      name: "Adithya Balaji",
-      image: teamMember1,
-    },
-    {
       id: 2,
       name: "Akshay Pakanati",
       image: teamMember2,
-    },
-    {
-      id: 3,
-      name: "Bhavin Vaghela",
-      image: teamMember3,
     },
     {
       id: 4,
@@ -37,11 +28,6 @@ const ConnectWithTeam = () => {
       id: 5,
       name: "Gokul B",
       image: teamMember5,
-    },
-    {
-      id: 6,
-      name: "Kajal Sheth",
-      image: teamMember6,
     },
     {
       id: 7,
@@ -67,6 +53,26 @@ const ConnectWithTeam = () => {
       id: 11,
       name: "Nikhil Nigade",
       image: teamMember11,
+    },
+    {
+      id: 12,
+      name: "Rimesh Jotaniya",
+      image: teamMember12,
+    },
+    {
+      id: 13,
+      name: "Vedang Kulkarni",
+      image: teamMember13,
+    },
+    {
+      id: 14,
+      name: "Yogesh Singh",
+      image: teamMember14,
+    },
+    {
+      id: 15,
+      name: "Akanksha Sharma",
+      image: teamMember15,
     },
   ];
 

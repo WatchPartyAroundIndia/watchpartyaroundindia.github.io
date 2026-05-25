@@ -1,4 +1,4 @@
-import swiftMumbaiLogo from "../../assets/organisers/swift-pune.png";
+import swiftPuneLogo from "../../assets/organisers/swift-pune.png";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -12,7 +12,7 @@ export const puneEvent: CityEvent = {
   time: "8:30 PM",
   startDate: "2025-06-08T20:30:00+05:30",
   endDate: "2025-06-09T00:30:00+05:30",
-  logo: swiftMumbaiLogo,
+  logo: swiftPuneLogo,
   venue: "The Daily All Day",
   address: "Lane No. 7, Opposite SBI Bank, Ashok Chakra Society, Meera Nagar, Koregaon Park",
   structuredAddress: {
