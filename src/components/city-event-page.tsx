@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import wwdcLogo from "../assets/2025/logo.svg";
+import wwdcLogo from "../assets/2026/logo.svg";
 import locationPinLogo from "../assets/2025/location-pin.svg";
 import { getCityEventBySlug } from "../data/city-events";
 import type { CityEvent } from "../data/city-events";
@@ -30,7 +30,7 @@ const CityEventPage = () => {
         <Link to="/" aria-label="Watch Party Around India home">
           <img
             src={wwdcLogo}
-            alt="WWDC 2025 logo"
+            alt="WWDC 2026 logo"
             className="w-24 h-9 md:w-32 md:h-11 object-contain"
           />
         </Link>
@@ -57,7 +57,7 @@ const CityEventPage = () => {
               Watch Party Around India
             </p>
             <h1 className="font-black text-5xl md:text-7xl lg:text-7xl leading-none text-[#1F1F29] break-words">
-              WWDC25 in {event.city}
+              WWDC26 in {event.city}
             </h1>
             <p className="mt-6 max-w-2xl text-lg md:text-xl text-black/70 break-words">
               {event.description}
