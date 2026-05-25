@@ -1,4 +1,4 @@
-import { Tweet } from "react-tweet";
+import SafeTweet from "./safe-tweet";
 
 const Testimonials = () => {
   const tweets = [
@@ -24,7 +24,7 @@ const Testimonials = () => {
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 w-full max-w-7xl mt-8 mx-auto px-3 space-y-4">
         {tweets.map((tweet) => (
           <div key={tweet} className="light break-inside-avoid mb-4 px-1">
-            <Tweet id={tweet} />
+            <SafeTweet id={tweet} />
           </div>
         ))}
       </div>
