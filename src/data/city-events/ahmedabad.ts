@@ -1,5 +1,4 @@
-import swiftAhmedabadLogo from "../../assets/2025/organisers/swift-ahmedabad.svg";
-import sevenSpanLogo from "../../assets/2025/sponsors/7Span.svg";
+import swiftAhmedabadLogo from "../../assets/organisers/swift-ahmedabad.png";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -9,59 +8,77 @@ export const ahmedabadEvent: CityEvent = {
   aliases: [],
   city: "Ahmedabad",
   chapterName: "Swift Ahmedabad",
-  date: "June 9, 2025",
-  time: "9:00 PM",
-  startDate: "2025-06-09T21:00:00+05:30",
-  endDate: "2025-06-10T00:30:00+05:30",
+  date: "June 8, 2026",
+  time: "8:30 PM",
+  startDate: "2026-06-08T20:30:00+05:30",
+  endDate: "2026-06-09T01:00:00+05:30",
   logo: swiftAhmedabadLogo,
-  venue: "7Span, 201, Isquare Corporate Park",
-  address: "7Span, 201, Isquare Corporate Park, Sola, Ahmedabad",
+
+  venue: "Pixster Studio",
+  address: "13th Floor, Solitaire Connect, Sarkhej - Gandhinagar Hwy, near BMW Gallop Motors, Makarba, Ahmedabad, Gujarat 382210, India",
   structuredAddress: {
-    streetAddress: "7Span, 201, Isquare Corporate Park, Sola",
+    streetAddress: "13th Floor, Solitaire Connect, Sarkhej - Gandhinagar Hwy, near BMW Gallop Motors, Makarba",
     addressLocality: "Ahmedabad",
     addressRegion: "Gujarat",
     addressCountry: "IN",
   },
-  location: "Sola",
-  lumaUrl: "https://lu.ma/kne1yfpm",
+
+  location: "Solitaire Connect, Makarba",
+
+  lumaUrl: "https://luma.com/b08evqjf",
+
   mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=7Span%20Isquare%20Corporate%20Park%20Sola%20Ahmedabad",
-  sponsorName: "7Span",
-  sponsorLogo: sevenSpanLogo,
+    "https://www.google.com/maps/search/?api=1&query=Pixster+Studio+Ahmedabad",
+
   gradient: {
     from: "#DE9CFF",
     to: "#AF52DE",
   },
-  description: makeDescription("Swift Ahmedabad", "7Span", "Ahmedabad"),
+
+  description: makeDescription("Swift Ahmedabad", "Pixster Studio", "Ahmedabad"),
+
   highlights: [
     "Hosted with Swift Ahmedabad",
-    "Venue support from 7Span",
+    "Venue support from Pixster Studio",
     "Free registration through Luma",
   ],
+
   agenda: [
     {
-      time: "9:00 PM",
-      title: "Doors open at 7Span",
+      time: "8:30 PM",
+      title: "Registration",
       description:
-        "Check in, meet local developers, and settle in before the keynote starts.",
+        "Check in and connect with the Swift Ahmedabad community.",
+    },
+    {
+      time: "9:00 PM",
+      title: "Lightning Talk by Pixster Studio",
+      description:
+        "A short talk from the team at Pixster Studio on their work and insights.",
+    },
+    {
+      time: "9:15 PM",
+      title: "Community Recap & Updates",
+      description:
+        "Catch up on what Swift Ahmedabad has been up to and what's coming next.",
     },
     {
       time: "9:30 PM",
-      title: "Ahmedabad community welcome",
+      title: "Quiz • Interaction • Product Showcase",
       description:
-        "A short organizer welcome and community catch-up before the livestream.",
+        "Engage in a fun quiz, interact with fellow developers, and explore product demonstrations.",
+    },
+    {
+      time: "10:00 PM",
+      title: "Refreshments Break & Networking",
+      description:
+        "Grab refreshments, network with the community, and recharge before the keynote.",
     },
     {
       time: "10:30 PM",
-      title: "WWDC keynote watch",
+      title: "WWDC Keynote Streaming",
       description:
-        "Watch Apple's keynote live with Swift Ahmedabad and fellow Apple platform developers.",
-    },
-    {
-      time: "After keynote",
-      title: "Post-keynote discussion",
-      description:
-        "Break down the announcements and share thoughts on new platform updates.",
+        "Watch the WWDC 2026 keynote live together with Swift Ahmedabad.",
     },
   ],
 };
