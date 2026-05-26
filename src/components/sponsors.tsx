@@ -1,6 +1,5 @@
 import { FC } from "react";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
-import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
 import atlasLogo from "../assets/2025/sponsors/atlas.svg";
 import ixigoLogo from "../assets/2025/sponsors/ixigo.png";
 import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
