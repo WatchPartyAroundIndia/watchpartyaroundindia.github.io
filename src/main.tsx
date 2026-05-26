@@ -1,20 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 
 import App from "./App.tsx";
+import App2025 from "./2025/App.tsx";
 import App2024 from "./2024/App.tsx";
+import CityEventPage from "./components/city-event-page.tsx";
 
 import "./index.css";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
   },
   {
+    path: "/2025",
+    element: <App2025 />,
+  },
+  {
     path: "/2024",
     element: <App2024 />,
+  },
+  {
+    path: "/:citySlug",
+    element: <CityEventPage />,
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" replace />,
   },
 ]);
 

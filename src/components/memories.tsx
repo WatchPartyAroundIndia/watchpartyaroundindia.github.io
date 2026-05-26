@@ -1,4 +1,5 @@
 import memoriesArrowLogo from "../assets/2025/memories-arrow.svg";
+import memories00 from "../assets/2025/memories/00.jpeg";
 import memories01 from "../assets/2025/memories/01.jpeg";
 import memories02 from "../assets/2025/memories/02.jpeg";
 import memories03 from "../assets/2025/memories/03.jpeg";
@@ -33,6 +34,10 @@ import memories31 from "../assets/2025/memories/31.jpeg";
 
 const Memories = () => {
   const imagesRow1 = [
+    {
+      id: 0,
+      imageSrc: memories00,
+    },
     {
       id: 1,
       imageSrc: memories01,
@@ -166,7 +171,7 @@ const Memories = () => {
     <div className="flex flex-col items-center justify-center">
       <div className="h-24" />
       <h2 className="font-coveredByYourGrace text-[#BDA6A6] text-4xl md:text-5xl text-center">
-        Memories of 2024
+        Memories of 2025
       </h2>
       <img
         loading="lazy"

@@ -13,15 +13,14 @@ const Footer = () => {
       <p>We're counting down the days with Swift communities across India</p>
       <div className="h-8" />
       <p className="max-w-sm">
-        Get your devices charged, your minds inspired, and your curiosity ready.
-        WWDC 2025 is almost here and we can't wait to experience it with you
+        Get your devices charged, your minds inspired, and your curiosity ready. WWDC 2026 is almost here and we can't wait to experience it with you
       </p>
       <div className="h-24" />
       <img src={heartLogo} alt="Made with love" className="w-8 h-8" />
       <h3 className="font-bold text-black/50">
         Made by developers for developers
       </h3>
-      <h4 className="font-bold text-black/30">Developed in India in 2025</h4>
+      <h4 className="font-bold text-black/30">Developed in India from 2024—2026</h4>
       <p className="text-xs text-black/40 mt-2">
         Designed by&nbsp;
         <span className="hover:text-blue-500 transition-colors hover:underline">
