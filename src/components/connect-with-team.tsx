@@ -11,6 +11,7 @@ import teamMember12 from "../assets/2026/team/RimeshJ.jpeg";
 import teamMember13 from "../assets/2026/team/VedangK.png";
 import teamMember14 from "../assets/2026/team/YogeshS.jpg";
 import teamMember15 from "../assets/2026/team/AkankshaS.jpeg";
+import teamMember16 from "../assets/2026/team/RatneshJ.jpeg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
@@ -73,6 +74,11 @@ const ConnectWithTeam = () => {
       id: 15,
       name: "Akanksha Sharma",
       image: teamMember15,
+    },
+    {
+      id: 16,
+      name: "Ratnesh Jain",
+      image: teamMember16,
     },
   ];
 

@@ -14,6 +14,7 @@ import nikhilNigade from "../assets/2026/team/NikhilN.jpg";
 import rimeshJotaniya from "../assets/2026/team/RimeshJ.jpeg";
 import vedangKulkarni from "../assets/2026/team/VedangK.png";
 import yogeshSingh from "../assets/2026/team/YogeshS.jpg";
+import ratneshJain from "../assets/2026/team/RatneshJ.jpeg";
 
 const MeetTheTeam = () => {
   const teamMembers = [
@@ -128,6 +129,13 @@ const MeetTheTeam = () => {
       name: "Yogesh Singh",
       memojiLogo: yogeshSingh,
       backgroundColour: "#BEFF93",
+    },
+    {
+      id: 25,
+      socialLink: "https://www.linkedin.com/in/ratnesh-jain-7a2270146/",
+      name: "Ratnesh Jain",
+      memojiLogo: ratneshJain,
+      backgroundColour: "#D4E7FF",
     },
   ];
 

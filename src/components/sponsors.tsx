@@ -9,6 +9,7 @@ import sedinLogo from "../assets/2026/sponsors/sedin.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import tuistLogo from "../assets/2025/sponsors/tuist.jpeg";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
+import pixsterStudioLogo from "../assets/2026/sponsors/pixterStudio.jpeg";
 
 const Sponsors = () => {
   const venueSponsors = [
@@ -38,11 +39,11 @@ const Sponsors = () => {
     },
     {
       sponsorId: 4,
-      name: "7Span",
-      description: "Your Growth Is Our Sword!",
-      logo: sevenSpanlogo,
+      name: "Pixster Studio",
+      description: "Crafting Innovative Apps with Passion",
+      logo: pixsterStudioLogo,
       contact: "Ahmedabad",
-      website: "https://7span.com/",
+      website: "https://www.pixsterstudio.com",
     },
     {
       sponsorId: 5,

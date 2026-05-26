@@ -1,4 +1,4 @@
-import swiftAhmedabadLogo from "../assets/organisers/swift-ahmedabad.svg";
+import swiftAhmedabadLogo from "../assets/organisers/swift-ahmedabad.png";
 import swiftBengaluruLogo from "../assets/organisers/swift-bengaluru.png";
 import swiftChennaiLogo from "../assets/organisers/swift-chennai.png";
 import swiftDelhiLogo from "../assets/organisers/swift-delhi.jpeg";
