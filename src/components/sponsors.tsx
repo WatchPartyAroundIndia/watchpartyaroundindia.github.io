@@ -5,7 +5,7 @@ import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
 import ixigoLogo from "../assets/2025/sponsors/ixigo.png";
 import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
 import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
-import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
+import sedinLogo from "../assets/2026/sponsors/sedin.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import tuistLogo from "../assets/2025/sponsors/tuist.jpeg";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
@@ -14,11 +14,11 @@ const Sponsors = () => {
   const venueSponsors = [
     {
       sponsorId: 1,
-      name: "Kissflow",
-      description: "'People-First' people",
-      logo: kissflowLogo,
+      name: "Sedin Technologies",
+      description: "Better the best",
+      logo: sedinLogo,
       contact: "Chennai",
-      website: "https://kissflow.com/",
+      website: "https://sedintechnologies.com",
     },
     {
       sponsorId: 2,
