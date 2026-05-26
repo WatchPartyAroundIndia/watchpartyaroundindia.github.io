@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             src={wwdcLogo}
-            srcset={logoSrcSet}
+            srcSet={logoSrcSet}
             alt="WWDC 2026 logo"
             className="w-24 h-9 md:w-32 md:h-11 lg:w-[148px] lg:h-[54px]"
           />
@@ -96,7 +96,7 @@ const Navbar = () => {
         {navItems.map((item) =>
           <Link
             key={item.id}
-            to={item.section}
+            to={item.link}
             className="hover:underline hover:decoration-[#FFC9F0] hover:underline-offset-1 hover:[text-decoration-thickness:5px] cursor-pointer text-xl lg:text-2xl"
             onClick={() => setMenuOpen(false)}
           >

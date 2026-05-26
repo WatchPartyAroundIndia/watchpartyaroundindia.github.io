@@ -17,6 +17,7 @@ export const nagpurEvent: CityEvent = {
   venue: "Venue to be announced",
   address: "Nagpur, Maharashtra",
   structuredAddress: {
+    streetAddress: "",
     addressLocality: "Nagpur",
     addressRegion: "Maharashtra",
     addressCountry: "IN",
