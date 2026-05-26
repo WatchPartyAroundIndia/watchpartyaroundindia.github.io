@@ -3,7 +3,6 @@ import sponsorsRound from "../assets/2025/sponsors-round.svg";
 import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
 import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
 import ixigoLogo from "../assets/2025/sponsors/ixigo.png";
-import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
 import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
 import kissflowLogo from "../assets/2025/sponsors/kissflow.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
@@ -19,14 +18,6 @@ const Sponsors = () => {
       logo: kissflowLogo,
       contact: "Chennai",
       website: "https://kissflow.com/",
-    },
-    {
-      sponsorId: 2,
-      name: "JBCodeapp",
-      description: "Your Trusted Development Partner",
-      logo: jbcodeappLogo,
-      contact: "Surat",
-      website: "https://jbcodeapp.com/",
     },
     {
       sponsorId: 3,

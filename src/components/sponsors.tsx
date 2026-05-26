@@ -1,13 +1,11 @@
 import { FC } from "react";
 import sponsorsRound from "../assets/2025/sponsors-round.svg";
 import sevenSpanlogo from "../assets/2025/sponsors/7Span.svg";
-import bookMyShowLogo from "../assets/2025/sponsors/bookmyshow.png";
+import atlasLogo from "../assets/2025/sponsors/atlas.svg";
 import ixigoLogo from "../assets/2025/sponsors/ixigo.png";
-import jbcodeappLogo from "../assets/2025/sponsors/jbcodeapp.jpeg";
 import keralaStartupMissionLogo from "../assets/2025/sponsors/kerala-startup-mission.svg";
 import sedinLogo from "../assets/2026/sponsors/sedin.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
-import tuistLogo from "../assets/2025/sponsors/tuist.jpeg";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
 import pixsterStudioLogo from "../assets/2026/sponsors/pixterStudio.jpeg";
 
@@ -20,14 +18,6 @@ const Sponsors = () => {
       logo: sedinLogo,
       contact: "Chennai",
       website: "https://sedintechnologies.com",
-    },
-    {
-      sponsorId: 2,
-      name: "JBCodeapp",
-      description: "Your Trusted Development Partner",
-      logo: jbcodeappLogo,
-      contact: "Surat",
-      website: "https://jbcodeapp.com/",
     },
     {
       sponsorId: 3,
@@ -47,11 +37,11 @@ const Sponsors = () => {
     },
     {
       sponsorId: 5,
-      name: "BookMyShow",
-      description: "It All Starts Here",
-      logo: bookMyShowLogo,
+      name: "Atlas University",
+      description: "Higher education for changemakers",
+      logo: atlasLogo,
       contact: "Mumbai",
-      website: "https://in.bookmyshow.com/",
+      website: "",
     },
     {
       sponsorId: 6,
@@ -76,25 +66,6 @@ const Sponsors = () => {
       logo: draperStartUpHouseLogo,
       contact: "Hyderabad",
       website: "https://draperstartuphouse.com/hyderabad",
-    },
-  ];
-
-  const supportingSponsors = [
-    {
-      sponsorId: 1,
-      name: "Swiggy",
-      description: "No Order Too Small",
-      logo: swiggyLogo,
-      contact: "Bengaluru",
-      website: "https://www.swiggy.com/",
-    },
-    {
-      sponsorId: 2,
-      name: "Tuist",
-      description: "Build better apps faster",
-      logo: tuistLogo,
-      contact: "Delhi",
-      website: "https://tuist.dev/",
     },
   ];
 
@@ -123,10 +94,6 @@ const Sponsors = () => {
         <div className="h-12" />
         <div className="flex flex-col max-w-6xl mx-auto gap-8">
           <SponsorsSection title="Venue Sponsors" sponsors={venueSponsors} />
-          <SponsorsSection
-            title="Other Sponsors"
-            sponsors={supportingSponsors}
-          />
         </div>
         <div className="h-16" />
       </div>

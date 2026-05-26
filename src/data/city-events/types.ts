@@ -26,8 +26,8 @@ export interface CityEvent {
   location: string;
   lumaUrl: string;
   mapUrl: string;
-  sponsorName: string;
-  sponsorLogo: string;
+  sponsorName?: string;
+  sponsorLogo?: string;
   gradient: {
     from: string;
     to: string;

@@ -1,5 +1,4 @@
 import swiftSuratLogo from "../../assets/2025/organisers/swift-surat.jpeg";
-import jbcodeappLogo from "../../assets/2025/sponsors/jbcodeapp.jpeg";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -26,8 +25,6 @@ export const suratEvent: CityEvent = {
   lumaUrl: "https://lu.ma/j41uncut",
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=JBcodeapp%20Square%20Point%20M.V%20Circle%20Dahin%20Nagar%20Surat",
-  sponsorName: "JBCodeapp",
-  sponsorLogo: jbcodeappLogo,
   gradient: {
     from: "#BB5BF3",
     to: "#6900EE",
@@ -35,7 +32,6 @@ export const suratEvent: CityEvent = {
   description: makeDescription("Swift Surat", "JBcodeapp", "Surat"),
   highlights: [
     "Hosted with Swift Surat",
-    "Venue support from JBCodeapp",
     "Free registration through Luma",
   ],
   agenda: [
