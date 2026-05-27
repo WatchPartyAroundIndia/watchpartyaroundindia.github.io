@@ -7,10 +7,59 @@ import sedinLogo from "../assets/2026/sponsors/sedin.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
 import pixsterStudioLogo from "../assets/2026/sponsors/pixterStudio.jpeg";
+import optimumBrewLogo from "../assets/2026/sponsors/optimumBrew_logo.png";
 import thecrib from "../assets/2026/sponsors/thecrib.png";
 
 const Sponsors = () => {
   const venueSponsors = [
+    {
+      sponsorId: 5,
+      name: "Atlas University",
+      description: "Higher education for changemakers",
+      logo: atlasLogo,
+      contact: "Mumbai",
+      website: "",
+    },
+    {
+      sponsorId: 8,
+      name: "Draper StartUp House",
+      description: "The Global Home for Entrepreneurs",
+      logo: draperStartUpHouseLogo,
+      contact: "Hyderabad",
+      website: "https://draperstartuphouse.com/hyderabad",
+    },
+    {
+      sponsorId: 7,
+      name: "ixigo",
+      description: "Know & Go",
+      logo: ixigoLogo,
+      contact: "Delhi",
+      website: "https://www.ixigo.com/",
+    },
+    {
+      sponsorId: 6,
+      name: "Kerala Startup Mission",
+      description: "Learn, start, grow and scale",
+      logo: keralaStartupMissionLogo,
+      contact: "Kozhikode",
+      website: "https://startupmission.kerala.gov.in/",
+    },
+    {
+      sponsorId: 9,
+      name: "OptimumBrew Technology",
+      description: "",
+      logo: optimumBrewLogo,
+      contact: "Surat",
+      website: "https://optimumbrew.com/",
+    },
+    {
+      sponsorId: 4,
+      name: "Pixster Studio",
+      description: "Crafting Innovative Apps with Passion",
+      logo: pixsterStudioLogo,
+      contact: "Ahmedabad",
+      website: "https://www.pixsterstudio.com",
+    },
     {
       sponsorId: 1,
       name: "Sedin Technologies",
@@ -28,47 +77,7 @@ const Sponsors = () => {
       website: "https://www.swiggy.com/",
     },
     {
-      sponsorId: 4,
-      name: "Pixster Studio",
-      description: "Crafting Innovative Apps with Passion",
-      logo: pixsterStudioLogo,
-      contact: "Ahmedabad",
-      website: "https://www.pixsterstudio.com",
-    },
-    {
-      sponsorId: 5,
-      name: "Atlas University",
-      description: "Higher education for changemakers",
-      logo: atlasLogo,
-      contact: "Mumbai",
-      website: "",
-    },
-    {
-      sponsorId: 6,
-      name: "Kerala Startup Mission",
-      description: "Learn, start, grow and scale",
-      logo: keralaStartupMissionLogo,
-      contact: "Kozhikode",
-      website: "https://startupmission.kerala.gov.in/",
-    },
-    {
-      sponsorId: 7,
-      name: "ixigo",
-      description: "Know & Go",
-      logo: ixigoLogo,
-      contact: "Delhi",
-      website: "https://www.ixigo.com/",
-    },
-    {
-      sponsorId: 8,
-      name: "Draper StartUp House",
-      description: "The Global Home for Entrepreneurs",
-      logo: draperStartUpHouseLogo,
-      contact: "Hyderabad",
-      website: "https://draperstartuphouse.com/hyderabad",
-    },
-    {
-      sponsorId: 8,
+      sponsorId: 10,
       name: "The Crib",
       description: "Taqueria | Pickleball | Rock Climbing",
       logo: thecrib,
