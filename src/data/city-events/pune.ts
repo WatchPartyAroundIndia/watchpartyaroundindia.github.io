@@ -3,7 +3,7 @@ import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
 export const puneEvent: CityEvent = {
-  id: 2,
+  id: 9,
   slug: "pune",
   aliases: [],
   city: "Pune",

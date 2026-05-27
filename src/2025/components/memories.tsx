@@ -179,13 +179,12 @@ const Memories = () => {
         className="relative overflow-x-hidden h-full w-full"
       >
         <div className="flex w-max animate-scroll-left">
-          {[...imagesRow1, ...imagesRow1].map((image) => (
+          {[...imagesRow1, ...imagesRow1].map((image, index) => (
             <div
-              key={image.id}
+              key={`${image.id}-${index}`}
               className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
             >
               <img
-                loading="lazy"
                 alt={`Memory ${image.id}`}
                 src={image.imageSrc || "https://placehold.co/600x400"}
                 className="rounded-xl shadow-lg h-full w-auto object-cover p-0 m-0"
@@ -200,13 +199,12 @@ const Memories = () => {
         className="relative overflow-x-hidden h-full w-full"
       >
         <div className="flex w-max animate-scroll-right">
-          {[...imagesRow2, ...imagesRow2].map((image) => (
+          {[...imagesRow2, ...imagesRow2].map((image, index) => (
             <div
-              key={image.id}
+              key={`${image.id}-${index}`}
               className="flex-shrink-0 px-1 md:px-3 h-[200px] md:h-[400px] w-auto flex items-center"
             >
               <img
-                loading="lazy"
                 src={image.imageSrc || "https://placehold.co/600x400"}
                 alt={`Memory ${image.id}`}
                 className="rounded-xl shadow-lg h-full w-auto object-cover p-0 m-0"
