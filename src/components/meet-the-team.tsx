@@ -15,36 +15,45 @@ import rimeshJotaniya from "../assets/2026/team/RimeshJ.jpeg";
 import vedangKulkarni from "../assets/2026/team/VedangK.png";
 import yogeshSingh from "../assets/2026/team/YogeshS.jpg";
 import ratneshJain from "../assets/2026/team/RatneshJ.jpeg";
+import bhavinVaghela from "../assets/2025/team/Bhavin Vaghela.jpg";
+import kajalSheth from "../assets/2025/team/Kajal Sheth.png";
 
 const MeetTheTeam = () => {
   const teamMembers = [
     {
-      id: 23,
+      id: 1,
       socialLink: "https://www.linkedin.com/in/akanksharmaa/",
       name: "Akanksha Sharma",
       memojiLogo: akankshaSharma,
       backgroundColour: "#FFE5F8",
     },
     {
-      id: 19,
+      id: 2,
       socialLink: "https://www.linkedin.com/in/akshay-njarangal/",
       name: "Akshay Njarangal",
       memojiLogo: akshayNjarangal,
       backgroundColour: "#f0f0f0",
     },
     {
-      id: 9,
+      id: 3,
       socialLink: "https://www.linkedin.com/in/akshaypakanati/",
       name: "Akshay Pakanati",
       memojiLogo: akshayPakanati,
       backgroundColour: "#A6CCFA",
     },
     {
-      id: 18,
+      id: 4,
       socialLink: "https://x.com/nirudhuuu",
       name: "Anirudh Jwala",
       memojiLogo: anirudhJwala,
       backgroundColour: "#e5d5bd",
+    },
+    {
+      id: 5,
+      socialLink: "https://www.linkedin.com/in/bhavin-vaghela",
+      name: "Bhavin Vaghela",
+      memojiLogo: bhavinVaghela,
+      backgroundColour: "#A6CCFA",
     },
     {
       id: 6,
@@ -54,88 +63,95 @@ const MeetTheTeam = () => {
       backgroundColour: "#FF69E1",
     },
     {
-      id: 13,
+      id: 7,
       socialLink: "https://www.linkedin.com/in/devanshimodha/",
       name: "Devanshi",
       memojiLogo: devanshi,
       backgroundColour: "#FF69E1",
     },
     {
-      id: 12,
+      id: 8,
       socialLink: "https://www.linkedin.com/in/gokul-bvb",
       name: "Gokul B",
       memojiLogo: gokulB,
       backgroundColour: "#D6D6D6",
     },
     {
-      id: 5,
+      id: 9,
+      socialLink: "https://www.linkedin.com/in/kajal-sheth",
+      name: "Kajal Sheth",
+      memojiLogo: kajalSheth,
+      backgroundColour: "#FFDEC0",
+    },
+    {
+      id: 10,
       socialLink: "https://www.linkedin.com/in/manindersinghh",
       name: "Maninder Singh",
       memojiLogo: maninderSingh,
       backgroundColour: "#D6D6D6",
     },
     {
-      id: 4,
+      id: 11,
       socialLink: "https://www.linkedin.com/in/nayyanmujadiya/",
       name: "Nayyan Mujadiya",
       memojiLogo: nayyanMujadiya,
       backgroundColour: "#FFE5F8",
     },
     {
-      id: 20,
+      id: 12,
       socialLink: "https://www.linkedin.com/in/dezinezync/",
       name: "Nikhil Nigade",
       memojiLogo: nikhilNigade,
       backgroundColour: "#f1ae5c",
     },
     {
-      id: 8,
+      id: 13,
       socialLink: "https://www.linkedin.com/in/nishantdesai1/",
       name: "Nishant Desai",
       memojiLogo: nishantDesai,
       backgroundColour: "#FFB069",
     },
     {
-      id: 10,
+      id: 14,
       socialLink: "https://www.linkedin.com/in/sforsethi/",
       name: "Raghav Sethi",
       memojiLogo: raghavSethi,
       backgroundColour: "#FFDEC0",
     },
     {
-      id: 24,
+      id: 15,
+      socialLink: "https://www.linkedin.com/in/ratnesh-jain-7a2270146/",
+      name: "Ratnesh Jain",
+      memojiLogo: ratneshJain,
+      backgroundColour: "#D4E7FF",
+    },
+    {
+      id: 16,
       socialLink: "https://www.linkedin.com/in/recursiveswift//",
       name: "Rimesh Jotaniya",
       memojiLogo: rimeshJotaniya,
       backgroundColour: "#f1ae5c",
     },
     {
-      id: 15,
+      id: 17,
       socialLink: "http://linkedin.com/in/shamil-roshan",
       name: "Shamil Roshan",
       memojiLogo: shamilRoshan,
       backgroundColour: "#A6CCFA",
     },
     {
-      id: 21,
+      id: 18,
       socialLink: "https://www.linkedin.com/in/recursiveswift//",
       name: "Vedang Kulkarni",
       memojiLogo: vedangKulkarni,
       backgroundColour: "#FFDEC0",
     },
     {
-      id: 22,
+      id: 19,
       socialLink: "https://www.linkedin.com/in/yogeshsingh2810/",
       name: "Yogesh Singh",
       memojiLogo: yogeshSingh,
       backgroundColour: "#BEFF93",
-    },
-    {
-      id: 25,
-      socialLink: "https://www.linkedin.com/in/ratnesh-jain-7a2270146/",
-      name: "Ratnesh Jain",
-      memojiLogo: ratneshJain,
-      backgroundColour: "#D4E7FF",
     },
   ];
 

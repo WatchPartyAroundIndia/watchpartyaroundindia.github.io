@@ -12,13 +12,25 @@ import teamMember13 from "../assets/2026/team/VedangK.png";
 import teamMember14 from "../assets/2026/team/YogeshS.jpg";
 import teamMember15 from "../assets/2026/team/AkankshaS.jpeg";
 import teamMember16 from "../assets/2026/team/RatneshJ.jpeg";
+import teamMember17 from "../assets/2025/team/Kajal Sheth.png";
+import teamMember18 from "../assets/2025/team/Bhavin Vaghela.jpg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
     {
+      id: 1,
+      name: "Akanksha Sharma",
+      image: teamMember15,
+    },
+    {
       id: 2,
       name: "Akshay Pakanati",
       image: teamMember2,
+    },
+    {
+      id: 3,
+      name: "Bhavin Vaghela",
+      image: teamMember18,
     },
     {
       id: 4,
@@ -31,29 +43,34 @@ const ConnectWithTeam = () => {
       image: teamMember5,
     },
     {
+      id: 6,
+      name: "Kajal Sheth",
+      image: teamMember17,
+    },
+    {
       id: 7,
       name: "Nayyan Mujadiya",
       image: teamMember7,
     },
     {
       id: 8,
+      name: "Nikhil Nigade",
+      image: teamMember11,
+    },
+    {
+      id: 9,
       name: "Nishant Desai",
       image: teamMember8,
     },
     {
-      id: 9,
+      id: 10,
       name: "Raghav Sethi",
       image: teamMember9,
     },
     {
-      id: 10,
-      name: "Rushit Rakhasiya",
-      image: teamMember10,
-    },
-    {
       id: 11,
-      name: "Nikhil Nigade",
-      image: teamMember11,
+      name: "Ratnesh Jain",
+      image: teamMember16,
     },
     {
       id: 12,
@@ -62,23 +79,18 @@ const ConnectWithTeam = () => {
     },
     {
       id: 13,
+      name: "Rushit Rakhasiya",
+      image: teamMember10,
+    },
+    {
+      id: 14,
       name: "Vedang Kulkarni",
       image: teamMember13,
     },
     {
-      id: 14,
+      id: 15,
       name: "Yogesh Singh",
       image: teamMember14,
-    },
-    {
-      id: 15,
-      name: "Akanksha Sharma",
-      image: teamMember15,
-    },
-    {
-      id: 16,
-      name: "Ratnesh Jain",
-      image: teamMember16,
     },
   ];
 
