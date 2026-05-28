@@ -7,6 +7,7 @@ import sedinLogo from "../assets/2026/sponsors/sedin.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
 import pixsterStudioLogo from "../assets/2026/sponsors/pixterStudio.jpeg";
+import thecrib from "../assets/2026/sponsors/thecrib.png";
 
 const Sponsors = () => {
   const venueSponsors = [
@@ -65,6 +66,14 @@ const Sponsors = () => {
       logo: draperStartUpHouseLogo,
       contact: "Hyderabad",
       website: "https://draperstartuphouse.com/hyderabad",
+    },
+    {
+      sponsorId: 8,
+      name: "The Crib",
+      description: "Taqueria | Pickleball | Rock Climbing",
+      logo: thecrib,
+      contact: "Nagpur",
+      website: "https://maps.app.goo.gl/ctqvzMemnHXhxix56",
     },
   ];
 

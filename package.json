@@ -15,7 +15,7 @@
     "react-router-dom": "^6.23.1",
     "react-router-hash-link": "^2.4.3",
     "react-tweet": "^3.2.2",
-    "vite-plugin-svgr": "^4.2.0"
+    "vite-plugin-svgr": "^5.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
@@ -23,7 +23,7 @@
     "@types/react-router-hash-link": "^2.4.9",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^6.0.2",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
