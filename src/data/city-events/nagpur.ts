@@ -24,6 +24,7 @@ export const nagpurEvent: CityEvent = {
   },
 
   location: "Ambazari",
+  lumaUrl: "https://luma.com/ownpcknh",
 
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=The+Crib+Taqueria+Pickleball+Rock+Climbing+Nagpur",
