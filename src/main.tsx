@@ -32,15 +32,10 @@ const router = createBrowserRouter(
       element: <Navigate to="/" replace />,
     },
   ],
-  {
-    future: {
-      v7_startTransition: true,
-    },
-  }
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} future={{ v7_startTransition: true }} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
