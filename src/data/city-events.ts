@@ -8,11 +8,12 @@ import { mumbaiEvent } from "./city-events/mumbai";
 import { suratEvent } from "./city-events/surat";
 import { puneEvent } from "./city-events/pune";
 import { nagpurEvent } from "./city-events/nagpur";
-import type { CityEvent } from "./city-events/types";
+import { teamMembers } from "./team-members";
+import type { CityEvent, CityEventTeamMember } from "./city-events/types";
 
-export type { CityEvent } from "./city-events/types";
+export type { CityEvent, CityEventTeamMember } from "./city-events/types";
 
-export const cityEvents: CityEvent[] = [
+const baseCityEvents: CityEvent[] = [
   bangaloreEvent,
   mumbaiEvent,
   ahmedabadEvent,
@@ -24,6 +25,69 @@ export const cityEvents: CityEvent[] = [
   puneEvent,
   nagpurEvent
 ];
+
+const buildCityProfiles = (event: CityEvent): CityEventTeamMember[] =>
+  teamMembers.flatMap((member) =>
+    (member.cityAssignments ?? [])
+      .filter(
+        (assignment) => assignment.city.trim().toLowerCase() === event.slug
+      )
+      .map((assignment) => {
+        const kind = assignment.kind ?? "team";
+        const baseTags = assignment.tags ?? [];
+
+        return {
+          id: member.id,
+          name: member.name,
+          image: member.photo,
+          socialUrl: member.socialLink,
+          role: assignment.role,
+          kind,
+          tags: [
+            `City: ${event.city}`,
+            `Type: ${kind === "speaker" ? "Speaker" : "Team Member"}`,
+            `Role: ${assignment.role}`,
+            ...baseTags,
+          ],
+          sessionTitle: assignment.sessionTitle,
+          sessionDescription: assignment.sessionDescription,
+        };
+      })
+  );
+
+export const cityEvents: CityEvent[] = baseCityEvents.map((event) => {
+  const profiles = buildCityProfiles(event);
+  const teamMembersForCity = profiles.filter((profile) => profile.kind === "team");
+  const speakersForCity = profiles.filter((profile) => profile.kind === "speaker");
+
+  return {
+    ...event,
+    teamMembers: teamMembersForCity,
+    speakers: speakersForCity,
+  };
+});
+
+export interface VenueSponsor {
+  sponsorId: number;
+  name: string;
+  description: string;
+  logo: string;
+  contact: string;
+  website: string;
+}
+
+export const venueSponsors: VenueSponsor[] = cityEvents
+  .filter((event): event is CityEvent & { sponsorName: string; sponsorLogo: string } => (
+    event.sponsorName != null && event.sponsorLogo != null
+  ))
+  .map((event) => ({
+    sponsorId: event.id,
+    name: event.sponsorName,
+    description: event.sponsorDescription ?? `Venue partner for ${event.chapterName}`,
+    logo: event.sponsorLogo,
+    contact: event.city,
+    website: event.sponsorWebsite ?? "",
+  }));
 
 export const getCityEventBySlug = (slug?: string) => {
   if (!slug) {

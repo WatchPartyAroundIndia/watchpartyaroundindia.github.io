@@ -4,6 +4,18 @@ export interface CityEventAgendaItem {
   description: string;
 }
 
+export interface CityEventTeamMember {
+  id: number;
+  name: string;
+  image: string;
+  socialUrl: string;
+  role: string;
+  kind: "team" | "speaker";
+  tags: string[];
+  sessionTitle?: string;
+  sessionDescription?: string;
+}
+
 export interface CityEvent {
   id: number;
   slug: string;
@@ -24,10 +36,12 @@ export interface CityEvent {
     addressCountry: string;
   };
   location: string;
-  lumaUrl: string;
+  lumaUrl?: string;
   mapUrl: string;
   sponsorName?: string;
   sponsorLogo?: string;
+  sponsorDescription?: string;
+  sponsorWebsite?: string;
   gradient: {
     from: string;
     to: string;
@@ -35,4 +49,6 @@ export interface CityEvent {
   description: string;
   highlights: string[];
   agenda: CityEventAgendaItem[];
+  teamMembers?: CityEventTeamMember[];
+  speakers?: CityEventTeamMember[];
 }

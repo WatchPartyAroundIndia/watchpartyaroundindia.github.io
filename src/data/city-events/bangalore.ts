@@ -28,6 +28,8 @@ export const bangaloreEvent: CityEvent = {
     "https://maps.app.goo.gl/Pz3EsxtRj4ehQvfg9",
   sponsorName: "Swiggy",
   sponsorLogo: swiggyLogo,
+  sponsorDescription: "No Order Too Small",
+  sponsorWebsite: "https://www.swiggy.com/",
   gradient: {
     from: "#FFC677",
     to: "#FF9500",

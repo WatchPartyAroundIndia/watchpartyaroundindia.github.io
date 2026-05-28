@@ -4,12 +4,68 @@ import { HashLink } from "react-router-hash-link";
 import wwdcLogo from "../assets/2026/logo.svg";
 import locationPinLogo from "../assets/2025/location-pin.svg";
 import { getCityEventBySlug } from "../data/city-events";
-import type { CityEvent } from "../data/city-events";
+import type { CityEvent, CityEventTeamMember } from "../data/city-events";
 import EventStructuredData from "./event-structured-data";
 
 const gradientStyle = (event: CityEvent): CSSProperties => ({
   backgroundImage: `linear-gradient(180deg, ${event.gradient.from} 0%, ${event.gradient.to} 100%)`,
 });
+
+interface CityProfileCardProps {
+  eventSlug: string;
+  member: CityEventTeamMember;
+}
+
+const CityProfileCard = ({ eventSlug, member }: CityProfileCardProps) => (
+  <a
+    key={`${eventSlug}-${member.kind}-${member.id}`}
+    href={member.socialUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group min-w-0 bg-white border-2 border-[#0B2131] p-4 shadow-[-4px_4px_0_0_#0B2131] hover:bg-[#f8f8f8] transition-colors"
+  >
+    <div className="flex items-center gap-3">
+      <img
+        src={member.image}
+        alt={`${member.name} profile`}
+        className="w-14 h-14 rounded-full object-cover bg-white"
+        loading="lazy"
+      />
+      <div className="min-w-0">
+        <p className="font-bold text-lg leading-tight break-words">
+          {member.name}
+        </p>
+        <p className="text-sm text-black/65">{member.role}</p>
+      </div>
+    </div>
+
+    {member.sessionTitle != null && (
+      <div className="mt-3">
+        <p className="text-sm font-bold">{member.sessionTitle}</p>
+        {member.sessionDescription != null && (
+          <p className="text-sm text-black/65 mt-1">{member.sessionDescription}</p>
+        )}
+      </div>
+    )}
+
+    {member.tags.length > 0 && (
+      <div className="mt-3 flex flex-wrap gap-2">
+        {member.tags.map((tag) => (
+          <span
+            key={`${eventSlug}-${member.id}-${tag}`}
+            className="text-[11px] font-semibold uppercase tracking-wide bg-[#EEF4FF] text-[#2D4A7C] px-2 py-1 rounded"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+    )}
+
+    <p className="mt-3 text-sm font-semibold text-[#4884FF] group-hover:underline">
+      Open profile
+    </p>
+  </a>
+);
 
 const CityEventPage = () => {
   const { citySlug } = useParams();
@@ -22,6 +78,11 @@ const CityEventPage = () => {
   if (citySlug?.toLowerCase() !== event.slug) {
     return <Navigate to={`/${event.slug}`} replace />;
   }
+
+  const registrationUrl = event.lumaUrl ?? event.mapUrl;
+  const registerCta = event.lumaUrl != null ? "Register" : "View venue";
+  const registerCardCta =
+    event.lumaUrl != null ? "Register on Luma" : "View venue";
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-white bg-[radial-gradient(#ccc_1px,transparent_1px)] bg-[length:20px_20px] font-sans text-[#1F1F29]">
@@ -42,10 +103,10 @@ const CityEventPage = () => {
             All cities
           </HashLink>
           <a
-            href={event.lumaUrl}
+            href={registrationUrl}
             className="text-sm md:text-base text-white bg-[#4884FF] font-medium px-4 md:px-6 py-2 border-2 border-[#0B2131] shadow-[-3px_3px_0_1px_#0B2131] hover:bg-[#366fd1] transition-colors duration-200"
           >
-            Register
+            {registerCta}
           </a>
         </div>
       </header>
@@ -122,6 +183,52 @@ const CityEventPage = () => {
                 ))}
               </div>
             </section>
+
+            {event.teamMembers != null && event.teamMembers.length > 0 && (
+              <section className="mt-14" aria-labelledby="city-team-heading">
+                <h2
+                  id="city-team-heading"
+                  className="font-bold text-3xl md:text-4xl"
+                >
+                  {event.chapterName} Team Members
+                </h2>
+                <p className="mt-3 text-black/65">
+                  Reach out directly to the organizers for this city.
+                </p>
+                <div className="mt-6 grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                  {event.teamMembers.map((member) => (
+                    <CityProfileCard
+                      key={`${event.slug}-team-${member.id}`}
+                      eventSlug={event.slug}
+                      member={member}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {event.speakers != null && event.speakers.length > 0 && (
+              <section className="mt-14" aria-labelledby="city-speakers-heading">
+                <h2
+                  id="city-speakers-heading"
+                  className="font-bold text-3xl md:text-4xl"
+                >
+                  {event.chapterName} Speakers
+                </h2>
+                <p className="mt-3 text-black/65">
+                  Featured speaker lineup for this city watch party.
+                </p>
+                <div className="mt-6 grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                  {event.speakers.map((speaker) => (
+                    <CityProfileCard
+                      key={`${event.slug}-speaker-${speaker.id}`}
+                      eventSlug={event.slug}
+                      member={speaker}
+                    />
+                  ))}
+                </div>
+              </section>
+            )}
           </section>
 
           <aside className="min-w-0 w-full lg:sticky lg:top-8">
@@ -168,10 +275,10 @@ const CityEventPage = () => {
                 </div>
 
                 <a
-                  href={event.lumaUrl}
+                  href={registrationUrl}
                   className="mt-6 flex items-center justify-center w-full rounded-lg bg-[#2A282F] text-white font-bold py-3 hover:bg-black transition-colors"
                 >
-                  Register on Luma
+                  {registerCardCta}
                 </a>
                 {event.sponsorName != null && event.sponsorLogo != null && (
                 <div className="mt-6 border-t border-black/10 pt-5">

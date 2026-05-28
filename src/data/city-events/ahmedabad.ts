@@ -1,4 +1,5 @@
 import swiftAhmedabadLogo from "../../assets/organisers/swift-ahmedabad.png";
+import pixsterStudioLogo from "../../assets/2026/sponsors/pixterStudio.jpeg";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -29,6 +30,10 @@ export const ahmedabadEvent: CityEvent = {
 
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=Pixster+Studio+Ahmedabad",
+  sponsorName: "Pixster Studio",
+  sponsorLogo: pixsterStudioLogo,
+  sponsorDescription: "Crafting Innovative Apps with Passion",
+  sponsorWebsite: "https://www.pixsterstudio.com",
 
   gradient: {
     from: "#DE9CFF",

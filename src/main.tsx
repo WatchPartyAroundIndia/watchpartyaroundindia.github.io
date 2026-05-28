@@ -9,38 +9,31 @@ import CityEventPage from "./components/city-event-page.tsx";
 
 import "./index.css";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <App />,
-    },
-    {
-      path: "/2025",
-      element: <App2025 />,
-    },
-    {
-      path: "/2024",
-      element: <App2024 />,
-    },
-    {
-      path: "/:citySlug",
-      element: <CityEventPage />,
-    },
-    {
-      path: "*",
-      element: <Navigate to="/" replace />,
-    },
-  ],
+const router = createBrowserRouter([
   {
-    future: {
-      v7_startTransition: true,
-    },
-  }
-);
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/2025",
+    element: <App2025 />,
+  },
+  {
+    path: "/2024",
+    element: <App2024 />,
+  },
+  {
+    path: "/:citySlug",
+    element: <CityEventPage />,
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" replace />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} future={{ v7_startTransition: true }} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
