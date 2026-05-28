@@ -53,7 +53,7 @@ const CityProfileCard = ({ eventSlug, member }: CityProfileCardProps) => (
         {member.tags.map((tag) => (
           <span
             key={`${eventSlug}-${member.id}-${tag}`}
-            className="text-[11px] font-semibold uppercase tracking-wide bg-[#EEF4FF] text-[#2D4A7C] px-2 py-1 rounded"
+            className="text-xs font-semibold bg-[#EEF4FF] text-[#2D4A7C] px-2 py-1 rounded"
           >
             {tag}
           </span>
@@ -184,19 +184,19 @@ const CityEventPage = () => {
               </div>
             </section>
 
-            {event.teamMembers != null && event.teamMembers.length > 0 && (
-              <section className="mt-14" aria-labelledby="city-team-heading">
-                <h2
-                  id="city-team-heading"
-                  className="font-bold text-3xl md:text-4xl"
-                >
-                  {event.chapterName} Team Members
-                </h2>
-                <p className="mt-3 text-black/65">
-                  Reach out directly to the organizers for this city.
-                </p>
+            <section className="mt-14" aria-labelledby="city-team-heading">
+              <h2
+                id="city-team-heading"
+                className="font-bold text-3xl md:text-4xl"
+              >
+                {event.chapterName} Team Members
+              </h2>
+              <p className="mt-3 text-black/65">
+                Reach out directly to the organizers for this city.
+              </p>
+              {(event.teamMembers?.length ?? 0) > 0 ? (
                 <div className="mt-6 grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
-                  {event.teamMembers.map((member) => (
+                  {event.teamMembers?.map((member) => (
                     <CityProfileCard
                       key={`${event.slug}-team-${member.id}`}
                       eventSlug={event.slug}
@@ -204,8 +204,12 @@ const CityEventPage = () => {
                     />
                   ))}
                 </div>
-              </section>
-            )}
+              ) : (
+                <p className="mt-6 text-black/60">
+                  Team assignments for this city will be announced soon.
+                </p>
+              )}
+            </section>
 
             {event.speakers != null && event.speakers.length > 0 && (
               <section className="mt-14" aria-labelledby="city-speakers-heading">

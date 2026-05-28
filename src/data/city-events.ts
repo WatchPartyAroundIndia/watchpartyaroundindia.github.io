@@ -44,9 +44,9 @@ const buildCityProfiles = (event: CityEvent): CityEventTeamMember[] =>
           role: assignment.role,
           kind,
           tags: [
-            `City: ${event.city}`,
-            `Type: ${kind === "speaker" ? "Speaker" : "Team Member"}`,
-            `Role: ${assignment.role}`,
+            event.city,
+            kind === "speaker" ? "Speaker" : "Team Member",
+            assignment.role,
             ...baseTags,
           ],
           sessionTitle: assignment.sessionTitle,
