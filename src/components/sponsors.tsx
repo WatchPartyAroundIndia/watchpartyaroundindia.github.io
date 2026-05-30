@@ -47,7 +47,7 @@ const Sponsors = () => {
     {
       sponsorId: 9,
       name: "OptimumBrew Technology",
-      description: "",
+      description: "Improvising enterprise marketing through meaningful innovation",
       logo: optimumBrewLogo,
       contact: "Surat",
       website: "https://optimumbrew.com/",

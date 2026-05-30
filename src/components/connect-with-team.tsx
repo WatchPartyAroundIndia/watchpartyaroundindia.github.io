@@ -30,6 +30,10 @@ import teamMember28 from "../assets/2026/team/ArihanrM.jpg";
 import teamMember29 from "../assets/2026/team/SejalK.jpeg";
 import teamMember30 from "../assets/2026/team/DishantN.jpeg";
 import teamMember31 from "../assets/2026/team/Jigar-Patel.jpeg";
+import teamMember32 from "../assets/2025/team/Akshay Njarangal.jpeg";
+import teamMember33 from "../assets/2025/team/Anirudh Jwala.png";
+import teamMember34 from "../assets/2025/team/Devanshi.png";
+import teamMember35 from "../assets/2025/team/Shamil Roshan.jpeg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
@@ -45,148 +49,168 @@ const ConnectWithTeam = () => {
     },
     {
       id: 3,
+      name: "Akshay Njarangal",
+      image: teamMember32,
+    },
+    {
+      id: 4,
       name: "Akshay Pakanati",
       image: teamMember2,
     },
     {
-      id: 4,
+      id: 5,
       name: "Amit Samant",
       image: teamMember3,
     },
     {
       id: 6,
-      name: "Bhavin Vaghela",
-      image: teamMember18,
+      name: "Anirudh Jwala",
+      image: teamMember33,
     },
     {
       id: 7,
-      name: "Bhumika Patel",
-      image: teamMember4,
-    },
-    {
-      id: 8,
-      name: "Dr. Nikhil Mangrulkar",
-      image: teamMember22,
-    },
-    {
-      id: 9,
-      name: "Gokul B",
-      image: teamMember5,
-    },
-    {
-      id: 10,
-      name: "Kajal Sheth",
-      image: teamMember17,
-    },
-    {
-      id: 11,
-      name: "Krishna Patidar",
-      image: teamMember21,
-    },
-    {
-      id: 12,
-      name: "Krishna Permi",
-      image: teamMember23,
-    },
-    {
-      id: 13,
-      name: "Nayyan Mujadiya",
-      image: teamMember7,
-    },
-    {
-      id: 14,
-      name: "Nikhil Nigade",
-      image: teamMember11,
-    },
-    {
-      id: 15,
-      name: "Nishant Desai",
-      image: teamMember8,
-    },
-    {
-      id: 16,
-      name: "Pinak Rokde",
-      image: teamMember24,
-    },
-    {
-      id: 18,
-      name: "Raj Raval",
-      image: teamMember19,
-    },
-    {
-      id: 19,
-      name: "Ranga Reddy",
-      image: teamMember20,
-    },
-    {
-      id: 20,
-      name: "Ratnesh Jain",
-      image: teamMember16,
-    },
-    {
-      id: 21,
-      name: "Rimesh Jotaniya",
-      image: teamMember12,
-    },
-    {
-      id: 22,
-      name: "Rizwan Ahmed",
-      image: teamMember25,
-    },
-    {
-      id: 23,
-      name: "Rushit Rakhasiya",
-      image: teamMember10,
-    },
-    {
-      id: 24,
-      name: "Vedang Kulkarni",
-      image: teamMember13,
-    },
-    {
-      id: 25,
-      name: "Yogesh Singh",
-      image: teamMember14,
-    },
-    {
-      id: 26,
-      name: "Arpita Gupta",
-      image: teamMember26,
-    },
-    {
-      id: 27,
-      name: "Maninder Singh",
-      image: teamMember27,
-    },
-    {
-      id: 28,
       name: "Arihant Marwaha",
       image: teamMember28,
     },
     {
-      id: 29,
-      name: "Sejal Khanna",
-      image: teamMember29,
+      id: 8,
+      name: "Arpita Gupta",
+      image: teamMember26,
     },
     {
-      id: 17,
-      name: "Raghav Sethi",
-      image: teamMember9,
-    },
-    {
-      id: 5,
+      id: 9,
       name: "Ayush Singh",
       image: teamMember6,
     },
     {
-      id: 30,
-      name: "Dishant N",
+      id: 10,
+      name: "Bhavin Vaghela",
+      image: teamMember18,
+    },
+    {
+      id: 11,
+      name: "Bhumika Patel",
+      image: teamMember4,
+    },
+    {
+      id: 12,
+      name: "Devanshi",
+      image: teamMember34,
+    },
+    {
+      id: 13,
+      name: "Dishant Nagpal",
       image: teamMember30,
     },
     {
-      id: 31,
-      name: "JIGAR PATEL",
+      id: 14,
+      name: "Dr. Nikhil Mangrulkar",
+      image: teamMember22,
+    },
+    {
+      id: 15,
+      name: "Gokul B",
+      image: teamMember5,
+    },
+    {
+      id: 16,
+      name: "Jigar Patel",
       image: teamMember31,
+    },
+    {
+      id: 17,
+      name: "Kajal Sheth",
+      image: teamMember17,
+    },
+    {
+      id: 18,
+      name: "Krishna Patidar",
+      image: teamMember21,
+    },
+    {
+      id: 19,
+      name: "Krishna Permi",
+      image: teamMember23,
+    },
+    {
+      id: 20,
+      name: "Maninder Singh",
+      image: teamMember27,
+    },
+    {
+      id: 21,
+      name: "Nayyan Mujadiya",
+      image: teamMember7,
+    },
+    {
+      id: 22,
+      name: "Nikhil Nigade",
+      image: teamMember11,
+    },
+    {
+      id: 23,
+      name: "Nishant Desai",
+      image: teamMember8,
+    },
+    {
+      id: 24,
+      name: "Pinak Rokde",
+      image: teamMember24,
+    },
+    {
+      id: 25,
+      name: "Raghav Sethi",
+      image: teamMember9,
+    },
+    {
+      id: 26,
+      name: "Raj Raval",
+      image: teamMember19,
+    },
+    {
+      id: 27,
+      name: "Ranga Reddy",
+      image: teamMember20,
+    },
+    {
+      id: 28,
+      name: "Ratnesh Jain",
+      image: teamMember16,
+    },
+    {
+      id: 29,
+      name: "Rimesh Jotaniya",
+      image: teamMember12,
+    },
+    {
+      id: 30,
+      name: "Rizwan Ahmed",
+      image: teamMember25,
+    },
+    {
+      id: 31,
+      name: "Rushit Rakhasiya",
+      image: teamMember10,
+    },
+    {
+      id: 32,
+      name: "Sejal Khanna",
+      image: teamMember29,
+    },
+    {
+      id: 33,
+      name: "Shamil Roshan",
+      image: teamMember35,
+    },
+    {
+      id: 34,
+      name: "Vedang Kulkarni",
+      image: teamMember13,
+    },
+    {
+      id: 35,
+      name: "Yogesh Singh",
+      image: teamMember14,
     },
   ];
 
