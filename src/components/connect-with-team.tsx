@@ -24,6 +24,11 @@ import teamMember22 from "../assets/2026/team/Dr. Nikhil.jpeg";
 import teamMember23 from "../assets/2026/team/KrishnaPermi.png";
 import teamMember24 from "../assets/2026/team/PinakR.png";
 import teamMember25 from "../assets/2026/team/RizwanA.jpeg";
+import teamMember26 from "../assets/2026/team/ArpitaG.jpeg";
+import teamMember27 from "../assets/2026/team/ManinderM.jpeg";
+import teamMember28 from "../assets/2026/team/ArihanrM.jpg";
+import teamMember29 from "../assets/2026/team/SejalK.jpeg";
+import teamMember30 from "../assets/2026/team/DishantN.jpeg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
@@ -46,11 +51,6 @@ const ConnectWithTeam = () => {
       id: 4,
       name: "Amit Samant",
       image: teamMember3,
-    },
-    {
-      id: 5,
-      name: "Ayush Singh",
-      image: teamMember6,
     },
     {
       id: 6,
@@ -108,11 +108,6 @@ const ConnectWithTeam = () => {
       image: teamMember24,
     },
     {
-      id: 17,
-      name: "Raghav Sethi",
-      image: teamMember9,
-    },
-    {
       id: 18,
       name: "Raj Raval",
       image: teamMember19,
@@ -151,6 +146,41 @@ const ConnectWithTeam = () => {
       id: 25,
       name: "Yogesh Singh",
       image: teamMember14,
+    },
+    {
+      id: 26,
+      name: "Arpita Gupta",
+      image: teamMember26,
+    },
+    {
+      id: 27,
+      name: "Maninder Singh",
+      image: teamMember27,
+    },
+    {
+      id: 28,
+      name: "Arihant Marwaha",
+      image: teamMember28,
+    },
+    {
+      id: 29,
+      name: "Sejal Khanna",
+      image: teamMember29,
+    },
+    {
+      id: 17,
+      name: "Raghav Sethi",
+      image: teamMember9,
+    },
+    {
+      id: 5,
+      name: "Ayush Singh",
+      image: teamMember6,
+    },
+    {
+      id: 30,
+      name: "Dishant N",
+      image: teamMember30,
     },
   ];
 
