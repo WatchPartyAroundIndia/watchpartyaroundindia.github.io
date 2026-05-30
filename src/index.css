@@ -120,6 +120,7 @@
 
 .animate-scroll-left {
   animation: scroll-left 120s linear infinite;
+  animation-delay: 3s;
 }
 
 @keyframes scroll-right {
@@ -133,4 +134,5 @@
 
 .animate-scroll-right {
   animation: scroll-right 120s linear infinite;
+  animation-delay: 3s;
 }

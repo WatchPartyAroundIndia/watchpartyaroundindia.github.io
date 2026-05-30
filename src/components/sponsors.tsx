@@ -8,6 +8,7 @@ import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
 import pixsterStudioLogo from "../assets/2026/sponsors/pixterStudio.jpeg";
 import optimumBrewLogo from "../assets/2026/sponsors/optimumBrew_logo.png";
+import thecrib from "../assets/2026/sponsors/thecrib.png";
 
 const Sponsors = () => {
   const venueSponsors = [
@@ -74,6 +75,14 @@ const Sponsors = () => {
       logo: optimumBrewLogo,
       contact: "Surat",
       website: "https://optimumbrew.com/",
+    },
+    {
+      sponsorId: 8,
+      name: "The Crib",
+      description: "Taqueria | Pickleball | Rock Climbing",
+      logo: thecrib,
+      contact: "Nagpur",
+      website: "https://maps.app.goo.gl/ctqvzMemnHXhxix56",
     },
   ];
 

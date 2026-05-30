@@ -3,7 +3,7 @@ import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
 export const nagpurEvent: CityEvent = {
-  id: 3,
+  id: 10,
   slug: "nagpur",
   aliases: [],
   city: "Nagpur",
@@ -14,22 +14,20 @@ export const nagpurEvent: CityEvent = {
   endDate: "2026-06-09T00:30:00+05:30",
   logo: swiftNagpurLogo,
 
-  venue: "Venue to be announced",
-  address: "Nagpur, Maharashtra",
+  venue: "The Crib - Taqueria | Pickleball | Rock Climbing",
+  address: "15, N Ambazari Rd, Ambazari, Nagpur, Maharashtra 440010",
   structuredAddress: {
-    streetAddress: "",
+    streetAddress: "15, N Ambazari Rd, Ambazari",
     addressLocality: "Nagpur",
     addressRegion: "Maharashtra",
     addressCountry: "IN",
   },
 
-  location: "Nagpur",
+  location: "Ambazari",
+  lumaUrl: "https://luma.com/ownpcknh",
 
-  // No Luma link yet
-  lumaUrl: "",
-
-  // No map yet
-  mapUrl: "",
+  mapUrl:
+    "https://www.google.com/maps/search/?api=1&query=The+Crib+Taqueria+Pickleball+Rock+Climbing+Nagpur",
 
   gradient: {
     from: "#F97316",
@@ -38,7 +36,7 @@ export const nagpurEvent: CityEvent = {
 
   description: makeDescription(
     "Swift Nagpur",
-    "Venue to be announced",
+    "The Crib",
     "Nagpur"
   ),
 

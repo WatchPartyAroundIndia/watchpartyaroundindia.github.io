@@ -36,7 +36,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mb-0">
       <div className="h-24" />
       <h2 className="font-sans font-bold text-3xl md:text-4xl mb-3 text-center">
         Experiences That{" "}
@@ -47,7 +47,7 @@ const Testimonials = () => {
       <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4] text-center">
         Hear what attendees loved about their experience
       </h4>
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 w-full max-w-7xl mt-8 mx-auto px-3 space-y-4">
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 w-full max-w-7xl mt-8 mx-auto px-3 space-y-4 [&_.react-tweet-theme]:[--tweet-container-margin:0]">
         {tweets.map((tweet) => (
           <div key={tweet} className="light break-inside-avoid mb-4 px-1">
             <SafeTweet id={tweet} />
