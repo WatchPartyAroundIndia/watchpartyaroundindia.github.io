@@ -35,16 +35,16 @@ import memories31 from "../assets/2025/memories/31.jpeg";
 const Memories = () => {
   const imagesRow1 = [
     {
-      id: 0,
-      imageSrc: memories00,
-    },
-    {
       id: 1,
       imageSrc: memories01,
     },
     {
       id: 2,
       imageSrc: memories02,
+    },
+    {
+      id: 0,
+      imageSrc: memories00,
     },
     {
       id: 3,
