@@ -29,6 +29,7 @@ import teamMember27 from "../assets/2026/team/ManinderM.jpeg";
 import teamMember28 from "../assets/2026/team/ArihanrM.jpg";
 import teamMember29 from "../assets/2026/team/SejalK.jpeg";
 import teamMember30 from "../assets/2026/team/DishantN.jpeg";
+import teamMember31 from "../assets/2026/team/Jigar-Patel.jpeg";
 
 const ConnectWithTeam = () => {
   const teamMembers = [
@@ -181,6 +182,11 @@ const ConnectWithTeam = () => {
       id: 30,
       name: "Dishant N",
       image: teamMember30,
+    },
+    {
+      id: 31,
+      name: "JIGAR PATEL",
+      image: teamMember31,
     },
   ];
 

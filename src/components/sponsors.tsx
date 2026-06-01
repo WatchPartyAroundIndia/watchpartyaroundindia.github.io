@@ -7,6 +7,7 @@ import sedinLogo from "../assets/2026/sponsors/sedin.png";
 import swiggyLogo from "../assets/2025/sponsors/swiggy.png";
 import draperStartUpHouseLogo from "../assets/2025/sponsors/draper.svg";
 import pixsterStudioLogo from "../assets/2026/sponsors/pixterStudio.jpeg";
+import optimumBrewLogo from "../assets/2026/sponsors/optimumBrew_logo.png";
 import thecrib from "../assets/2026/sponsors/thecrib.png";
 
 const Sponsors = () => {
@@ -66,6 +67,14 @@ const Sponsors = () => {
       logo: draperStartUpHouseLogo,
       contact: "Hyderabad",
       website: "https://draperstartuphouse.com/hyderabad",
+    },
+    {
+      sponsorId: 9,
+      name: "OptimumBrew Technology",
+      description: "",
+      logo: optimumBrewLogo,
+      contact: "Surat",
+      website: "https://optimumbrew.com/",
     },
     {
       sponsorId: 8,
