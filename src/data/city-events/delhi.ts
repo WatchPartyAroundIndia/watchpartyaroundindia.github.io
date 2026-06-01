@@ -1,4 +1,4 @@
-import swiftDelhiLogo from "../../assets/2025/organisers/swift-delhi.jpeg";
+import swiftDelhiLogo from "../../assets/organisers/swift-delhi.png";
 import ixigoLogo from "../../assets/2025/sponsors/ixigo.png";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
@@ -9,8 +9,8 @@ export const delhiEvent: CityEvent = {
   aliases: [],
   city: "Delhi NCR",
   chapterName: "Swift Delhi",
-  date: "June 9, 2025",
-  time: "9:00 PM",
+  date: "June 8, 2026",
+  time: "8:00 PM",
   startDate: "2025-06-09T21:00:00+05:30",
   endDate: "2025-06-10T00:30:00+05:30",
   logo: swiftDelhiLogo,
@@ -23,7 +23,7 @@ export const delhiEvent: CityEvent = {
     addressCountry: "IN",
   },
   location: "Gurugram",
-  lumaUrl: "https://lu.ma/pry2tx7d",
+  lumaUrl: "https://luma.com/flgblcpd",
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=Ixigo%20Office%20Veritas%20Building%20Gurugram",
   sponsorName: "ixigo",
@@ -40,7 +40,7 @@ export const delhiEvent: CityEvent = {
   ],
   agenda: [
     {
-      time: "9:00 PM",
+      time: "8:00 PM",
       title: "Doors open at ixigo",
       description:
         "Arrive at the Gurugram venue, check in, and meet the Delhi NCR community.",
@@ -59,7 +59,7 @@ export const delhiEvent: CityEvent = {
     },
     {
       time: "After keynote",
-      title: "Post-keynote reactions",
+      title: "Post-keynote reactions / State of the Union",
       description:
         "Discuss the announcements, share first impressions, and compare notes with the room.",
     },
