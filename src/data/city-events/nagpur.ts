@@ -1,4 +1,5 @@
 import swiftNagpurLogo from "../../assets/organisers/swift-nagpur.jpeg";
+import theCribLogo from "../../assets/2026/sponsors/thecrib.png";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -28,6 +29,10 @@ export const nagpurEvent: CityEvent = {
 
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=The+Crib+Taqueria+Pickleball+Rock+Climbing+Nagpur",
+  sponsorName: "The Crib",
+  sponsorLogo: theCribLogo,
+  sponsorDescription: "Taqueria | Pickleball | Rock Climbing",
+  sponsorWebsite: "https://maps.app.goo.gl/ctqvzMemnHXhxix56",
 
   gradient: {
     from: "#F97316",
@@ -43,7 +48,7 @@ export const nagpurEvent: CityEvent = {
   highlights: [
     "Hosted with Swift Nagpur",
     "WWDC 2026 community watch party",
-    "Venue details coming soon",
+    "Venue support from The Crib",
   ],
 
   agenda: [

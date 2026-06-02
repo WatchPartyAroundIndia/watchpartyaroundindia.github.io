@@ -13,56 +13,61 @@ const RegisterNow = () => {
         Seats are limited—save yours today!
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mt-8 px-8 lg:px-4">
-        {cityEvents.map((event) => (
-          <div
-            key={event.id}
-            className="aspect-square rounded-3xl shadow max-h-[265px] w-full transform transition-transform hover:scale-[1.02] hover:shadow-lg"
-            style={{
-              backgroundImage: `linear-gradient(180deg, ${event.gradient.from} 0%, ${event.gradient.to} 100%)`,
-            }}
-          >
-            <div className="flex flex-col items-start justify-center gap-3 p-6">
-              <div className="text-white font-medium bg-black/80 px-3 py-1 rounded-md text-xs">
-                {event.time}
-              </div>
+        {cityEvents.map((event) => {
+          const cardLogo = event.sponsorLogo ?? event.logo;
+          const cardLabel = event.sponsorName ?? event.chapterName;
 
-              <div className="flex items-center gap-2">
-                <img
-                  loading="lazy"
-                  src={event.logo}
-                  aria-hidden="true"
-                  alt={`${event.chapterName} logo`}
-                  className="w-8 h-8 flex-shrink-0 rounded-full"
-                />
-                <h6 className="font-semibold text-white text-lg">
-                  {event.chapterName}
-                </h6>
-              </div>
+          return (
+            <div
+              key={event.id}
+              className="aspect-square rounded-3xl shadow max-h-[265px] w-full transform transition-transform hover:scale-[1.02] hover:shadow-lg"
+              style={{
+                backgroundImage: `linear-gradient(180deg, ${event.gradient.from} 0%, ${event.gradient.to} 100%)`,
+              }}
+            >
+              <div className="flex flex-col items-start justify-center gap-3 p-6">
+                <div className="text-white font-medium bg-black/80 px-3 py-1 rounded-md text-xs">
+                  {event.time}
+                </div>
 
-              <h4 className="font-bold text-white text-2xl mb-4 line-clamp-2">
-                {event.venue}
-              </h4>
-
-              <div className="flex items-center justify-between w-full text-white mt-auto">
-                <div className="flex items-center font-semibold text-base">
+                <div className="flex items-center gap-2">
                   <img
                     loading="lazy"
-                    src={locationPinLogo}
-                    alt="location pin"
-                    className="inline w-4 h-4 mr-1"
+                    src={cardLogo}
+                    aria-hidden="true"
+                    alt={`${cardLabel} logo`}
+                    className="w-8 h-8 flex-shrink-0 rounded-full"
                   />
-                  {event.location}
+                  <h6 className="font-semibold text-white text-lg">
+                    {cardLabel}
+                  </h6>
                 </div>
-                <Link
-                  to={`/${event.slug}`}
-                  className="rounded-lg bg-[#2A282F]/80 font-sans font-medium p-2 px-3 text-sm"
-                >
-                  Register Now
-                </Link>
+
+                <h4 className="font-bold text-white text-2xl mb-4 line-clamp-2">
+                  {event.venue}
+                </h4>
+
+                <div className="flex items-center justify-between w-full text-white mt-auto">
+                  <div className="flex items-center font-semibold text-base">
+                    <img
+                      loading="lazy"
+                      src={locationPinLogo}
+                      alt="location pin"
+                      className="inline w-4 h-4 mr-1"
+                    />
+                    {event.location}
+                  </div>
+                  <Link
+                    to={`/${event.slug}`}
+                    className="rounded-lg bg-[#2A282F]/80 font-sans font-medium p-2 px-3 text-sm"
+                  >
+                    Register Now
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

@@ -28,6 +28,7 @@ export const mumbaiEvent: CityEvent = {
     "https://maps.app.goo.gl/5w57gH3UMq87f2Hu7",
   sponsorName: "Atlas University",
   sponsorLogo: atlasLogo,
+  sponsorDescription: "Higher education for changemakers",
   gradient: {
     from: "#A8D7FF",
     to: "#6171FF",

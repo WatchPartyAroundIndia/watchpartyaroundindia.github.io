@@ -28,6 +28,8 @@ export const chennaiEvent: CityEvent = {
     "https://maps.app.goo.gl/Vo6fM33zLCqecRh56",
   sponsorName: "Sedin Technologies",
   sponsorLogo: sedinLogo,
+  sponsorDescription: "Better the best",
+  sponsorWebsite: "https://sedintechnologies.com",
   gradient: {
     from: "#A8D7FF",
     to: "#6171FF",

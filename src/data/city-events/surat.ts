@@ -28,6 +28,8 @@ export const suratEvent: CityEvent = {
     "https://www.google.com/maps/search/?api=1&query=OptimumBrew+Technology+LLP",
   sponsorName: "OptimumBrew Technology",
   sponsorLogo: optimumBrewLogo,
+  sponsorDescription: "",
+  sponsorWebsite: "https://optimumbrew.com/",
   gradient: {
     from: "#BB5BF3",
     to: "#6900EE",

@@ -1,5 +1,5 @@
 import swiftHyderabadLogo from "../../assets/2025/organisers/swift-hyderabad.svg";
-import draperStartUpHouseLogo from "../../assets/2025/sponsors/draper.svg";
+import sonatypeLogo from "../../assets/2026/sponsors/sonatype.jpeg";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -14,40 +14,39 @@ export const hyderabadEvent: CityEvent = {
   startDate: "2025-06-09T19:00:00+05:30",
   endDate: "2025-06-10T00:30:00+05:30",
   logo: swiftHyderabadLogo,
-  venue: "Draper Startup House, Rajiv Gandhi Nagar",
-  address: "Draper Startup House, Rajiv Gandhi Nagar, Gachibowli, Hyderabad",
+  venue: "Sonatype",
+  address:
+    "TOWER-1, Aurobindo Orbit, 25th Floor, Sonatype India, Knowledge City Rd, Silpa Gram Craft Village, HITEC City, Hyderabad, Serilingampalle (M), Telangana 500081",
   structuredAddress: {
-    streetAddress: "Draper Startup House, Rajiv Gandhi Nagar, Gachibowli",
+    streetAddress:
+      "TOWER-1, Aurobindo Orbit, 25th Floor, Sonatype India, Knowledge City Rd, Silpa Gram Craft Village, HITEC City",
     addressLocality: "Hyderabad",
     addressRegion: "Telangana",
     addressCountry: "IN",
   },
-  location: "Gachibowli",
-  lumaUrl: "https://lu.ma/jehijqln",
+  location: "HITEC City",
+  lumaUrl: "https://luma.com/v8d19gd7",
   mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=Draper%20Startup%20House%20Gachibowli%20Hyderabad",
-  sponsorName: "Draper Startup House",
-  sponsorLogo: draperStartUpHouseLogo,
+    "https://www.google.com/maps/search/?api=1&query=TOWER-1+Aurobindo+Orbit+25th+Floor+Sonatype+India+Knowledge+City+Rd+Silpa+Gram+Craft+Village+HITEC+City+Hyderabad+Telangana+500081",
+  sponsorName: "Sonatype",
+  sponsorLogo: sonatypeLogo,
+  sponsorDescription: "Venue partner for Swift Hyderabad",
   gradient: {
     from: "#A8D7FF",
     to: "#6171FF",
   },
-  description: makeDescription(
-    "Swift Hyderabad",
-    "Draper Startup House",
-    "Hyderabad"
-  ),
+  description: makeDescription("Swift Hyderabad", "Sonatype", "Hyderabad"),
   highlights: [
     "Hosted with Swift Hyderabad",
-    "Venue support from Draper Startup House",
+    "Venue support from Sonatype",
     "Free registration through Luma",
   ],
   agenda: [
     {
       time: "7:00 PM",
-      title: "Doors open at Draper Startup House",
+      title: "Doors open at Sonatype",
       description:
-        "Check in, meet the Hyderabad organizers, and settle in at the Gachibowli venue.",
+        "Check in, meet the Hyderabad organizers, and settle in at the HITEC City venue.",
     },
     {
       time: "7:45 PM",

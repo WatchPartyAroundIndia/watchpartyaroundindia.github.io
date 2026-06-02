@@ -28,6 +28,8 @@ export const kozhikodeEvent: CityEvent = {
     "https://www.google.com/maps/search/?api=1&query=Kerala%20Startup%20Mission%20Palazhi%20Pantheeramkavu%20Kozhikode",
   sponsorName: "Kerala Startup Mission",
   sponsorLogo: keralaStartupMissionLogo,
+  sponsorDescription: "Learn, start, grow and scale",
+  sponsorWebsite: "https://startupmission.kerala.gov.in/",
   gradient: {
     from: "#FFC677",
     to: "#FF9500",
