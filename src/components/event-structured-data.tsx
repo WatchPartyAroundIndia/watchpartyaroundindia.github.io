@@ -35,7 +35,7 @@ const EventStructuredData = ({ event }: EventStructuredDataProps) => {
     },
     offers: {
       "@type": "Offer",
-      url: event.lumaUrl,
+      url: event.lumaUrl ?? event.mapUrl,
       price: 0,
       priceCurrency: "INR",
       availability: "https://schema.org/InStock",

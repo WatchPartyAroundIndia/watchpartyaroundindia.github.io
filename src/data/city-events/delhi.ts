@@ -28,6 +28,8 @@ export const delhiEvent: CityEvent = {
     "https://www.google.com/maps/search/?api=1&query=Ixigo%20Office%20Veritas%20Building%20Gurugram",
   sponsorName: "ixigo",
   sponsorLogo: ixigoLogo,
+  sponsorDescription: "Know & Go",
+  sponsorWebsite: "https://www.ixigo.com/",
   gradient: {
     from: "#A8D7FF",
     to: "#6171FF",

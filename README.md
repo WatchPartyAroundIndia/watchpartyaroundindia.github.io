@@ -2,17 +2,6 @@
 
 Website for WWDC Watch Party Around India, built with React, TypeScript, Vite, and Tailwind CSS.
 
-The site has a main landing page plus clean city URLs such as:
-
-- `/hyderabad`
-- `/delhi`
-- `/bangalore`
-- `/mumbai`
-- `/ahmedabad`
-- `/surat`
-- `/chennai`
-- `/kozhikode`
-
 ## Getting Started
 
 Install dependencies:
@@ -39,130 +28,175 @@ Run lint checks:
 npm run lint
 ```
 
-## City Pages
+## Routes
 
-Each city page is powered by data in `src/data/city-events/`.
+The site includes a landing page plus city pages:
 
-The root export is `src/data/city-events.ts`. Keep importing from this file in components:
+- `/hyderabad`
+- `/delhi`
+- `/bangalore`
+- `/mumbai`
+- `/ahmedabad`
+- `/surat`
+- `/chennai`
+- `/kozhikode`
+- `/pune`
+- `/nagpur`
+
+City routes are handled by `/:citySlug` in `src/main.tsx`.
+
+## Data Architecture
+
+The app is data-driven. UI components should import from `src/data/city-events.ts`:
 
 ```ts
 import { cityEvents, getCityEventBySlug } from "../data/city-events";
 ```
 
-Do not import city files directly from UI components unless there is a strong reason. The aggregator keeps the public API stable.
+`src/data/city-events.ts` is the aggregator. It combines:
 
-## Where To Update A City
+- base city event files (`src/data/city-events/<city>.ts`)
+- tagged member assignments (`src/data/team-members.ts`)
 
-Edit the matching city file:
+and produces:
 
-- `src/data/city-events/ahmedabad.ts`
-- `src/data/city-events/bangalore.ts`
-- `src/data/city-events/chennai.ts`
-- `src/data/city-events/delhi.ts`
-- `src/data/city-events/hyderabad.ts`
-- `src/data/city-events/kozhikode.ts`
-- `src/data/city-events/mumbai.ts`
-- `src/data/city-events/surat.ts`
+- `teamMembers` for each city page
+- `speakers` for each city page
+- `venueSponsors` for the homepage
 
-Each file exports one `CityEvent` object. This controls the city page, home registration card, Luma registration links, and structured data.
+## Where To Update City Event Details
 
-Common fields to update:
+Edit the matching file in `src/data/city-events/`:
 
-- `slug`: clean URL path, for example `hyderabad` creates `/hyderabad`.
-- `aliases`: alternate spellings that should redirect to the canonical slug, for example `hyderbad`.
-- `city` and `chapterName`: page title and organizer display text.
-- `date`, `time`, `startDate`, `endDate`: visible time and Event schema dates.
-- `venue`, `address`, `structuredAddress`, `location`, `mapUrl`: location card and structured data.
-- `lumaUrl`: used by both Register buttons and Event schema offer URL.
-- `sponsorName` and `sponsorLogo`: venue partner block.
-- `gradient`: city card/page accent colors.
-- `highlights`: short badges below the hero copy.
-- `agenda`: city-specific schedule shown in the "What to expect" section.
+- `ahmedabad.ts`
+- `bangalore.ts`
+- `chennai.ts`
+- `delhi.ts`
+- `hyderabad.ts`
+- `kozhikode.ts`
+- `mumbai.ts`
+- `surat.ts`
+- `pune.ts`
+- `nagpur.ts`
 
-Use ISO 8601 dates with the India timezone offset for schema fields:
+Each file exports one `CityEvent` object.
+
+Common fields:
+
+- `slug`: URL segment, for example `hyderabad` for `/hyderabad`
+- `aliases`: misspellings or legacy slugs to auto-redirect
+- `city`, `chapterName`
+- `date`, `time`, `startDate`, `endDate`
+- `venue`, `address`, `structuredAddress`, `location`, `mapUrl`
+- `lumaUrl` (optional): when missing, register buttons fall back to `mapUrl`
+- `sponsorName`, `sponsorLogo`, `sponsorDescription`, `sponsorWebsite`
+- `gradient`
+- `description`
+- `highlights`
+- `agenda`
+
+Use ISO 8601 with `+05:30` for schema dates:
 
 ```ts
-startDate: "2025-06-09T19:00:00+05:30",
-endDate: "2025-06-10T00:30:00+05:30",
+startDate: "2026-06-09T19:00:00+05:30";
+endDate: "2026-06-10T00:30:00+05:30";
 ```
 
-## Updating A City Agenda
+## Member Tagging System
 
-Agendas are intentionally city-specific. Update the `agenda` array inside the relevant city file:
+City team members and speakers are assigned in `src/data/team-members.ts`.
+
+Each profile can define `cityAssignments` with tags:
 
 ```ts
-agenda: [
+cityAssignments: [
+  { city: "hyderabad", role: "Organizer", kind: "team" },
   {
-    time: "7:00 PM",
-    title: "Doors open",
-    description: "Check in and meet the local community.",
+    city: "hyderabad",
+    role: "Speaker",
+    kind: "speaker",
+    sessionTitle: "What is new in SwiftUI",
+    sessionDescription: "A quick walkthrough of key WWDC updates.",
+    tags: ["SwiftUI", "WWDC26"],
   },
-  {
-    time: "10:30 PM",
-    title: "WWDC keynote watch",
-    description: "Watch the keynote live with the city chapter.",
-  },
-],
+];
 ```
 
-The page renders agenda items automatically from this array.
+Rules:
 
-## Adding A New City
+- `city` must match the city slug (for example `hyderabad`, `bangalore`)
+- `kind` defaults to `team` when omitted
+- no cap on number of members per city
+- one person can appear in multiple cities
+- cards show assignment tags (`City`, `Type`, `Role`, custom tags)
 
-1. Add organizer and sponsor assets under `src/assets/2025/` if needed.
-2. Create a new file in `src/data/city-events/<city>.ts`.
-3. Export a `CityEvent` object from that file.
-4. Import the new city event in `src/data/city-events.ts`.
-5. Add it to the `cityEvents` array.
-6. Add aliases if old links or common misspellings should redirect.
-7. Run `npm run lint` and `npm run build`.
+City page sections are generated automatically:
 
-The clean URL is handled by the router route `/:citySlug` in `src/main.tsx`.
+- `{chapterName} Team Members`
+- `{chapterName} Speakers` (only when speaker assignments exist)
 
-## Luma Registration
+## Homepage Dynamic Sections
 
-Luma pages are linked directly through `lumaUrl`. The city page has two registration links:
+These sections are auto-generated from data:
 
-- Top-right `Register`
-- Card button `Register on Luma`
+- `Register Now`: uses `cityEvents`; card logo uses sponsor logo when available, else chapter logo
+- `Venue Sponsors`: uses `venueSponsors` derived from city event sponsor fields
 
-Both buttons use the city-specific `lumaUrl`.
+## Luma Registration Behavior
 
-Luma event pages are not embedded in an iframe because Luma blocks iframe rendering with frame protection headers. Keep registration as a direct link unless Luma changes that behavior.
+City page register CTAs:
+
+- top-right action button
+- registration card button
+
+Behavior:
+
+- if `lumaUrl` exists, CTA points to Luma
+- if `lumaUrl` is missing, CTA points to `mapUrl`
 
 ## Structured Data
 
-Event JSON-LD is generated in `src/components/event-structured-data.tsx` from each `CityEvent`.
+JSON-LD is generated in `src/components/event-structured-data.tsx` from city event data.
 
-When changing event details, make sure these fields are accurate:
+Keep these fields accurate:
 
 - `startDate`
 - `endDate`
 - `venue`
 - `structuredAddress`
-- `lumaUrl`
+- `lumaUrl` or `mapUrl`
 - `description`
 - `chapterName`
 
-Google's Event structured data documentation is here:
+Reference:
 
-https://developers.google.com/search/docs/appearance/structured-data/event
+- https://developers.google.com/search/docs/appearance/structured-data/event
+
+## Adding A New City
+
+1. Add assets under `src/assets/` as needed.
+2. Create `src/data/city-events/<city>.ts`.
+3. Export a `CityEvent` object.
+4. Import and include it in `src/data/city-events.ts`.
+5. Add `aliases` if needed.
+6. Add member tags in `src/data/team-members.ts` using `cityAssignments`.
+7. Run `npm run lint` and `npm run build`.
 
 ## Routing And GitHub Pages
 
-The app uses browser routes for clean URLs. GitHub Pages needs a fallback so direct visits to `/hyderabad` still load the React app.
+Clean URLs work with fallback files:
 
-Relevant files:
+- `src/main.tsx`
+- `public/404.html`
+- `index.html`
+- `public/CNAME`
 
-- `src/main.tsx`: app routes.
-- `public/404.html`: GitHub Pages fallback redirect.
-- `index.html`: restores clean paths from the fallback redirect.
-- `public/CNAME`: custom domain config.
+## Important Files
 
-## Important Components
-
-- `src/components/register-now.tsx`: city cards on the homepage.
-- `src/components/city-event-page.tsx`: city page layout and Register buttons.
-- `src/components/event-structured-data.tsx`: Event schema JSON-LD.
-- `src/data/city-events.ts`: public city event list and slug lookup.
-- `src/data/city-events/types.ts`: shared city data types.
+- `src/components/register-now.tsx`
+- `src/components/sponsors.tsx`
+- `src/components/city-event-page.tsx`
+- `src/components/event-structured-data.tsx`
+- `src/data/city-events.ts`
+- `src/data/city-events/types.ts`
+- `src/data/team-members.ts`
