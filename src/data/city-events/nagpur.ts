@@ -1,4 +1,5 @@
 import swiftNagpurLogo from "../../assets/organisers/swift-nagpur.jpeg";
+import theCribLogo from "../../assets/2026/sponsors/thecrib.png";
 import { makeDescription } from "./helpers";
 import type { CityEvent } from "./types";
 
@@ -14,7 +15,7 @@ export const nagpurEvent: CityEvent = {
   endDate: "2026-06-09T00:30:00+05:30",
   logo: swiftNagpurLogo,
 
-  venue: "The Crib- Taqueria | Pickleball | Rock Climbing",
+  venue: "The Crib - Taqueria | Pickleball | Rock Climbing",
   address: "15, N Ambazari Rd, Ambazari, Nagpur, Maharashtra 440010",
   structuredAddress: {
     streetAddress: "15, N Ambazari Rd, Ambazari",
@@ -24,9 +25,14 @@ export const nagpurEvent: CityEvent = {
   },
 
   location: "Ambazari",
+  lumaUrl: "https://luma.com/ownpcknh",
 
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=The+Crib+Taqueria+Pickleball+Rock+Climbing+Nagpur",
+  sponsorName: "The Crib",
+  sponsorLogo: theCribLogo,
+  sponsorDescription: "Taqueria | Pickleball | Rock Climbing",
+  sponsorWebsite: "https://maps.app.goo.gl/ctqvzMemnHXhxix56",
 
   gradient: {
     from: "#F97316",
@@ -35,14 +41,14 @@ export const nagpurEvent: CityEvent = {
 
   description: makeDescription(
     "Swift Nagpur",
-    "Venue to be announced",
+    "The Crib",
     "Nagpur"
   ),
 
   highlights: [
     "Hosted with Swift Nagpur",
     "WWDC 2026 community watch party",
-    "Venue details coming soon",
+    "Venue support from The Crib",
   ],
 
   agenda: [

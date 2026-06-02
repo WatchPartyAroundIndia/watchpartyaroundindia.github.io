@@ -104,6 +104,8 @@ const CityEventPage = () => {
           </HashLink>
           <a
             href={registrationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm md:text-base text-white bg-[#4884FF] font-medium px-4 md:px-6 py-2 border-2 border-[#0B2131] shadow-[-3px_3px_0_1px_#0B2131] hover:bg-[#366fd1] transition-colors duration-200"
           >
             {registerCta}
@@ -280,6 +282,8 @@ const CityEventPage = () => {
 
                 <a
                   href={registrationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 flex items-center justify-center w-full rounded-lg bg-[#2A282F] text-white font-bold py-3 hover:bg-black transition-colors"
                 >
                   {registerCardCta}

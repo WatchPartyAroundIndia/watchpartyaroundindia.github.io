@@ -4,16 +4,20 @@ import akshayNjarangal from "../assets/2025/team/Akshay Njarangal.jpeg";
 import akshayPakanati from "../assets/2025/team/Akshay Pakanati.png";
 import amitSamant from "../assets/2025/team/Amit Samant.png";
 import anirudhJwala from "../assets/2025/team/Anirudh Jwala.png";
+import arihantMarwaha from "../assets/2026/team/ArihanrM.jpg";
+import arpitaG from "../assets/2026/team/ArpitaG.jpeg";
 import ayushSingh from "../assets/2025/team/Ayush Singh.png";
 import bhavinVaghela from "../assets/2025/team/Bhavin Vaghela.jpg";
 import bhumikaPatel from "../assets/2025/team/Bhumika Patel.jpeg";
 import devanshi from "../assets/2025/team/Devanshi.png";
+import dishantN from "../assets/2026/team/DishantN.jpeg";
 import drNikhilMangrulkar from "../assets/2026/team/Dr. Nikhil.jpeg";
 import gokulB from "../assets/2025/team/Gokul B.jpeg";
+import jigarPatel from "../assets/2026/team/Jigar-Patel.jpeg";
 import kajalSheth from "../assets/2025/team/Kajal Sheth.png";
 import krishnaPatidar from "../assets/2026/team/krishna-patidar.jpeg";
 import krishnaPermi from "../assets/2026/team/KrishnaPermi.png";
-import maninderSingh from "../assets/2025/team/Maninder Singh.jpeg";
+import maninderSingh from "../assets/2026/team/ManinderM.jpeg";
 import nayyanMujadiya from "../assets/2025/team/Nayyan Mujadiya.jpeg";
 import nikhilNigade from "../assets/2026/team/NikhilN.jpg";
 import nishantDesai from "../assets/2025/team/Nishant Desai.png";
@@ -25,6 +29,7 @@ import ratneshJain from "../assets/2026/team/RatneshJ.jpeg";
 import rimeshJotaniya from "../assets/2026/team/RimeshJ.jpeg";
 import rizwanAhmed from "../assets/2026/team/RizwanA.jpeg";
 import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
+import sejalK from "../assets/2026/team/SejalK.jpeg";
 import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
 import vedangKulkarni from "../assets/2026/team/VedangK.png";
 import yogeshSingh from "../assets/2026/team/YogeshS.jpg";
@@ -191,7 +196,8 @@ export const teamMembers: TeamMember[] = [
     socialLink: "https://www.linkedin.com/in/manindersinghh",
     name: "Maninder Singh",
     photo: maninderSingh,
-    backgroundColour: "#D6D6D6",
+    backgroundColour: "#ecd908",
+    connectWithTeamOrder: 26,
     cityAssignments: [{ city: "chennai", role: "Organizer" }],
   },
   {
@@ -316,6 +322,46 @@ export const teamMembers: TeamMember[] = [
     backgroundColour: "#BEFF93",
     connectWithTeamOrder: 25,
     cityAssignments: [{ city: "mumbai", role: "City Lead" }],
+  },
+  {
+    id: 31,
+    socialLink: "https://www.linkedin.com/in/arihant-marwaha-855211227/",
+    name: "Arihant Marwaha",
+    photo: arihantMarwaha,
+    backgroundColour: "#ef1616",
+    connectWithTeamOrder: 27,
+  },
+  {
+    id: 33,
+    socialLink: "https://www.linkedin.com/in/sejallkhanna/",
+    name: "Sejal Khanna",
+    photo: sejalK,
+    backgroundColour: "#d617a4",
+    connectWithTeamOrder: 28,
+  },
+  {
+    id: 34,
+    socialLink: "https://www.linkedin.com/in/arpita-gupta01/",
+    name: "Arpita Gupta",
+    photo: arpitaG,
+    backgroundColour: "#f3b8e3",
+    connectWithTeamOrder: 29,
+  },
+  {
+    id: 35,
+    socialLink: "https://www.linkedin.com/in/dishantios/",
+    name: "Dishant Nagpal",
+    photo: dishantN,
+    backgroundColour: "#C9E4FF",
+    connectWithTeamOrder: 30,
+  },
+  {
+    id: 36,
+    socialLink: "https://www.linkedin.com/in/jigar24patel/",
+    name: "JIGAR PATEL",
+    photo: jigarPatel,
+    backgroundColour: "#000000",
+    connectWithTeamOrder: 31,
   },
 ];
 

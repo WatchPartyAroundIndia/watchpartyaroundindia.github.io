@@ -7,8 +7,8 @@ const MeetTheTeam = () => {
       <h2 className="font-sans font-bold text-3xl md:text-4xl mb-3">
         Meet The Team
       </h2>
-      <h4 className="font-sans font-bold text-lg md:text-2xl text-[#A4A4A4]">
-        Built by devs, for devs
+      <h4 className="font-sans font-bold text-md sm:text-xl md:text-2xl lg:text-3xl text-center">
+        A nationwide watch party organized by devs, for devs
       </h4>
       <div className="flex justify-center max-w-7xl mt-8 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
@@ -19,14 +19,14 @@ const MeetTheTeam = () => {
               className="flex flex-col items-center justify-end w-48 h-48 rounded-full shadow relative hover:scale-105 transition-transform duration-200"
               style={{ backgroundColor: member.backgroundColour }}
               tabIndex={0}
-              onClick={(event) => {
-                event.preventDefault();
+              onClick={(e) => {
+                e.preventDefault();
                 if (member.socialLink !== "#") {
                   window.open(member.socialLink, "_blank");
                 }
               }}
-              onKeyDown={(event) =>
-                event.key === "Enter" && window.open(member.socialLink, "_blank")
+              onKeyDown={(e) =>
+                e.key === "Enter" && window.open(member.socialLink, "_blank")
               }
             >
               <img
