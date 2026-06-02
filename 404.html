@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function (location) {
+        var path = location.pathname.slice(1);
+        var query = location.search
+          ? "&" + location.search.slice(1).replace(/&/g, "~and~")
+          : "";
+
+        location.replace(
+          location.protocol +
+            "//" +
+            location.hostname +
+            (location.port ? ":" + location.port : "") +
+            "/?/" +
+            path +
+            query +
+            location.hash
+        );
+      })(window.location);
+    </script>
+  </head>
+  <body></body>
+</html>

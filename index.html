@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function (location) {
+        if (location.search[1] === "/") {
+          var decoded = location.search
+            .slice(1)
+            .split("&")
+            .map(function (segment) {
+              return segment.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          window.history.replaceState(
+            null,
+            null,
+            location.pathname.slice(0, -1) + decoded + location.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WWDC26 - Watch Party Around India</title>
+    <meta
+      name="description"
+      content="Join us for the Watch Party Around India in Ahmedabad, Bengaluru, Chennai, Delhi, Hyderabad, Kozhikode, Mumbai and Surat!"
+    />
+
+    <!-- Favicon -->
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://watchpartyaroundindia.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WWDC26 - Watch Party Around India" />
+    <meta
+      property="og:description"
+      content="Join us in Ahmedabad, Delhi, Mumbai, Bengaluru, Hyderabad, Chennai, Surat, and Kozhikode for a community watch party of WWDC 2026."
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:domain" content="watchpartyaroundindia.com" />
+    <meta property="twitter:url" content="https://watchpartyaroundindia.com/" />
+    <meta name="twitter:title" content="WWDC26 - Watch Party Around India" />
+    <meta
+      name="twitter:description"
+      content="Join us in Ahmedabad, Delhi, Mumbai, Bengaluru, Hyderabad, Chennai, Surat, and Kozhikode for a community watch party of WWDC 2026."
+    />
+    <script type="module" crossorigin src="/assets/index-B6guHUQw.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-PkeIaN7G.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
