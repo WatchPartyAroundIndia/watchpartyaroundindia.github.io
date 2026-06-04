@@ -61,7 +61,7 @@ export const teamMembers: TeamMember[] = [
     photo: adithyaBalaji,
     backgroundColour: "#FFB069",
     connectWithTeamOrder: 1,
-    cityAssignments: [{ city: "chennai", role: "City Lead" }],
+    cityAssignments: [{ city: "chennai", role: "Organizer" }],
   },
   {
     id: 2,
@@ -78,7 +78,7 @@ export const teamMembers: TeamMember[] = [
     name: "Akshay Njarangal",
     photo: akshayNjarangal,
     backgroundColour: "#f0f0f0",
-    cityAssignments: [{ city: "nagpur", role: "Organizer" }],
+    cityAssignments: [{ city: "kozhikode", role: "Organizer" }],
   },
   {
     id: 4,
@@ -87,10 +87,7 @@ export const teamMembers: TeamMember[] = [
     photo: akshayPakanati,
     backgroundColour: "#A6CCFA",
     connectWithTeamOrder: 3,
-    cityAssignments: [
-      { city: "chennai", role: "Organizer" },
-      { city: "hyderabad", role: "Organizer" },
-    ],
+    cityAssignments: [{ city: "hyderabad", role: "Organizer" }],
   },
   {
     id: 5,
@@ -99,7 +96,7 @@ export const teamMembers: TeamMember[] = [
     photo: amitSamant,
     backgroundColour: "#FFE5F8",
     connectWithTeamOrder: 4,
-    cityAssignments: [{ city: "bangalore", role: "City Lead" }],
+    cityAssignments: [{ city: "bangalore", role: "Organizer" }],
   },
   {
     id: 6,
@@ -116,7 +113,7 @@ export const teamMembers: TeamMember[] = [
     photo: ayushSingh,
     backgroundColour: "#fff3ea",
     connectWithTeamOrder: 5,
-    cityAssignments: [{ city: "delhi", role: "City Lead" }],
+    cityAssignments: [{ city: "delhi", role: "Organizer" }],
   },
   {
     id: 8,
@@ -125,7 +122,7 @@ export const teamMembers: TeamMember[] = [
     photo: bhavinVaghela,
     backgroundColour: "#A6CCFA",
     connectWithTeamOrder: 6,
-    cityAssignments: [{ city: "ahmedabad", role: "City Lead" }],
+    cityAssignments: [{ city: "ahmedabad", role: "Organizer" }],
   },
   {
     id: 9,
@@ -134,6 +131,7 @@ export const teamMembers: TeamMember[] = [
     photo: bhumikaPatel,
     backgroundColour: "#FF69E1",
     connectWithTeamOrder: 7,
+    cityAssignments: [{ city: "surat", role: "Organizer" }],
   },
   {
     id: 10,
@@ -141,7 +139,7 @@ export const teamMembers: TeamMember[] = [
     name: "Devanshi",
     photo: devanshi,
     backgroundColour: "#FF69E1",
-    cityAssignments: [{ city: "nagpur", role: "Organizer" }],
+    cityAssignments: [{ city: "ahmedabad", role: "Organizer" }],
   },
   {
     id: 11,
@@ -150,7 +148,7 @@ export const teamMembers: TeamMember[] = [
     photo: drNikhilMangrulkar,
     backgroundColour: "#E8D5FF",
     connectWithTeamOrder: 8,
-    cityAssignments: [{ city: "delhi", role: "Organizer" }],
+    cityAssignments: [{ city: "nagpur", role: "Organizer" }],
   },
   {
     id: 12,
@@ -159,10 +157,7 @@ export const teamMembers: TeamMember[] = [
     photo: gokulB,
     backgroundColour: "#D6D6D6",
     connectWithTeamOrder: 9,
-    cityAssignments: [
-      { city: "bangalore", role: "Organizer" },
-      { city: "kozhikode", role: "City Lead" },
-    ],
+    cityAssignments: [{ city: "bangalore", role: "Organizer" }],
   },
   {
     id: 13,
@@ -180,7 +175,6 @@ export const teamMembers: TeamMember[] = [
     photo: krishnaPatidar,
     backgroundColour: "#C9E4FF",
     connectWithTeamOrder: 11,
-    cityAssignments: [{ city: "nagpur", role: "City Lead" }],
   },
   {
     id: 15,
@@ -189,7 +183,7 @@ export const teamMembers: TeamMember[] = [
     photo: krishnaPermi,
     backgroundColour: "#B8E8D0",
     connectWithTeamOrder: 12,
-    cityAssignments: [{ city: "kozhikode", role: "Organizer" }],
+    cityAssignments: [{ city: "bangalore", role: "Organizer" }],
   },
   {
     id: 16,
@@ -198,7 +192,7 @@ export const teamMembers: TeamMember[] = [
     photo: maninderSingh,
     backgroundColour: "#ecd908",
     connectWithTeamOrder: 26,
-    cityAssignments: [{ city: "chennai", role: "Organizer" }],
+    cityAssignments: [{ city: "delhi", role: "Organizer" }],
   },
   {
     id: 17,
@@ -225,7 +219,7 @@ export const teamMembers: TeamMember[] = [
     photo: nishantDesai,
     backgroundColour: "#FFB069",
     connectWithTeamOrder: 15,
-    cityAssignments: [{ city: "delhi", role: "Organizer" }],
+    cityAssignments: [{ city: "mumbai", role: "Organizer" }],
   },
   {
     id: 20,
@@ -234,7 +228,7 @@ export const teamMembers: TeamMember[] = [
     photo: pinakRokde,
     backgroundColour: "#FFD4A8",
     connectWithTeamOrder: 16,
-    cityAssignments: [{ city: "pune", role: "City Lead" }],
+    cityAssignments: [{ city: "nagpur", role: "Organizer" }],
   },
   {
     id: 21,
@@ -243,6 +237,7 @@ export const teamMembers: TeamMember[] = [
     photo: raghavSethi,
     backgroundColour: "#FFDEC0",
     connectWithTeamOrder: 17,
+    cityAssignments: [{ city: "delhi", role: "Organizer" }],
   },
   {
     id: 22,
@@ -251,7 +246,10 @@ export const teamMembers: TeamMember[] = [
     photo: rajRaval,
     backgroundColour: "#FFDEC0",
     connectWithTeamOrder: 18,
-    cityAssignments: [{ city: "mumbai", role: "Organizer" }],
+    cityAssignments: [
+      { city: "bangalore", role: "Organizer" },
+      { city: "mumbai", role: "Organizer" },
+    ],
   },
   {
     id: 23,
@@ -260,7 +258,7 @@ export const teamMembers: TeamMember[] = [
     photo: rangaReddy,
     backgroundColour: "#dee6f1",
     connectWithTeamOrder: 19,
-    cityAssignments: [{ city: "hyderabad", role: "City Lead" }],
+    cityAssignments: [{ city: "hyderabad", role: "Organizer" }],
   },
   {
     id: 24,
@@ -269,7 +267,7 @@ export const teamMembers: TeamMember[] = [
     photo: ratneshJain,
     backgroundColour: "#D4E7FF",
     connectWithTeamOrder: 20,
-    cityAssignments: [{ city: "surat", role: "City Lead" }],
+    cityAssignments: [{ city: "ahmedabad", role: "Organizer" }],
   },
   {
     id: 25,
@@ -278,7 +276,7 @@ export const teamMembers: TeamMember[] = [
     photo: rimeshJotaniya,
     backgroundColour: "#f1ae5c",
     connectWithTeamOrder: 21,
-    cityAssignments: [{ city: "surat", role: "Organizer" }],
+    cityAssignments: [{ city: "pune", role: "Organizer" }],
   },
   {
     id: 26,
@@ -287,7 +285,7 @@ export const teamMembers: TeamMember[] = [
     photo: rizwanAhmed,
     backgroundColour: "#FFC0CB",
     connectWithTeamOrder: 22,
-    cityAssignments: [{ city: "surat", role: "Organizer" }],
+    cityAssignments: [{ city: "chennai", role: "Organizer" }],
   },
   {
     id: 27,
@@ -296,7 +294,7 @@ export const teamMembers: TeamMember[] = [
     photo: rushitRakhasiya,
     backgroundColour: "#BEFF93",
     connectWithTeamOrder: 23,
-    cityAssignments: [{ city: "ahmedabad", role: "Organizer" }],
+    cityAssignments: [{ city: "mumbai", role: "Organizer" }],
   },
   {
     id: 28,
@@ -304,6 +302,7 @@ export const teamMembers: TeamMember[] = [
     name: "Shamil Roshan",
     photo: shamilRoshan,
     backgroundColour: "#A6CCFA",
+    cityAssignments: [{ city: "kozhikode", role: "Organizer" }],
   },
   {
     id: 29,
@@ -312,7 +311,7 @@ export const teamMembers: TeamMember[] = [
     photo: vedangKulkarni,
     backgroundColour: "#FFDEC0",
     connectWithTeamOrder: 24,
-    cityAssignments: [{ city: "pune", role: "Organizer" }],
+    cityAssignments: [{ city: "nagpur", role: "Organizer" }],
   },
   {
     id: 30,
@@ -321,7 +320,7 @@ export const teamMembers: TeamMember[] = [
     photo: yogeshSingh,
     backgroundColour: "#BEFF93",
     connectWithTeamOrder: 25,
-    cityAssignments: [{ city: "mumbai", role: "City Lead" }],
+    cityAssignments: [{ city: "mumbai", role: "Organizer" }],
   },
   {
     id: 31,
@@ -338,6 +337,7 @@ export const teamMembers: TeamMember[] = [
     photo: sejalK,
     backgroundColour: "#d617a4",
     connectWithTeamOrder: 28,
+    cityAssignments: [{ city: "delhi", role: "Organizer" }],
   },
   {
     id: 34,
@@ -346,6 +346,7 @@ export const teamMembers: TeamMember[] = [
     photo: arpitaG,
     backgroundColour: "#f3b8e3",
     connectWithTeamOrder: 29,
+    cityAssignments: [{ city: "delhi", role: "Organizer" }],
   },
   {
     id: 35,
@@ -354,6 +355,7 @@ export const teamMembers: TeamMember[] = [
     photo: dishantN,
     backgroundColour: "#C9E4FF",
     connectWithTeamOrder: 30,
+    cityAssignments: [{ city: "delhi", role: "Organizer" }],
   },
   {
     id: 36,
@@ -362,6 +364,7 @@ export const teamMembers: TeamMember[] = [
     photo: jigarPatel,
     backgroundColour: "#000000",
     connectWithTeamOrder: 31,
+    cityAssignments: [{ city: "surat", role: "Organizer" }],
   },
 ];
 
