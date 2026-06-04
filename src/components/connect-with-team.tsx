@@ -8,7 +8,9 @@ const ConnectWithTeam = () => {
         Connect with passionate developers from across India
       </h4>
       <div className="flex flex-wrap justify-start items-center mt-4 gap-6 mb-12 w-full overflow-x-auto">
-        {connectWithTeamMembers.map((member) => (
+        {[...connectWithTeamMembers]
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((member) => (
           <img
             key={member.id}
             src={member.photo}

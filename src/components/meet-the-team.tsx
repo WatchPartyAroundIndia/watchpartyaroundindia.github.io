@@ -12,7 +12,9 @@ const MeetTheTeam = () => {
       </h4>
       <div className="flex justify-center max-w-7xl mt-8 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
-          {teamMembers.map((member) => (
+          {[...teamMembers]
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((member) => (
             <div
               key={member.id}
               role="button"
