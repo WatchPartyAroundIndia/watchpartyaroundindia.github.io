@@ -14,8 +14,8 @@ const RegisterNow = () => {
       </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mt-8 px-8 lg:px-4">
         {cityEvents.map((event) => {
-          const cardLogo = event.sponsorLogo ?? event.logo;
-          const cardLabel = event.sponsorName ?? event.chapterName;
+          const cardLogo = event.logo;
+          const cardLabel = event.chapterName;
 
           return (
             <div
