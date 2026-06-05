@@ -31,6 +31,7 @@ import rizwanAhmed from "../assets/2026/team/RizwanA.jpeg";
 import rushitRakhasiya from "../assets/2025/team/Rushit Rakhasiya.png";
 import sejalK from "../assets/2026/team/SejalK.jpeg";
 import shamilRoshan from "../assets/2025/team/Shamil Roshan.jpeg";
+import sureshG from "../assets/2026/team/SureshG.jpeg";
 import vedangKulkarni from "../assets/2026/team/VedangK.png";
 import yogeshSingh from "../assets/2026/team/YogeshS.jpg";
 
@@ -365,6 +366,15 @@ export const teamMembers: TeamMember[] = [
     backgroundColour: "#000000",
     connectWithTeamOrder: 31,
     cityAssignments: [{ city: "surat", role: "Organizer" }],
+  },
+  {
+    id: 37,
+    socialLink: "https://www.linkedin.com/in/sureshkumargondi/",
+    name: "Suresh Kumar Gondi",
+    photo: sureshG,
+    backgroundColour: "#B8E8D0",
+    connectWithTeamOrder: 32,
+    cityAssignments: [{ city: "hyderabad", role: "Organizer" }],
   },
 ];
 
