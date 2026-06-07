@@ -6,6 +6,7 @@ import amitSamant from "../assets/2025/team/Amit Samant.png";
 import anirudhJwala from "../assets/2025/team/Anirudh Jwala.png";
 import arihantMarwaha from "../assets/2026/team/ArihanrM.jpg";
 import arpitaG from "../assets/2026/team/ArpitaG.jpeg";
+import ayushBhople from "../assets/2026/team/AyushB.jpg";
 import ayushSingh from "../assets/2025/team/Ayush Singh.png";
 import bhavinVaghela from "../assets/2025/team/Bhavin Vaghela.jpg";
 import bhumikaPatel from "../assets/2025/team/Bhumika Patel.jpeg";
@@ -376,6 +377,15 @@ export const teamMembers: TeamMember[] = [
     connectWithTeamOrder: 32,
     cityAssignments: [{ city: "hyderabad", role: "Organizer" }],
   },
+  {
+    id: 38,
+    socialLink: "https://www.linkedin.com/in/ayush-bhople",
+    name: "Ayush Bhople",
+    photo: ayushBhople,
+    backgroundColour: "#B8E8D0",
+    connectWithTeamOrder: 33,
+    cityAssignments: [{ city: "nagpur", role: "Organizer" }],
+  }
 ];
 
 export const connectWithTeamMembers = teamMembers
